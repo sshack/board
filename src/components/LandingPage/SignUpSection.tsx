@@ -2,11 +2,13 @@ import React from 'react';
 
 const SignUpSection: React.FC = () => {
   return (
-    <section className="w-full bg-gray-800 text-white px-6 md:px-16 py-16">
-      <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+    <section className="w-max-[1360px] h-[695px] bg-black text-white">
+      <div className="border border-red-500 bg-black mx-auto grid md:grid-cols-2 p-20 items-center overflow-hidden rounded-[8px]"
+        style={{ backgroundImage: 'url(/lp/fundo2last.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      >
         {/* Form */}
-        <div className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold">
+        <div className="space-y-20">
+          <h2 className="font-semibold text-[56px] leading-[64px] tracking-[-2.24px]">
             Join Our Party
             <br />
             Sign Up For Updates
@@ -15,21 +17,27 @@ const SignUpSection: React.FC = () => {
             <input
               type="text"
               placeholder="Full Name"
-              className="w-full px-4 py-3 rounded bg-gray-900 text-white placeholder-gray-500 focus:outline-none"
+              className="w-[448px] px-4 py-3 rounded-[8px] bg-[rgba(255,255,255,0.15)]  text-white placeholder-gray-500 focus:outline-none"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full px-4 py-3 rounded bg-gray-900 text-white placeholder-gray-500 focus:outline-none"
+              className="w-[448px] rounded-[8px] px-4 py-3 bg-[rgba(255,255,255,0.15)]  text-white placeholder-gray-500 focus:outline-none"
             />
-            <button className="w-full bg-blue-600 hover:bg-blue-500 text-white px-4 py-3 rounded font-semibold">
+            <button className="w-[448px] roudend-full bg-white text-black text-[16px] px-4 py-3 rounded-full">
               Subscribe
             </button>
           </form>
         </div>
+        <div className='w-[798px] h-[532px]'
+          style={{
+            backgroundImage: 'url(/lp/fundo1last.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
 
-        {/* Preview feed placeholder */}
-        <div className="w-full h-64 md:h-80 bg-black rounded-lg" />
+        </div>
       </div>
     </section>
   );

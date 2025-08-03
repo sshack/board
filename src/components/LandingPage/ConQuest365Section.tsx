@@ -1,30 +1,83 @@
 import React from 'react';
 
+const dailyQuests = [
+  {
+    icon: '/lp/trophy-icon.png',
+    text: 'expressions of nerdy passion (show us your favorite piece of superhero merch)',
+  },
+  {
+    icon: '/lp/art-icon.png',
+    text: "whimsical artistry (doodle a cat's face)",
+  },
+  {
+    icon: '/lp/sword-icon.png',
+    text: 'adventuresome absurdity (find a stick suitable for swordplay)',
+  },
+  {
+    icon: '/lp/heart-icon.png',
+    text: 'bite-sized acts of benevolence (help a housemate with a chore)',
+  },
+  {
+    icon: '/lp/book-icon.png',
+    text: 'manageable ways to level up IRL (read at least 30 pages of something you find interesting or enriching!)',
+  },
+];
+
+
+
 const ConQuest365Section: React.FC = () => {
   return (
-    <section className="w-full bg-gray-900 text-white px-6 md:px-16 py-16 space-y-8">
-      <h2 className="text-2xl md:text-4xl font-bold text-center">
+    <section className="w-full bg-black text-white px-4 md:px-0 py-16">
+      <h2 className="text-[56px] md:text-4xl font-bold text-center mb-12">
         ConQuesting 365
       </h2>
-
-      <div className="flex flex-col md:flex-row items-center gap-8 max-w-5xl mx-auto">
-        <div className="flex-1 space-y-4">
-          <p className="text-gray-400">
-            Follow <span className="text-blue-500">@gamoneechelon</span> on
-            Instagram to receive daily quest prompts starting on September 1st.
+      <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl mx-auto">
+        {/* Texto à esquerda */}
+        <div className="flex-1 flex flex-col items-start">
+          <p className="text-white text-[29px] mb-6 leading-[44px]">
+            Follow @gameonechelon on Instagram to receive daily quest prompts starting on September 1st.
           </p>
-          <ul className="list-disc list-inside text-gray-300 space-y-1">
-            <li>
-              Wanderlust travel inspiration driven by your favorite places of
-              adventure.
-            </li>
-            <li>Enthusiasm-driven daily cosplay challenges.</li>
-            <li>Skill-development quests (fit checks & more!).</li>
-          </ul>
+          <div className='flex flex-col'>
+            <span className="flex flex-col font-semibold mb-2">Daily quests will include</span>
+            <ul className="flex flex-col space-y-3">
+                <li className="flex items-start gap-3 text-gray-200 text-base">
+                  <img src="/lp/icon2.svg" alt="Trophy Icon" className="w-[28px] h-[28px]" />
+                  <span className='text-[#A4A4B2] text-[16px]'>{dailyQuests[0].text}</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-200 text-base">
+                  <img src="/lp/icon3.svg" alt="Trophy Icon" className="w-[28px] h-[28px]" />
+                  <span className='text-[#A4A4B2] text-[16px]'>{dailyQuests[1].text}</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-200 text-base">
+                  <img src="/lp/icon4.svg" alt="Trophy Icon" className="w-[28px] h-[28px]" />
+                  <span className='text-[#A4A4B2] text-[16px]'>{dailyQuests[2].text}</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-200 text-base">
+                  <img src="/lp/icon1.svg" alt="Trophy Icon" className="w-[28px] h-[28px]" />
+                  <span className='text-[#A4A4B2] text-[16px]'>{dailyQuests[3].text}</span>
+                </li>
+                <li className="flex items-start gap-3 text-gray-200 text-base">
+                  <img src="/lp/icon5.svg" alt="Trophy Icon" className="w-[28px] h-[28px] " />
+                  <span className='text-[#A4A4B2] text-[16px]'>{dailyQuests[4].text}</span>
+                </li>
+            </ul>
+          </div>
         </div>
-
-        {/* Placeholder phone image */}
-        <div className="flex-1 w-full h-80 bg-black rounded-lg" />
+        {/* Imagem do celular à direita */}
+        <div className="flex-1 flex items-center justify-center overflow-hidden">
+          <div
+            className="w-[500px] h-[500px] rounded-xl flex items-center justify-center"
+            style={{
+              background: 'linear-gradient(111deg, rgba(25,159,236,0.10) 0.9%, rgba(25,159,236,0.55) 100%)',
+            }}
+          >
+            <img
+              src="/lp/screenshot.png"
+              alt="Instagram Phone"
+              className="w-[213px] h-[402px] rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
