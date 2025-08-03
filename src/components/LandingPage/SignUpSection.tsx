@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignUpSection: React.FC = () => {
   return (
-    <section className="w-max-[1360px] h-[695px] bg-black text-white">
+    <section className="w-[1280px] flex justify-center items-center h-[695px] bg-black text-white mx-auto">
       <div className="border border-red-500 bg-black mx-auto grid md:grid-cols-2 p-20 items-center overflow-hidden rounded-[8px]"
         style={{ backgroundImage: 'url(/lp/fundo2last.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
