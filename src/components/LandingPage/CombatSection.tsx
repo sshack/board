@@ -11,7 +11,7 @@ export default function LoreSection() {
         </div>
 
         {/* Right Side - Three Cards */}
-        <div className="w-[1279px] h-[516px] space-y-6 pt-2">
+        <div className="w-[1279px] h-[580px] space-y-6 pt-2">
           {/* Card 1: Tons of Build Options */}
           <div className="w-[898px] h-[200px] rounded-2xl border border-[rgba(25,159,236,0.30)] overflow-hidden">
             <div className="flex h-full">
