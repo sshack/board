@@ -8,7 +8,7 @@ export default function CharactersSection({
   return (
     <>
       {/* Characters Section */}
-      <div className="pb-40 flex flex-col lg:flex-row gap-8 left-0">
+      <div className="pb-20 flex flex-col lg:flex-row gap-8 left-0">
         {/* Left Side - Characters Heading */}
         <div className="lg:w-1/4">
           <h2 className="text-[24px] leading-[40px] font-normal text-white mb-8">

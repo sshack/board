@@ -75,7 +75,7 @@ const TeamPerson: React.FC = () => {
             {teamMembers.map((member) => (
               <div
                 key={member.id}
-                className="bg-white rounded-lg overflow-hidden shadow-lg"
+                className="bg-[#0B1C2C] rounded-lg overflow-hidden shadow-lg"
               >
                 {/* Upper Section - Image Area */}
                 <div className="h-48 bg-gray-200 relative">

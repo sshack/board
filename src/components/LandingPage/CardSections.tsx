@@ -7,10 +7,10 @@ const CardSections = () => {
       {/* Card 1 */}
       <div className="w-[632px] h-[730px] rounded-lg bg-[#011627] flex flex-col items-center justify-center text-center p-6 overflow-hidden">
         <Image
-          src="/lp/discordImage.png"
+          src="/lp/maskDiscord.png"
           alt="Discord"
-          width={570}
-          height={475}
+          width={450}
+          height={366}
           className="rounded-md mb-6"
         />
         <div className="text-[44px] leading-[49px]">
@@ -28,10 +28,10 @@ const CardSections = () => {
       {/* Card 2 */}
       <div className="w-[632px] h-[730px] rounded-lg bg-[#011627] flex flex-col items-center justify-center text-center p-6">
         <Image
-          src="/lp/screenshot.png"
+          src="/lp/maskCell.png"
           alt="Instagram"
-          width={213}
-          height={402}
+          width={500}
+          height={500}
           className="rounded-md mb-6"
         />
         <div className="text-[44px] leading-[48px]">

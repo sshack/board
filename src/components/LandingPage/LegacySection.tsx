@@ -1,11 +1,25 @@
-import React from 'react';
+import React from "react";
 
 const LegacySection: React.FC = () => {
   return (
-    <section className="w-full text-white px-4 md:px-0 bg-cover py-16 flex flex-col items-center justify-center"
-      style={{ backgroundImage: 'url(/lp/fundoLegacy.png)' }}
+    <section
+      className="w-full text-white px-4 md:px-0 bg-cover py-16 flex flex-col items-center justify-center relative"
+      style={{
+        backgroundImage: "url(/lp/fundoLegacy.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="max-w-4xl w-full mx-auto flex flex-col md:flex-row gap-12">
+      {/* Gradiente inferior para resolver o efeito de corte */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
+        }}
+      />
+
+      <div className="max-w-4xl w-full mx-auto flex flex-col md:flex-row gap-12 relative z-10">
         {/* Left Title */}
         <div className="pr-16 first:w-[340px] py-40 flex-1 flex flex-col items-start md:items-start">
           <h2
@@ -26,17 +40,17 @@ const LegacySection: React.FC = () => {
               alt="Scrolls"
               className="w-[160px] h-[160px] rounded-lg bg-black object-cover"
             />
-            <div className='w-[556px]'>
+            <div className="w-[556px]">
               <p className="text-[16px] text-[#A4A4B2] mb-2">
                 We have held ConQuesting in Atlanta at DragonCon since 2016,
-                aggressively innovating to ensure each year eclipses the preceding
-                one.
+                aggressively innovating to ensure each year eclipses the
+                preceding one.
               </p>
               <p className="text-[16px] text-[#A4A4B2] h-[112px] w-[550px]">
-                Starting with randomized hand-rolled scrolls and candy pouches, we
-                have since upgraded to digital tomes, added quest tiers of varying
-                difficulty, repeat-completion rewards, and we did it all without
-                losing anything along the way.
+                Starting with randomized hand-rolled scrolls and candy pouches,
+                we have since upgraded to digital tomes, added quest tiers of
+                varying difficulty, repeat-completion rewards, and we did it all
+                without losing anything along the way.
               </p>
             </div>
           </div>
@@ -53,17 +67,18 @@ const LegacySection: React.FC = () => {
               alt="Quest"
               className="w-[160px] h-[160px] rounded-lg object-cover"
             />
-            <div className='w-[556px]'>
+            <div className="w-[556px]">
               <p className="text-[16px] text-[#A4A4B2] mb-2">
-                This year we will be handing out 600 Mystery Quest Scrolls over the
-                course of the con, each containing 1 of 200 distinct quests.
+                This year we will be handing out 600 Mystery Quest Scrolls over
+                the course of the con, each containing 1 of 200 distinct quests.
               </p>
               <p className="text-[16px] text-[#A4A4B2]  h-[112px] w-[550px]">
-                If you prefer to take fate in your own hands, select an adventure
-                from our ever-expanding Epic Quest Tome, boasting 100 pages of quests
-                from the most prominent mainstays of popular culture to the nerdiest
-                of niches. But speaking frankly, that’s all familiar territory for
-                our seasoned veterans. Just more of the same.
+                If you prefer to take fate in your own hands, select an
+                adventure from our ever-expanding Epic Quest Tome, boasting 100
+                pages of quests from the most prominent mainstays of popular
+                culture to the nerdiest of niches. But speaking frankly, that’s
+                all familiar territory for our seasoned veterans. Just more of
+                the same.
               </p>
             </div>
           </div>
@@ -75,7 +90,7 @@ const LegacySection: React.FC = () => {
         </div>
       </div>
       {/* Footer */}
-      <p className="text-center text-white mt-5">
+      <p className="text-center text-white flex">
         <span className="text-white text">
           This year? The end of DragonCon is just the beginning…
         </span>

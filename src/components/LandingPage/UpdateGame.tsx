@@ -17,13 +17,13 @@ const UpdateGame = () => {
         <div className="grid grid-cols-3 gap-8">
           {/* Card 1 */}
           <div className="bg-[#0B1C2C] rounded-lg overflow-hidden">
-            <div className="w-full h-[248px]  bg-yellow-400 relative overflow-hidden">
+            <div className="w-full h-[248px] overflow-hidden">
               <Image
-                src="/lp/cardUpdate1.png"
+                src="/lp/cardUpdate001.png"
                 alt="Anno Amagium"
-                width={390}
+                width={400}
                 height={248}
-                className="translate-y-[10px] translate-x-[16px] object-cover object-[center_top]"
+                className="w-full h-full object-cover object-[center_top]"
               />
             </div>
             <div className="w-[400px] h-[224px] p-6">
@@ -44,14 +44,11 @@ const UpdateGame = () => {
           <div className="bg-[#0B1C2C] rounded-lg overflow-hidden">
             <div className="w-full h-[248px] relative overflow-hidden">
               <Image
-                src="/lp/fundo1last.png"
+                src="/lp/cardUpdate002.png"
                 alt="Echelon"
                 width={450}
                 height={300}
-                className="w-full h-full object-cover object-[center_top]"
-                style={{
-                  transform: "rotate(-15deg) translateX(30px)",
-                }}
+                className="w-full h-full"
               />
             </div>
             <div className="p-4">
