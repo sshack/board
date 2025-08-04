@@ -59,7 +59,7 @@ const TeamPerson: React.FC = () => {
         {/* Top Section - Current Team */}
         <div className="mb-20">
           {/* Title */}
-          <div className="text-center mb-32 gap-8">
+          <div className="text-center mb-36 mt-10">
             <h1 className="text-[56px] md:text-5xl font-bold text-white mb-4">
               Meet the people who <br />
               make Echelon's magic happen

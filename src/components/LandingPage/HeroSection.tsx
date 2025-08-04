@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import Header from '../../components/LandingPage/Header';
-import { url } from 'inspector';
+import React from "react";
+import Image from "next/image";
+import Header from "../../components/LandingPage/Header";
+import { url } from "inspector";
 
 const Arrow: React.FC = () => (
   <svg
@@ -43,14 +43,30 @@ const metallicGradient = `conic-gradient(
 const HeroSection: React.FC = () => {
   return (
     <>
-      <section className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8" style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}>
+      <section
+        className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8"
+        style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}
+      >
         <Header />
         <div className="flex items-start z-0 justify-start flex-row gap-[12px] px-[40px]">
-          <span className="text-[rgba(255,255,255,0.5)] text-16px font-normal">Home</span>
-          <svg className="justify-center items-center text-center flex" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 12" fill="none">
-            <path d="M10.9764 10.0006L6.85156 5.87577L8.03008 4.69727L13.3334 10.0006L8.03008 15.3038L6.85156 14.1253L10.9764 10.0006Z" fill="white" fillOpacity="0.5"/>
+          <span className="text-[rgba(255,255,255,0.5)] text-16px font-normal">
+            Home
+          </span>
+          <svg
+            className="justify-center items-center text-center flex"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 12"
+            fill="none"
+          >
+            <path
+              d="M10.9764 10.0006L6.85156 5.87577L8.03008 4.69727L13.3334 10.0006L8.03008 15.3038L6.85156 14.1253L10.9764 10.0006Z"
+              fill="white"
+              fillOpacity="0.5"
+            />
           </svg>
-          <span className="text-16px">ConQuesting</span>
+          <span className="text-[16px]">ConQuesting</span>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8">
           <div className="w-full md:w-2/3 space-y-4 text-left order-2 md:order-1">
@@ -91,13 +107,13 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
               <div
                 className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl p-[0.5px] border"
-                style={{ borderColor: 'rgba(25, 159, 236, 0.30)' }}
+                style={{ borderColor: "rgba(25, 159, 236, 0.30)" }}
               >
                 <div className="flex h-full w-full rounded-2xl bg-gray-800">
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
                     <p className="text-white text-lg font-medium leading-7">
-                      Get the Epic Quest Tome — quest book packed with adventures
-                      to choose from
+                      Get the Epic Quest Tome — quest book packed with
+                      adventures to choose from
                     </p>
                     <button className="btn w-fit">Download as PDF</button>
                   </div>
@@ -115,13 +131,13 @@ const HeroSection: React.FC = () => {
               </div>
               <div
                 className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl p-[0.5px] border"
-                style={{ borderColor: 'rgba(25, 159, 236, 0.30)' }}
+                style={{ borderColor: "rgba(25, 159, 236, 0.30)" }}
               >
                 <div className="flex h-full w-full rounded-2xl bg-gray-800">
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
                     <p className="text-white text-lg font-medium leading-7">
-                      Get the Epic Quest Tome — quest book packed with adventures
-                      to choose from
+                      Get the Epic Quest Tome — quest book packed with
+                      adventures to choose from
                     </p>
                     <button className="btn w-fit">Download as PDF</button>
                   </div>
@@ -184,10 +200,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </section>
-
-
-
-  </>
+    </>
   );
 };
 
