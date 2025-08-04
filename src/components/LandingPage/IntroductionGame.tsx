@@ -1,6 +1,59 @@
 export default function IntroductionGame() {
   return (
-    <section className="w-full bg-black text-white px-6 md:px-16 py-16 space-y-6">
+    <section className="w-full bg-black text-white py-20 relative overflow-hidden">
+      <div
+        className="relative w-full h-[726px]"
+        style={{
+          backgroundImage: "url('/lp/foundAmmo.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Gradiente inferior para resolver o efeito de corte */}
+        <div
+          className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
+          }}
+        />
+
+        {/* Conteúdo do lado esquerdo */}
+        <div className="absolute top-0 left-0 p-12 z-20 max-w-2xl">
+          {/* Release Information */}
+          <p className="text-white text-[18px] mb-24">Beta Begins Q4 2025</p>
+
+          {/* Game Title */}
+          <img
+            src="/lp/titleAmmo.png"
+            alt="ANNO AMAGIUM"
+            className=""
+            style={{ maxWidth: "400px" }}
+          />
+
+          {/* Game Type */}
+          <h2 className="text-[44px] text-white mb-6">The Roleplaying Game</h2>
+
+          {/* Description */}
+          <p className=" text-white text-[18px] leading-relaxed mb-8">
+            A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying Game is
+            based on the Anno Amagium Universe, with over five years of stories,
+            worldbuilding, and mechanical development.
+          </p>
+
+          {/* Call to Action Button */}
+          <button className="bg-white text-black px-8 py-4 rounded-full font-normal">
+            Subscribe to our waiting list
+          </button>
+        </div>
+
+        <img
+          src="/lp/screenshotAmoo.png"
+          alt="Screenshot"
+          className="absolute bottom-0 right-0 h-[650px] w-[800px]"
+        />
+      </div>
+
       <div className="w-full flex flex-col items-center justify-center py-20">
         <div className="text-[24px] text-white mb-8 text-center">
           <h3>Start Exploring the Anno Amagium Universe with our Rule Books</h3>
