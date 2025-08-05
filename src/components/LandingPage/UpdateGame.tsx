@@ -15,7 +15,7 @@ const UpdateGame = () => {
         {/* Cards */}
         <div className="grid grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-[#0B1C2C] rounded-lg overflow-hidden">
+          <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
             <div className="w-full h-[248px] overflow-hidden">
               <Image
                 src="/lp/cardUpdate001.png"
@@ -40,7 +40,7 @@ const UpdateGame = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#0B1C2C] rounded-lg overflow-hidden">
+          <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
             <div className="w-full h-[248px] relative overflow-hidden">
               <Image
                 src="/lp/cardUpdate002.png"
@@ -65,7 +65,7 @@ const UpdateGame = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#0B1C2C] rounded-lg overflow-hidden">
+          <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
             <div
               className="w-full h-[248px] flex items-center justify-center relative overflow-hidden"
               style={{

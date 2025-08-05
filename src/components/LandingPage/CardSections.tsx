@@ -1,12 +1,9 @@
-import React from 'react';
 import Image from 'next/image';
 
 const CardSections = () => {
   return (
     <div className="flex flex-row justify-center gap-4 py-10 items-center">
-      {/* Card 1 */}
-      <div className="relative w-[632px] h-[730px] rounded-lg bg-surface-primary flex flex-col items-center justify-center text-center p-6 overflow-hidden">
-        {/* Decorative top lines */}
+      <div className="relative w-[632px] h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-center text-center p-6 overflow-hidden">
         <img
           src="/lp/lines.png"
           alt=""
@@ -31,9 +28,7 @@ const CardSections = () => {
         </button>
       </div>
 
-      {/* Card 2 */}
-      <div className="relative w-[632px] h-[730px] rounded-lg bg-surface-primary flex flex-col items-center justify-center text-center p-6 overflow-hidden">
-        {/* Decorative top lines */}
+      <div className="relative w-[632px] h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-center text-center p-6 overflow-hidden">
         <img
           src="/lp/lines.png"
           alt=""

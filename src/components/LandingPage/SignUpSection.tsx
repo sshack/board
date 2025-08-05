@@ -5,14 +5,14 @@ const SignUpSection: React.FC = () => {
     <section className="w-[1280px] flex justify-center items-center h-[695px] bg-black text-white mx-auto">
       {/* Gradient border wrapper */}
       <div
-        className="p-[2px] rounded-[8px]"
+        className="p-[1px] rounded-[20px]"
         style={{
           background:
             'linear-gradient(90deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
         }}
       >
         <div
-          className="bg-black mx-auto grid md:grid-cols-2 p-20 items-center overflow-hidden rounded-[6px]"
+          className="bg-black mx-auto grid md:grid-cols-2 p-20 items-center overflow-hidden rounded-[20px]"
           style={{
             backgroundImage: 'url(/lp/fundo2last.png)',
             backgroundSize: 'cover',
