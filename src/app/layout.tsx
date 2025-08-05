@@ -13,17 +13,19 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="en-US" className="max-w-[100vw] overflow-x-hidden">
       <head>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
         />
       </head>
-      <body className={`${cormorant.className} ${inter.className}`}>
+      <body
+        className={`${cormorant.className} ${inter.className} w-full max-w-[100vw] overflow-x-hidden`}
+      >
         <Header />
-        <main>{children}</main>
-        <div className="w-full h-40 bg-red-500">footer</div>
+        <main className="w-full overflow-x-hidden">{children}</main>
+        <footer className="w-full h-40 bg-red-500">footer</footer>
       </body>
     </html>
   );

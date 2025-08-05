@@ -1,5 +1,5 @@
-import { url } from "inspector";
-import Image from "next/image";
+import { url } from 'inspector';
+import Image from 'next/image';
 
 const Arrow: React.FC = () => (
   <svg
@@ -19,7 +19,7 @@ export default function EarlyAccess({}) {
     <section className="bg-black">
       <div className="flex flex-col  items-center justify-center w-full gap-1">
         <h1 className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] mb-4">
-          {" "}
+          {' '}
           Early Access Features
         </h1>
 
@@ -28,14 +28,14 @@ export default function EarlyAccess({}) {
           <Arrow />
           <span>
             Betas are for figuring things out, and not everything will work
-            correctly.{" "}
+            correctly.{' '}
           </span>
         </div>
         <p className="text-[16px] leading-[24px] font-normal">
           You are doing us a favor by playing. We want to make our trial run as
-          accessible as possible,{" "}
+          accessible as possible,{' '}
           <a className="cursor-auto text-[#199FEC]">
-            {" "}
+            {' '}
             so the first beta test will be 100% on us.
           </a>
         </p>
@@ -47,22 +47,22 @@ export default function EarlyAccess({}) {
             <div className="flex flex-col items-center justify-center gap-3 px-4">
               <div
                 className="w-[522px] h-[370px] flex items-center justify-center rounded-lg md:mt-0 mt-0 mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div
                   className="flex flex-col  bg-cover bg-center w-full h-full rounded-lg p-5 gap-2 "
                   style={{
                     backgroundImage: "url('/lp/MapGame.png')",
-                    backgroundSize: "contain",
-                    backgroundPosition: "bottom",
-                    backgroundRepeat: "no-repeat",
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'bottom',
+                    backgroundRepeat: 'no-repeat',
                   }}
                 >
                   <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
                     The Depth of Crunch with Digital Convenience
                   </h1>
                   <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                    Digital tools unlock new TTRPG features like Dynamic Smart{" "}
+                    Digital tools unlock new TTRPG features like Dynamic Smart{' '}
                     <br />
                     Character Sheets and streamline complex systems with
                     automated <br />
@@ -73,7 +73,7 @@ export default function EarlyAccess({}) {
 
               <div
                 className="w-[522px] h-[262px] flex items-center justify-center rounded-lg mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-row gap-1 items-center justify-center">
                   <div className="flex flex-col gap-2 p-5">
@@ -104,7 +104,7 @@ export default function EarlyAccess({}) {
             <div className="flex flex-col items-center justify-center gap-3 px-4">
               <div
                 className="w-[522px] h-[316px] flex items-center justify-center rounded-lg mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-row gap-1 items-center justify-center">
                   <div className="w-[263px] flex flex-col p-7">
@@ -121,9 +121,9 @@ export default function EarlyAccess({}) {
                     className="h-[316px] w-[280px]"
                     style={{
                       backgroundImage: "url('/lp/Remotely.png')",
-                      backgroundSize: "cover",
-                      backgroundPosition: "left",
-                      backgroundRepeat: "no-repeat",
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'left',
+                      backgroundRepeat: 'no-repeat',
                     }}
                   ></div>
                 </div>
@@ -131,7 +131,7 @@ export default function EarlyAccess({}) {
 
               <div
                 className="w-[522px] h-[316px] flex items-center justify-center rounded-lg mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-row gap-4 items-center justify-center">
                   <div className="flex flex-col gap-3 p-5">
