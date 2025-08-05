@@ -43,7 +43,7 @@ const teamMembers: TeamMember[] = [
 
 const TeamPerson: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black relative overflow-hidden">
+    <div className="w-full min-h-screen bg-black bg-[url('/lp/bgroleplay.png')] bg-cover bg-center relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div

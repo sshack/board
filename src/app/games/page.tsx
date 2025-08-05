@@ -6,7 +6,7 @@ import CreateExp from '@/components/LandingPage/CreateExp';
 
 export default function UpdatesPage() {
   return (
-    <main className="flex flex-col w-screen min-h-screen max-w-[1440px] mx-auto">
+    <main className="flex flex-col justify-center min-h-screen w-full items-center">
       <CreateExp />
       <IntroductionGame />
       <RoleGames />

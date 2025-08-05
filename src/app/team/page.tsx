@@ -1,7 +1,7 @@
-import About from '@/components/LandingPage/About';
-import CardSections from '@/components/LandingPage/CardSections';
-import SignUpSection from '@/components/LandingPage/SignUpSection';
-import TeamPerson from '@/components/LandingPage/TeamPerson';
+import About from "@/components/LandingPage/About";
+import CardSections from "@/components/LandingPage/CardSections";
+import SignUpSection from "@/components/LandingPage/SignUpSection";
+import TeamPerson from "@/components/LandingPage/TeamPerson";
 
 export default function GamesPage() {
   return (

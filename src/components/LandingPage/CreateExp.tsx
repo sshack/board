@@ -17,7 +17,7 @@ const Arrow: React.FC = () => (
 export default function CreateExp() {
   return (
     <>
-      <section className="w-[1440px]">
+      <section className="w-full">
         <div className="pt-20 w-full h-[1000px] bg-[url('/lp/bgroleplay.png')] bg-cover bg-center mb-20 overflow-hidden relative">
           <div className="w-full min-h-screen">
             <div className="w-full mx-auto px-8 flex flex-col items-center">

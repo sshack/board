@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div
-      className="min-h-screen relative overflow-hidden"
+      className="w-full min-h-screen relative overflow-hidden"
       style={{
         backgroundImage: `url(/lp/fundoSectionTeam.png)`,
         backgroundSize: "cover",
