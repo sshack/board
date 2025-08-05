@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Header from './Header';
+import Image from "next/image";
+import Header from "./Header";
 
 const Arrow: React.FC = () => (
   <svg
@@ -18,7 +18,7 @@ export default function CreateExp() {
   return (
     <>
       <section className="w-[1440px]">
-        <div className="w-full h-[1000px] bg-[url('/lp/bgroleplay.png')] bg-cover bg-center mb-20 overflow-hidden relative">
+        <div className="pt-20 w-full h-[1000px] bg-[url('/lp/bgroleplay.png')] bg-cover bg-center mb-20 overflow-hidden relative">
           <div className="w-full min-h-screen">
             <div className="w-full mx-auto px-8 flex flex-col items-center">
               {/* Main Statement */}
@@ -40,7 +40,7 @@ export default function CreateExp() {
             className="absolute bottom-0 left-0 right-0 h-36 pointer-events-none"
             style={{
               background:
-                'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)',
+                "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
             }}
           ></div>
         </div>

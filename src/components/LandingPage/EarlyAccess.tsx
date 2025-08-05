@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import Image from "next/image";
 
 const Arrow: React.FC = () => (
@@ -106,22 +107,52 @@ export default function EarlyAccess({}) {
                 style={{ backgroundColor: "rgb(4 25 36)" }}
               >
                 <div className="flex flex-row gap-1 items-center justify-center">
-                  <div className="flex flex-col gap-2 p-5">
-                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                  <div className="w-[263px] flex flex-col p-7">
+                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
                       Play Fully Remotely or In-Person with Digital Elements
                     </h1>
-                    <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                    <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
                       Play remotely with a global community or gather in person
                       with real dice, miniatures, and your favorite maps.
                     </p>
                   </div>
 
+                  <div
+                    className="h-[316px] w-[280px]"
+                    style={{
+                      backgroundImage: "url('/lp/Remotely.png')",
+                      backgroundSize: "cover",
+                      backgroundPosition: "left",
+                      backgroundRepeat: "no-repeat",
+                    }}
+                  ></div>
+                </div>
+              </div>
+
+              <div
+                className="w-[522px] h-[316px] flex items-center justify-center rounded-lg mx-auto"
+                style={{ backgroundColor: "rgb(4 25 36)" }}
+              >
+                <div className="flex flex-row gap-4 items-center justify-center">
+                  <div className="flex flex-col gap-3 p-5">
+                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                      Commitment to Craftsmanship
+                    </h1>
+                    <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                      Echelon vows to champion creators with our content from
+                      art and authorship, to game design and user-experience
+                      interfaces. We welcome our players to use any tools that
+                      suit their needs, but our official content will always be
+                      100% handcrafted by real meatba—Err, humans.
+                    </p>
+                  </div>
+
                   <div>
                     <Image
-                      src="/lp/Remotely.png"
-                      alt="Remote"
-                      width={1200}
-                      height={1200}
+                      src="/lp/CreatorPartnership.png"
+                      alt="CreatorPartnership"
+                      width={1400}
+                      height={1400}
                       quality={100}
                       className="object-cover"
                     />

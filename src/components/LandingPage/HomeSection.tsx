@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import Header from '../../components/LandingPage/Header';
-import { url } from 'inspector';
+import React from "react";
+import Image from "next/image";
+import Header from "../../components/LandingPage/Header";
+import { url } from "inspector";
 
 const Arrow: React.FC = () => (
   <svg
@@ -70,7 +70,7 @@ const HomeSection: React.FC = () => {
         className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col gap-8"
         style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}
       >
-        <div className="pl-20 flex flex-col md:flex-row items-center justify-between w-full gap-8">
+        <div className="pl-20 pt-[164px] flex flex-col md:flex-row items-center justify-between w-full gap-8">
           <div className="w-full space-y-8 text-left order-2 md:order-1">
             <h1 className="text-[48px] lg:text-[124px] leading-[56px] lg:leading-[108px] font-bold tracking-[-2px] lg:tracking-[-7.44px]">
               Game. On.
@@ -96,9 +96,9 @@ const HomeSection: React.FC = () => {
                 quality={100}
                 className="h-auto pr-[-80px]"
                 style={{
-                  maxHeight: '1200px',
-                  paddingRight: '-80px',
-                  objectFit: 'cover',
+                  maxHeight: "1200px",
+                  paddingRight: "-80px",
+                  objectFit: "cover",
                 }}
               />
             </div>
