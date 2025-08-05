@@ -2,9 +2,7 @@
 
 import CardSections from '@/components/LandingPage/CardSections';
 import SignUpSection from '../../components/LandingPage/SignUpSection';
-import Footer from '../../components/LandingPage/Footer';
 import UpdateGame from '../../components/LandingPage/UpdateGame';
-import Header from '@/components/LandingPage/Header';
 
 export default function ConquestingPage() {
   return (
@@ -12,7 +10,6 @@ export default function ConquestingPage() {
       <UpdateGame />
       <CardSections />
       <SignUpSection />
-      <Footer/>
     </main>
   );
 }

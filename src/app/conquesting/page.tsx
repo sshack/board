@@ -8,7 +8,6 @@ import FAQSection from '../../components/LandingPage/FAQSection';
 import LegacySection from '../../components/LandingPage/LegacySection';
 import ConQuest365Section from '../../components/LandingPage/ConQuest365Section';
 import SignUpSection from '../../components/LandingPage/SignUpSection';
-import Footer from '../../components/LandingPage/Footer';
 
 export default function ConquestingPage() {
   return (
@@ -20,7 +19,6 @@ export default function ConquestingPage() {
       <LegacySection />
       <ConQuest365Section />
       <SignUpSection />
-      <Footer/>
     </main>
   );
 }

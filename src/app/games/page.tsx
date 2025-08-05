@@ -1,10 +1,8 @@
-import Footer from "@/components/LandingPage/Footer";
-import SignUpSection from "@/components/LandingPage/SignUpSection";
-import CardSections from "@/components/LandingPage/CardSections";
-import RoleGames from "@/components/LandingPage/RoleGames";
-import IntroductionGame from "@/components/LandingPage/IntroductionGame";
-import CreateExp from "@/components/LandingPage/CreateExp";
-import Header from "@/components/LandingPage/Header";
+import SignUpSection from '@/components/LandingPage/SignUpSection';
+import CardSections from '@/components/LandingPage/CardSections';
+import RoleGames from '@/components/LandingPage/RoleGames';
+import IntroductionGame from '@/components/LandingPage/IntroductionGame';
+import CreateExp from '@/components/LandingPage/CreateExp';
 
 export default function UpdatesPage() {
   return (
@@ -14,7 +12,6 @@ export default function UpdatesPage() {
       <RoleGames />
       <CardSections />
       <SignUpSection />
-      <Footer />
     </main>
   );
 }

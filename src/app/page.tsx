@@ -1,10 +1,9 @@
-import EarlyAccess from "@/components/LandingPage/EarlyAccess";
-import Footer from "@/components/LandingPage/Footer";
-import HomeSection from "@/components/LandingPage/HomeSection";
-import SignUpSection from "@/components/LandingPage/SignUpSection";
-import CardSections from "@/components/LandingPage/CardSections";
-import RolePlayGameHome from "@/components/LandingPage/RolePlayGameHome";
-import NextLevel from "@/components/LandingPage/NextLevel";
+import EarlyAccess from '@/components/LandingPage/EarlyAccess';
+import HomeSection from '@/components/LandingPage/HomeSection';
+import SignUpSection from '@/components/LandingPage/SignUpSection';
+import CardSections from '@/components/LandingPage/CardSections';
+import RolePlayGameHome from '@/components/LandingPage/RolePlayGameHome';
+import NextLevel from '@/components/LandingPage/NextLevel';
 
 export default function HomePage() {
   return (
@@ -15,7 +14,6 @@ export default function HomePage() {
       <RolePlayGameHome />
       <CardSections />
       <SignUpSection />
-      <Footer />
     </main>
   );
 }
