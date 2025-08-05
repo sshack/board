@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import Header from "../../components/LandingPage/Header";
-import { url } from "inspector";
+import React from 'react';
+import Image from 'next/image';
+import Header from '../../components/LandingPage/Header';
+import { url } from 'inspector';
 
 const Arrow: React.FC = () => (
   <svg
@@ -47,7 +47,6 @@ const HeroSection: React.FC = () => {
         className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8"
         style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}
       >
-        <Header />
         <div className="flex items-start z-0 justify-start flex-row gap-[12px] px-[40px]">
           <span className="text-[rgba(255,255,255,0.5)] text-16px font-normal">
             Home
@@ -107,7 +106,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
               <div
                 className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl p-[0.5px] border"
-                style={{ borderColor: "rgba(25, 159, 236, 0.30)" }}
+                style={{ borderColor: 'rgba(25, 159, 236, 0.30)' }}
               >
                 <div className="flex h-full w-full rounded-2xl bg-gray-800">
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -131,7 +130,7 @@ const HeroSection: React.FC = () => {
               </div>
               <div
                 className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl p-[0.5px] border"
-                style={{ borderColor: "rgba(25, 159, 236, 0.30)" }}
+                style={{ borderColor: 'rgba(25, 159, 236, 0.30)' }}
               >
                 <div className="flex h-full w-full rounded-2xl bg-gray-800">
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">

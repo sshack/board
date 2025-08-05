@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Cormorant, Inter } from 'next/font/google';
 import './globals.css';
+import Header from '../components/LandingPage/Header';
 
 const cormorant = Cormorant({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
@@ -20,7 +21,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         />
       </head>
       <body className={`${cormorant.className} ${inter.className}`}>
-        {children}
+        <Header />
+        <main>{children}</main>
       </body>
     </html>
   );

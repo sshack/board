@@ -28,7 +28,7 @@ const Header: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <header className="w-full bg-transparent">
+    <header className="w-full bg-transparent fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between max-w-[1440px] mx-auto px-4 md:px-10 py-6 w-full">
         <Link href="/" className="flex items-center flex-shrink-0">
           <img
