@@ -106,7 +106,6 @@ const Header: React.FC = () => {
                   'font-semibold text-[28px] leading-[36px] tracking-[-1.12px]',
                   isActive ? 'text-[#FC5212]' : 'text-white'
                 )}
-                onClick={() => setIsOpen(false)}
               >
                 {label}
               </Link>
