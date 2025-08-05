@@ -1,21 +1,27 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 const CardSections = () => {
   return (
     <div className="flex flex-row justify-center gap-4 py-10 items-center">
       {/* Card 1 */}
-      <div className="w-[632px] h-[730px] rounded-lg bg-[#011627] flex flex-col items-center justify-center text-center p-6 overflow-hidden">
+      <div className="relative w-[632px] h-[730px] rounded-lg bg-surface-primary flex flex-col items-center justify-center text-center p-6 overflow-hidden">
+        {/* Decorative top lines */}
+        <img
+          src="/lp/lines.png"
+          alt=""
+          className="absolute top-0 left-0 w-full h-auto z-0 pointer-events-none"
+        />
         <Image
           src="/lp/maskDiscord.png"
           alt="Discord"
           width={450}
           height={366}
-          className="rounded-md mb-6"
+          className="relative z-10 rounded-md mb-6"
         />
         <div className="text-[44px] leading-[49px]">
           <h2 className="font-semibold text-white mb-2">
-            Join the{" "}
+            Join the{' '}
             <span className="text-[#00B4FF]">ConQuesting community</span> on the
             Echelon Discord Server
           </h2>
@@ -26,17 +32,23 @@ const CardSections = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="w-[632px] h-[730px] rounded-lg bg-[#011627] flex flex-col items-center justify-center text-center p-6">
+      <div className="relative w-[632px] h-[730px] rounded-lg bg-surface-primary flex flex-col items-center justify-center text-center p-6 overflow-hidden">
+        {/* Decorative top lines */}
+        <img
+          src="/lp/lines.png"
+          alt=""
+          className="absolute top-0 left-0 w-full h-auto z-0 pointer-events-none"
+        />
         <Image
           src="/lp/maskCell.png"
           alt="Instagram"
           width={500}
           height={500}
-          className="rounded-md mb-6"
+          className="relative z-10 rounded-md mb-6"
         />
         <div className="text-[44px] leading-[48px]">
           <h2 className="font-semibold text-white mb-2">
-            Follow us on Instagram for{" "}
+            Follow us on Instagram for{' '}
             <span className="text-[#00B4FF]">more loot and quests!</span>
           </h2>
         </div>
@@ -47,6 +59,5 @@ const CardSections = () => {
     </div>
   );
 };
-1;
 
 export default CardSections;

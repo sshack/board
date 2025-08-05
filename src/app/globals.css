@@ -27,12 +27,27 @@ body {
     --background: #000;
     --foreground: #fff;
     --border: #ccc;
+    --color-primary: #199FEC;
+    --color-surface-primary: rgba(25, 159, 236, 0.30);
+    --color-surface-primary-light: rgba(25, 159, 236, 0.15);
   }
 }
 
 @layer components {
   .btn {
     @apply flex items-center justify-center gap-9 px-4 py-2 rounded-full text-white text-center font-medium leading-5 text-sm bg-[#199FEC];
+  }
+  
+  .bg-surface-primary {
+    background-color: var(--color-surface-primary);
+  }
+  
+  .bg-surface-primary-light {
+    background-color: var(--color-surface-primary-light);
+  }
+  
+  .bg-primary {
+    background-color: var(--color-primary);
   }
 }
 

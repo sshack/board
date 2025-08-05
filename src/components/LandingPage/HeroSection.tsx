@@ -106,7 +106,7 @@ const HeroSection: React.FC = () => {
             <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
               <div
                 className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl p-[0.5px] border"
-                style={{ borderColor: 'rgba(25, 159, 236, 0.30)' }}
+                style={{ borderColor: 'var(--Transparent-secondary-T2-30)' }}
               >
                 <div className="flex h-full w-full rounded-2xl bg-gray-800">
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -130,7 +130,7 @@ const HeroSection: React.FC = () => {
               </div>
               <div
                 className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl p-[0.5px] border"
-                style={{ borderColor: 'rgba(25, 159, 236, 0.30)' }}
+                style={{ borderColor: 'var(--Transparent-secondary-T2-30)' }}
               >
                 <div className="flex h-full w-full rounded-2xl bg-gray-800">
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -165,7 +165,7 @@ const HeroSection: React.FC = () => {
                   background: metallicGradient,
                 }}
               >
-                <div className="relative flex flex-col justify-between h-full w-full bg-gray-800 rounded-2xl p-6">
+                <div className="relative flex flex-col justify-between h-full w-full bg-pink-800 rounded-2xl p-6">
                   <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
                     Follow us on Instagram for more loot and quests!
                   </p>
@@ -183,7 +183,7 @@ const HeroSection: React.FC = () => {
                   background: metallicGradient,
                 }}
               >
-                <div className="relative flex flex-col justify-between h-full w-full bg-gray-800 rounded-2xl p-6">
+                <div className="relative flex flex-col justify-between h-full w-full bg-pink-800 rounded-2xl p-6">
                   <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
                     Join the ConQuesting community on the Echelon Discord Server
                   </p>
