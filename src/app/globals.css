@@ -50,3 +50,28 @@ body {
 [data-character-sheet] * {
   cursor: none !important;
 }
+
+/* -------------------------------------------------- */
+/* Custom thin scrollbar (dark blue) */
+/* -------------------------------------------------- */
+
+/* Firefox */
+html {
+  scrollbar-width: thin; /* makes scrollbar thinner */
+  scrollbar-color: #0E3045 transparent; /* thumb and track */
+}
+
+/* WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px; /* vertical */
+  height: 6px; /* horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0E3045; /* dark blue */
+  border-radius: 9999px;
+}
