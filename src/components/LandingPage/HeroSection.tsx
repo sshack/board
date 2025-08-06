@@ -1,50 +1,12 @@
-import React from 'react';
 import Image from 'next/image';
-import Header from '../../components/LandingPage/Header';
-import { url } from 'inspector';
-
-const Arrow: React.FC = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="8"
-    height="8"
-    viewBox="0 0 8 8"
-    fill="none"
-    className="shrink-0 fill-[#199FEC]"
-  >
-    <path d="M7.5 3.22427C8.16667 3.56904 8.16667 4.43096 7.5 4.77573L1.5 7.87866C0.833334 8.22343 6.63909e-07 7.79247 5.6647e-07 7.10293L1.33333 4L-3.10479e-07 0.897075C-4.07918e-07 0.207535 0.833333 -0.223427 1.5 0.121343L7.5 3.22427Z" />
-  </svg>
-);
-
-const metallicGradient = `conic-gradient(
-  from 0deg,
-  /* Bottom-Right 45° → Blue 0.4 */
-  rgba(25, 159, 236, 0.4)   0%,
-  rgba(25, 159, 236, 0.4)  16.7%,
-
-  /* Bottom-Left 135° → Black */
-  rgba(244, 81, 17, 0.8)      33.3%,
-  rgba(25, 159, 236, 0.4)      50%,
-
-  /* Top-Left 225° → Orange 0.8 */
-  rgba(25, 159, 236, 0.4)   62.5%,
-
-  /* Top-Center 250–290° → Blue 0.6 (≈30% width of top border) */
-  rgba(25, 159, 236, 0.6)  69.4%,
-  rgba(25, 159, 236, 0.6)  80.6%,
-
-  /* Top-Right 315° → Orange 0.8 */
-  rgba(244, 81, 17, 0.8)   87.5%,
-
-  /* Loop back to starting color */
-  rgba(25, 159, 236, 0.6) 100%
-)`;
+import React from 'react';
+import Arrow from '../icons/arrow';
 
 const HeroSection: React.FC = () => {
   return (
     <>
       <section
-        className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8"
+        className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8 pt-20 md:pt-36"
         style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}
       >
         <div className="flex items-start z-0 justify-start flex-row gap-[12px] px-[40px]">
@@ -159,12 +121,7 @@ const HeroSection: React.FC = () => {
               Useful Links
             </p>
             <div className="flex flex-col items-center justify-between w-full gap-3">
-              <div
-                className="relative h-[128px] w-full rounded-2xl p-[0.5px]"
-                style={{
-                  background: metallicGradient,
-                }}
-              >
+              <div className="relative h-[128px] w-full rounded-2xl p-[0.5px]">
                 <div className="relative flex flex-col justify-between h-full w-full bg-pink-800 rounded-2xl p-6">
                   <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
                     Follow us on Instagram for more loot and quests!
@@ -177,12 +134,7 @@ const HeroSection: React.FC = () => {
                   />
                 </div>
               </div>
-              <div
-                className="relative h-[128px] w-full rounded-2xl p-[0.5px]"
-                style={{
-                  background: metallicGradient,
-                }}
-              >
+              <div className="relative h-[128px] w-full rounded-2xl p-[0.5px]">
                 <div className="relative flex flex-col justify-between h-full w-full bg-pink-800 rounded-2xl p-6">
                   <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
                     Join the ConQuesting community on the Echelon Discord Server

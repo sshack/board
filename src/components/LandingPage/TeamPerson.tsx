@@ -1,64 +1,21 @@
-import React from "react";
-
-interface TeamMember {
-  id: string;
-  name: string;
-  role: string;
-  image?: string;
-  placeholder?: string;
-}
-
-const teamMembers: TeamMember[] = [
-  {
-    id: "1",
-    name: "Hank Whitson",
-    role: "CEO/Creative Lead",
-    image: "/lp/person1.png", // Substitua pelo caminho real da imagem
-  },
-  {
-    id: "2",
-    name: "Dose of Culture",
-    role: "Culture",
-    image: "/lp/culture.png",
-  },
-  {
-    id: "3",
-    name: "Colin Solloway",
-    role: "Game Designer",
-    image: "/lp/person2.png", // Substitua pelo caminho real da imagem
-  },
-  {
-    id: "4",
-    name: "Ruben De Vela",
-    role: "Lead Artist",
-    image: "/lp/person3.png", // Substitua pelo caminho real da imagem
-  },
-  {
-    id: "5",
-    name: "Hugo Pereira",
-    role: "Lead Developer",
-    image: "/lp/culture.png", // Substitua pelo caminho real da imagem
-  },
-];
+import React from 'react';
+import { teamMembers } from '@/utils/mocks';
 
 const TeamPerson: React.FC = () => {
   return (
-    <div className="w-full min-h-screen bg-black bg-[url('/lp/bgroleplay.png')] bg-cover bg-center relative overflow-hidden">
-      {/* Background pattern */}
+    <div className="w-full min-h-screen bg-black bg-[url('/lp/bgroleplay.png')] bg-cover bg-center relative overflow-hidden pt-20 md:pt-36">
       <div className="absolute inset-0 opacity-10">
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, #3b82f6 1px, transparent 0)`,
-            backgroundSize: "20px 20px",
+            backgroundSize: '20px 20px',
           }}
         ></div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-16">
-        {/* Top Section - Current Team */}
         <div className="mb-20">
-          {/* Title */}
           <div className="text-center mb-36 mt-10">
             <h1 className="text-[56px] md:text-5xl font-bold text-white mb-4">
               Meet the people who <br />
@@ -70,16 +27,13 @@ const TeamPerson: React.FC = () => {
             </p>
           </div>
 
-          {/* Team Member Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
             {teamMembers.map((member) => (
               <div
                 key={member.id}
                 className="bg-[#0B1C2C] rounded-lg overflow-hidden shadow-lg"
               >
-                {/* Upper Section - Image Area */}
                 <div className="h-48 bg-gray-200 relative">
-                  {/* Background pattern with refresh/power symbols */}
                   <div className="absolute inset-0 opacity-20">
                     <div className="absolute inset-0 flex flex-wrap">
                       {Array.from({ length: 48 }).map((_, i) => (
@@ -103,7 +57,6 @@ const TeamPerson: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Member Image or Placeholder */}
                   <div className="flex items-center justify-center">
                     {member.image ? (
                       <img
@@ -125,11 +78,9 @@ const TeamPerson: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Lower Section - Text Area */}
                 <div className="bg-gray-900 pt-16 p-6">
-                  {/* Name */}
                   <h3 className="text-white text-[20px] mb-2">{member.name}</h3>
-                  {/* Role */}
+
                   <p className="text-[#199FEC] text-[14px]">{member.role}</p>
                 </div>
               </div>
@@ -141,9 +92,7 @@ const TeamPerson: React.FC = () => {
             className="w-[1280px] h-[496px] relative bg-cover bg-center bg-no-repeat rounded-2xl overflow-hidden"
             style={{ backgroundImage: `url('/lp/fundoRecrutamento.png')` }}
           >
-            {/* Content container */}
             <div className="py-12 flex items-center justify-between px-12">
-              {/* Left side - Text content */}
               <div>
                 <p className="text-[#3b82f6] text-sm font-medium mb-20">
                   Are you our next team member?
@@ -154,7 +103,6 @@ const TeamPerson: React.FC = () => {
                   online gaming platform.
                 </h2>
 
-                {/* Job listings */}
                 <div className="space-y-3 mb-8">
                   <div className="flex items-center">
                     <div className="w-2 h-2 bg-[#3b82f6] mr-3 transform rotate-45"></div>
@@ -170,7 +118,6 @@ const TeamPerson: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Apply button */}
                 <button className="bg-[#199FEC] text-white py-3 px-8 rounded-full text-[16px]">
                   Apply Now
                 </button>

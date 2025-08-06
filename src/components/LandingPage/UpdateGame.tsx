@@ -1,10 +1,10 @@
-import React from "react";
-import Image from "next/image";
-import Header from "./Header";
+import React from 'react';
+import Image from 'next/image';
+import Header from './Header';
 
 const UpdateGame = () => {
   return (
-    <section className="bg-black w-full bg-[url('/lp/bgroleplay.png')] bg-cover bg-center text-white px-6 mb-20">
+    <section className="bg-black w-full bg-[url('/lp/bgroleplay.png')] bg-cover bg-center text-white px-6 mb-20 pt-20 md:pt-36">
       <div className="max-w-[1280px] mx-auto pt-40 pb-20">
         {/* Título */}
         <h2 className="text-center text-[56px] leading-[64px] font-semibold mb-32">
@@ -70,8 +70,8 @@ const UpdateGame = () => {
               className="w-full h-[248px] flex items-center justify-center relative overflow-hidden"
               style={{
                 backgroundImage: "url('/lp/fundo2last.png')",
-                backgroundSize: "200% 100%",
-                backgroundPosition: "left center",
+                backgroundSize: '200% 100%',
+                backgroundPosition: 'left center',
               }}
             >
               <Image
