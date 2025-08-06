@@ -1,22 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
-import Header from './Header';
+import React from "react";
+import Image from "next/image";
+import Header from "./Header";
 
 const UpdateGame = () => {
   return (
-    <section className="bg-black w-full bg-[url('/lp/bgroleplay.png')] bg-cover bg-center text-white px-6 mb-20 pt-20 md:pt-36">
-      <div className="max-w-[1280px] mx-auto pt-40 pb-20">
+    <section className="bg-black w-full bg-[url('/lp/bgroleplay.png')] bg-cover bg-center text-white mb-40 pt-20 md:pt-36 relative">
+      <div className="pointer-events-none flex !w-full h-[2500px] absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent md:h-40" />
+      <div className="max-w-[1280px] mx-auto pt-20 md:pt-40 sm:px-6 md:px-0 z-10 relative">
         {/* Título */}
-        <h2 className="text-center text-[56px] leading-[64px] font-semibold mb-32">
-          Stay on top of the latest game <br />
-          updates, news, and reveals right here.
+        <h2 className="px-6 text-[40px] leading-[48px] md:text-center sm:text-[36px] md:text-[56px] md:leading-[64px] font-semibold mb-12 md:mb-32">
+          Stay on top of <br className="md:hidden" />
+          the latest game <br className="hidden md:block" /> updates, news,{" "}
+          <br className="md:hidden" /> and reveals right here.
         </h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-3 gap-8">
+        <div className="px-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 z-10">
           {/* Card 1 */}
           <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
-            <div className="w-full h-[248px] overflow-hidden">
+            <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
               <Image
                 src="/lp/cardUpdate001.png"
                 alt="Anno Amagium"
@@ -25,14 +27,14 @@ const UpdateGame = () => {
                 className="w-full h-full object-cover object-[center_top]"
               />
             </div>
-            <div className="w-[400px] h-[224px] p-6">
+            <div className="p-4 md:w-[400px] md:h-[224px] md:p-6">
               <p className="text-sm text-gray-400">
                 Hank Whitson • Aug 22, 2024 • 2 min read
               </p>
-              <h3 className="text-[20px] text-white mt-2 mb-1">
+              <h3 className="text-[18px] md:text-[20px] text-white mt-2 mb-1">
                 Introducing Anno Amagium Role Playing Game!
               </h3>
-              <p className="text-[16px] text-gray-300">
+              <p className="text-sm md:text-[16px] text-gray-300">
                 A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying
                 Game is based on the Anno Amagium Universe...
               </p>
@@ -41,20 +43,20 @@ const UpdateGame = () => {
 
           {/* Card 2 */}
           <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
-            <div className="w-full h-[248px] relative overflow-hidden">
+            <div className="w-full h-[200px] md:h-[248px] relative overflow-hidden">
               <Image
                 src="/lp/cardUpdate002.png"
                 alt="Echelon"
                 width={450}
                 height={300}
-                className="w-full h-full"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-4">
+            <div className="p-4 md:p-6 z-10">
               <p className="text-sm text-gray-400">
                 Hank Whitson • Aug 22, 2024 • 2 min read
               </p>
-              <h3 className="text-lg font-semibold mt-2 mb-1">
+              <h3 className="text-[18px] md:text-lg font-semibold mt-2 mb-1">
                 Introducing Echelon!
               </h3>
               <p className="text-sm text-gray-300">
@@ -67,27 +69,26 @@ const UpdateGame = () => {
           {/* Card 3 */}
           <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
             <div
-              className="w-full h-[248px] flex items-center justify-center relative overflow-hidden"
+              className="w-full h-[200px] md:h-[248px] flex items-center justify-center relative overflow-hidden"
               style={{
                 backgroundImage: "url('/lp/fundo2last.png')",
-                backgroundSize: '200% 100%',
-                backgroundPosition: 'left center',
+                backgroundSize: "200% 100%",
+                backgroundPosition: "left center",
               }}
             >
               <Image
                 src="/lp/conquesting-logo.png"
                 alt="DragonCon"
-                width={120}
-                height={120}
-                className="flex items-center justify-center object-cover object-[center_top]"
+                width={100}
+                height={100}
+                className="flex items-center justify-center object-cover"
               />
-              <div className="absolute top-0 left-0 w-full h-2" />
             </div>
-            <div className="p-4">
+            <div className="p-4 md:p-6">
               <p className="text-sm text-gray-400">
                 Hank Whitson • Aug 22, 2024 • 2 min read
               </p>
-              <h3 className="text-lg font-semibold mt-2 mb-1">
+              <h3 className="text-[18px] md:text-lg font-semibold mt-2 mb-1">
                 Find Us on DragonCon!
               </h3>
               <p className="text-sm text-gray-300">
