@@ -5,7 +5,7 @@ const HomeSection: React.FC = () => {
   return (
     <>
       <section
-        className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col gap-8 relative overflow-hidden pt-20 md:pt-36"
+        className="w-full bg-cover bg-center bg-gray-900 text-white flex flex-col gap-8 relative overflow-hidden pt-20 md:pt-36 max-w-[1440px]"
         style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}
       >
         <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8">
