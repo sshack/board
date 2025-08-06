@@ -8,10 +8,10 @@ import DragonCon from '../components/LandingPage/DragonCon';
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col w-full max-w-[1440px]">
+    <main className="flex flex-col w-full h-full max-w-[1440px]">
       <HomeSection />
-      {/* <DragonCon />
-      <EarlyAccess />
+      <DragonCon />
+      {/* <EarlyAccess />
       <NextLevel />
       <RolePlayGameHome />
       <CardSections />
