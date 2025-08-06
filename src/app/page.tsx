@@ -11,11 +11,11 @@ export default function HomePage() {
     <main className="flex flex-col items-center justify-center w-full h-full">
       <HomeSection />
       <DragonCon />
-      {/* <EarlyAccess />
-      <NextLevel />
-      <RolePlayGameHome />
-      <CardSections />
-      <SignUpSection /> */}
+      {/* <EarlyAccess /> */}
+      {/* <NextLevel /> */}
+      {/* <RolePlayGameHome /> */}
+      {/* <CardSections /> */}
+      {/* <SignUpSection /> */}
     </main>
   );
 }

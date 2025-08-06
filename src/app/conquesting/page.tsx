@@ -11,7 +11,7 @@ import SignUpSection from '../../components/LandingPage/SignUpSection';
 
 export default function ConquestingPage() {
   return (
-    <main className="flex flex-col w-screen min-h-screen max-w-[1440px] mx-auto">
+    <main className="flex flex-col items-center justify-center w-full h-full">
       <HeroSection />
       <HowItWorksSection />
       <OtherRewardsSection />
