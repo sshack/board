@@ -50,136 +50,148 @@ export default function EarlyAccess({}) {
       </div>
 
       <div className="w-full flex flex-col items-center justify-center mt-20">
-        <div className="flex flex-col items-center justify-center gap-4 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-4 w-full">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
+          <div className="flex flex-col items-center justify-center gap-4">
             <div
-              className="p-[1px] rounded-[20px] w-full md:w-[522px] justify-self-stretch"
+              className="p-[1px] rounded-[20px] w-[522px]"
               style={{
                 background:
                   'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div
-                className="rounded-[20px] md:mt-0 mt-0 mx-auto overflow-hidden h-full flex flex-col"
+                className="h-[370px] flex items-center justify-center rounded-[20px] md:mt-0 mt-0 mx-auto"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div
-                  className="w-full h-[248px] bg-cover bg-center"
+                  className="flex flex-col  bg-cover bg-center w-full h-full rounded-[20px] p-5 gap-2 "
                   style={{
                     backgroundImage: "url('/lp/MapGame.png')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'bottom',
                     backgroundRepeat: 'no-repeat',
                   }}
-                />
-                <div className="flex flex-col p-6 gap-2">
+                >
                   <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
                     The Depth of Crunch with Digital Convenience
                   </h1>
                   <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                    Digital tools unlock new TTRPG features like Dynamic Smart
+                    Digital tools unlock new TTRPG features like Dynamic Smart{' '}
+                    <br />
                     Character Sheets and streamline complex systems with
-                    automated mechanics and digital maps.
+                    automated <br />
+                    mechanics and digital maps.
                   </p>
                 </div>
               </div>
             </div>
 
             <div
-              className="p-[1px] rounded-[20px] w-full md:w-[522px]"
-              style={{
-                background:
-                  'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
-              }}
-            >
-              <div
-                className="rounded-[20px] mx-auto overflow-hidden h-full flex flex-col"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
-              >
-                <div
-                  className="w-full h-[248px] bg-cover bg-right bg-no-repeat"
-                  style={{
-                    backgroundImage: "url('/lp/Remotely.png')",
-                  }}
-                />
-                <div className="flex flex-col p-6 gap-2">
-                  <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
-                    Play Fully Remotely or In-Person with Digital Elements
-                  </h1>
-                  <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
-                    Play remotely with a global community or gather in person
-                    with real dice, miniatures, and your favorite maps.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="p-[1px] rounded-[20px] w-full md:w-[522px] h-full"
+              className="p-[1px] rounded-[20px] w-[522px]"
               style={{
                 background:
                   'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div
-                className="rounded-[20px] mx-auto overflow-hidden h-full flex flex-col"
+                className="h-[262px] flex items-center justify-center rounded-[20px] mx-auto"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div className="w-full h-[248px] relative overflow-hidden">
-                  <Image
-                    src="/lp/NewPerson.png"
-                    alt="New Person"
-                    width={1200}
-                    height={600}
-                    quality={100}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="flex flex-row gap-1 items-center justify-center">
+                  <div className="flex flex-col gap-2 p-5">
+                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                      Ever-Improving Experiences
+                    </h1>
+                    <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                      We’ll expand our titles with free maps, campaign ideas,
+                      and in-game content—including new illustrations, spell
+                      icons, weapon art, and more.
+                    </p>
+                  </div>
+
+                  <div>
+                    <Image
+                      src="/lp/NewPerson.png"
+                      alt="New Person"
+                      width={1400}
+                      height={1400}
+                      quality={100}
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
-                <div className="flex flex-col p-6 gap-2">
-                  <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                    Ever-Improving Experiences
-                  </h1>
-                  <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                    We’ll expand our titles with free maps, campaign ideas, and
-                    in-game content— including new illustrations, spell icons,
-                    weapon art, and more.
-                  </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-4">
+            <div
+              className="p-[1px] rounded-[20px] w-[522px]"
+              style={{
+                background:
+                  'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+              }}
+            >
+              <div
+                className="h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
+              >
+                <div className="flex flex-row gap-1 items-center justify-center w-full">
+                  <div className="flex-1 min-w-0 flex flex-col p-7">
+                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
+                      Play Fully Remotely or In-Person with Digital Elements
+                    </h1>
+                    <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
+                      Play remotely with a global community or gather in person
+                      with real dice, miniatures, and your favorite maps.
+                    </p>
+                  </div>
+
+                  <div
+                    className="h-[316px] w-[240px] shrink-0 bg-cover bg-right bg-no-repeat"
+                    style={{
+                      backgroundImage: "url('/lp/Remotely.png')",
+                    }}
+                  ></div>
                 </div>
               </div>
             </div>
 
             <div
-              className="p-[1px] rounded-[20px] w-full md:w-[522px] h-full bg-pink-700"
-              // style={{
-              //   background:
-              //     'linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
-              // }}
+              className="p-[1px] rounded-[20px] w-[522px]"
+              style={{
+                background:
+                  'linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+              }}
             >
               <div
-                className="rounded-[20px] mx-auto overflow-hidden h-full flex flex-col"
+                className="h-[316px] flex items-center justify-center rounded-[20px] mx-auto"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div className="w-full h-[248px] relative overflow-hidden">
-                  <Image
-                    src="/lp/CreatorPartnership.png"
-                    alt="CreatorPartnership"
-                    width={1200}
-                    height={600}
-                    quality={100}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex flex-col p-6 gap-2">
-                  <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                    Commitment to Craftsmanship
-                  </h1>
-                  <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                    Echelon vows to champion creators with our content from art
-                    and authorship, to game design and user-experience
-                    interfaces. We welcome our players to use any tools that
-                    suit their needs, but our official content will always be
-                    100% handcrafted by real meatba—Err, humans.
-                  </p>
+                <div className="flex flex-row gap-4 items-center justify-center">
+                  <div className="flex flex-col gap-3 p-5">
+                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                      Commitment to Craftsmanship
+                    </h1>
+                    <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                      Echelon vows to champion creators with our content from
+                      art and authorship, to game design and user-experience
+                      interfaces. We welcome our players to use any tools that
+                      suit their needs, but our official content will always be
+                      100% handcrafted by real meatba—Err, humans.
+                    </p>
+                  </div>
+
+                  <div>
+                    <Image
+                      src="/lp/CreatorPartnership.png"
+                      alt="CreatorPartnership"
+                      width={1400}
+                      height={1400}
+                      quality={100}
+                      className="object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
