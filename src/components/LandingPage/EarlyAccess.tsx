@@ -16,22 +16,23 @@ const Arrow: React.FC = () => (
 export default function EarlyAccess({}) {
   return (
     <section className="bg-black">
-      <div className="flex flex-col items-start md:items-center justify-center w-full gap-4">
-        <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm">
+      <div className="flex flex-col items-start md:items-center justify-center w-full">
+        {/* Mobile Beta (under md) */}
+        <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm mb-4">
           Beta
         </p>
 
-        <h1 className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] mb-4 relative text-left md:text-center">
-          Early Access Features
-          <p
-            className="hidden md:inline-flex absolute -right-6 top-1 items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold z-10 shadow-sm"
-            style={{ transform: 'rotate(14.367deg)' }}
-          >
-            Beta
-          </p>
-        </h1>
+        {/* Desktop Beta (md and up) placed above heading, not tilted */}
+        <p className="hidden md:inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-center shadow-sm mb-4">
+          Beta
+        </p>
 
-        <div className="flex flex-wrap items-center gap-2 lg:gap-3 text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center">
+        {/* Big text as a single <p> */}
+        <p className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
+          Early Access Features
+        </p>
+
+        <div className="flex flex-wrap items-center gap-2 lg:gap-3 text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center mb-2">
           <span className="text-[#199FEC]">Assemble your party</span>
           <Arrow />
           <span>
