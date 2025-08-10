@@ -15,7 +15,7 @@ const Arrow: React.FC = () => (
 
 export default function EarlyAccess({}) {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
       <div className="flex flex-col items-start md:items-center justify-center w-full">
         {/* Mobile Beta (under md) */}
         <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm mb-4">
@@ -50,11 +50,11 @@ export default function EarlyAccess({}) {
         </p>
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center mt-20">
+      <div className="w-full flex flex-col items-center justify-center mt-20 md:w-[1062px]">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-          <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 w-full md:flex-1">
             <div
-              className="p-[1px] rounded-[20px] w-[522px]"
+              className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
                   'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
@@ -88,7 +88,7 @@ export default function EarlyAccess({}) {
             </div>
 
             <div
-              className="p-[1px] rounded-[20px] w-[522px]"
+              className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
                   'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
@@ -125,9 +125,9 @@ export default function EarlyAccess({}) {
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 w-full md:flex-1">
             <div
-              className="p-[1px] rounded-[20px] w-[522px]"
+              className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
                   'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
@@ -159,7 +159,7 @@ export default function EarlyAccess({}) {
             </div>
 
             <div
-              className="p-[1px] rounded-[20px] w-[522px]"
+              className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
                   'linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
