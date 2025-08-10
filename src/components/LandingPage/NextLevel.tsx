@@ -15,7 +15,7 @@ const Arrow: React.FC = () => (
 
 export default function NextLevel({}) {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] mt-[60px] px-6 md:px-0">
       <div className="flex flex-col items-start md:items-center justify-center w-full">
         <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm mb-4">
           Beta
