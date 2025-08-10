@@ -12,7 +12,7 @@ export default function HomePage() {
       <HomeSection />
       <DragonCon />
       <EarlyAccess />
-      {/* <NextLevel /> */}
+      <NextLevel />
       {/* <RolePlayGameHome /> */}
       {/* <CardSections /> */}
       {/* <SignUpSection /> */}

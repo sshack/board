@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const Arrow: React.FC = () => (
   <svg
@@ -15,17 +15,17 @@ const Arrow: React.FC = () => (
 
 export default function NextLevel({}) {
   return (
-    <section className="mt-48 bg-black">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
       <div className="flex flex-col  items-center justify-center w-full gap-1">
         <h1 className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] mb-4">
-          {" "}
+          {' '}
           Next-Level Features
         </h1>
 
         <p className="text-[16px] leading-[24px] font-normal text-[#199FEC]">
-          The next chapter of Echelon is already being written{" "}
+          The next chapter of Echelon is already being written{' '}
           <a className="cursor-auto text-white ">
-            {" "}
+            {' '}
             — here’s a glimpse into what’s to come.
           </a>
         </p>
@@ -37,7 +37,7 @@ export default function NextLevel({}) {
             <div className="flex flex-col items-center justify-center gap-3 px-4">
               <div
                 className="w-[525px] h-[320] flex items-center justify-center rounded-2xl mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-row gap-1 items-center justify-center">
                   <div className="flex flex-col gap-1  p-7">
@@ -58,8 +58,8 @@ export default function NextLevel({}) {
                     className="h-full w-48 flex items-center justify-center"
                     style={{
                       backgroundImage: "url('/lp/Money.png')",
-                      backgroundPosition: "center",
-                      backgroundSize: "cover",
+                      backgroundPosition: 'center',
+                      backgroundSize: 'cover',
                     }}
                   >
                     <div
@@ -72,7 +72,7 @@ export default function NextLevel({}) {
 
               <div
                 className="w-[525] h-[240px] flex items-center justify-center rounded-lg"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-row items-center justify-center">
                   <div className="flex flex-col gap-2 p-7">
@@ -89,9 +89,9 @@ export default function NextLevel({}) {
                     <div
                       style={{
                         backgroundImage: "url('/lp/achievements.png')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
                       }}
                       className="w-[280px] h-[240px]"
                     />
@@ -101,7 +101,7 @@ export default function NextLevel({}) {
 
               <div
                 className="w-[525px] h-[360px] flex flex-col justify-center rounded-lg md:mt-0 mt-0 mx-auto p-7"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <h1 className="text-[20px] leading-[20px] tracking-[-0.8px] font-normal pb-2">
                   An Expanding Catalog of Bespoke TTRPGS
@@ -117,24 +117,24 @@ export default function NextLevel({}) {
                     className="w-[143px] h-[172px] opacity-70 mt-[28px]"
                     style={{
                       backgroundImage: "url('/lp/CardHero1.png')",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
                     }}
                   ></div>
                   <div
                     className="w-[143px] h-[172px] opacity-50 mt-[28px]"
                     style={{
                       backgroundImage: "url('/lp/CardHero1.png')",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
                     }}
                   ></div>
                   <div
                     className="w-[143px] h-[172px] opacity-70 mt-[28px]"
                     style={{
                       backgroundImage: "url('/lp/CardHero1.png')",
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
                     }}
                   ></div>
                 </div>
@@ -146,7 +146,7 @@ export default function NextLevel({}) {
             <div className="flex flex-col items-center justify-center gap-3 px-4">
               <div
                 className="w-[522px] h-[468px] flex items-start justify-start rounded-lg mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-col gap-4 items-start justify-start w-full h-full ">
                   <div className="flex flex-row gap-1 justify-start w-full p-12">
@@ -178,7 +178,7 @@ export default function NextLevel({}) {
 
               <div
                 className="w-[522px] h-[488px] flex items-start justify-start rounded-lg mx-auto"
-                style={{ backgroundColor: "rgb(4 25 36)" }}
+                style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
                 <div className="flex flex-col gap-4 items-start justify-start w-full h-full ">
                   <div className="flex flex-row gap-1 justify-start w-full p-12">
@@ -191,7 +191,7 @@ export default function NextLevel({}) {
                         easy way to monetize your ferret-kin drunken fist
                         pyromancer? Whether you are a cartographer, a portrait
                         artist, a campaign author, mechanical theory-crafter, or
-                        an all-in-one GM, it is our goal to support you.{" "}
+                        an all-in-one GM, it is our goal to support you.{' '}
                       </p>
                     </div>
                   </div>
