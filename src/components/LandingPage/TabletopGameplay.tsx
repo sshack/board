@@ -1,7 +1,7 @@
 export default function TabletopGameplay({}) {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px]">
-      <div className="flex items-center justify-center bg-[url(/lp/fundoSectionTeam.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen relative overflow-hidden px-6 md:px-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] ">
+      <div className="flex items-center justify-center bg-[url(/lp/tableTopgameplaybg.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen relative overflow-hidden px-6 md:px-0">
         <div className="w-full max-w-[900px] mx-auto flex flex-col items-start md:items-center justify-center text-left md:text-center px-4">
           <h1 className="text-white text-[40px] md:text-[56px] leading-[48px] md:leading-[64px] font-semibold tracking-[-1.6px] md:tracking-[-2.24px] mb-6 md:mb-[68px] text-left md:text-center">
             Hybrid Tabletop Gameplay
@@ -39,7 +39,7 @@ export default function TabletopGameplay({}) {
           </p>
         </div>
       </div>
-      <div className="w-full h-full mt-10 bottom-0 bg-[#FC5212]">
+      <div className="w-full h-full mt-10 bottom-0 bg-[#FC5212] md:hidden">
         <div className="p-3 text-[16px] text-white font-normal leading-6 flex flex-col text-center items-center justify-center h-full">
           <p>
             Introducing Our New Game <br />

@@ -15,7 +15,7 @@ export default function HomePage() {
       <EarlyAccess />
       <NextLevel />
       <TabletopGameplay />
-      {/* <RolePlayGameHome /> */}
+      <RolePlayGameHome />
       {/* <CardSections /> */}
       {/* <SignUpSection /> */}
     </main>
