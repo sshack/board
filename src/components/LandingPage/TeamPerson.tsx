@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import { teamMembers } from "@/utils/mocks";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+'use client';
+import React from 'react';
+import { teamMembers } from '@/utils/mocks';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const TeamPerson: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const TeamPerson: React.FC = () => {
           className="absolute inset-0"
           style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, #3b82f6 1px, transparent 0)`,
-            backgroundSize: "20px 20px",
+            backgroundSize: '20px 20px',
           }}
         ></div>
       </div>
@@ -76,11 +76,10 @@ const TeamPerson: React.FC = () => {
                               {member.expertise}
                             </span>
                           </div>
-                          <div className="flex items-start justify-center bg-pink-950 text-white text-[14px] gap-2">
+                          <div className="text-white text-[14px]">
                             <p>
-                              <p className="text-[#199FEC]">Fun Fact:</p>{" "}
-                              aosdoaskdoa dasodkaosdkasd asdoaksdoa asdkoaksdoa
-                              dasdokaksdoasd okdasos
+                              <span className="text-[#199FEC]">Fun Fact:</span>{' '}
+                              {member.funFact}
                             </p>
                           </div>
                         </div>

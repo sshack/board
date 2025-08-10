@@ -142,26 +142,39 @@ export default function EarlyAccess({}) {
               }}
             >
               <div
-                className="h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[350px] md:h-[316px]"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div className="flex flex-row gap-1 items-center justify-center w-full">
-                  <div className="flex-1 min-w-0 flex flex-col p-7">
-                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
-                      Play Fully Remotely or In-Person with Digital Elements
-                    </h1>
-                    <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
-                      Play remotely with a global community or gather in person
-                      with real dice, miniatures, and your favorite maps.
-                    </p>
+                <div className="relative w-full h-full rounded-[20px]">
+                  {/* Mobile/Small screens layout */}
+                  <div className="md:hidden flex h-full w-full flex-col">
+                    <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url(/lp/Remotely.png)]" />
+                    <div className="hidden sm:block h-[5%]" />
+                    <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
+                        Play Fully Remotely or In-Person with Digital Elements
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
+                        Play remotely with a global community or gather in
+                        person with real dice, miniatures, and your favorite
+                        maps.
+                      </p>
+                    </div>
                   </div>
 
-                  <div
-                    className="h-[316px] w-[240px] shrink-0 bg-cover bg-right bg-no-repeat"
-                    style={{
-                      backgroundImage: "url('/lp/Remotely.png')",
-                    }}
-                  ></div>
+                  {/* Desktop and up */}
+                  <div className="hidden md:flex relative w-full md:h-auto md:bg-[url(/lp/Remotely.png)] md:bg-no-repeat md:bg-right md:bg-[length:50%_auto] md:pr-[50%]">
+                    <div className="flex flex-col gap-2 p-7 md:h-auto justify-center">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
+                        Play Fully Remotely or In-Person with Digital Elements
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
+                        Play remotely with a global community or gather in
+                        person with real dice, miniatures, and your favorite
+                        maps.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
