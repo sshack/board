@@ -1,7 +1,7 @@
 export default function IntroductionGame() {
   return (
-    <section className="w-full bg-black text-white md:py-20 relative overflow-hidden">
-      <div className="hidden md:flex w-full justify-center absolute top-16 left-0 right-0 z-20">
+    <section className="w-full bg-black text-white relative">
+      <div className="hidden md:flex w-full justify-center absolute -top-4 left-0 right-0 z-20">
         <div className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FC5212] px-3 py-1 text-white text-[16px] leading-6 font-normal">
           <span>Introducing Our New Game</span>
           <span>•</span>
