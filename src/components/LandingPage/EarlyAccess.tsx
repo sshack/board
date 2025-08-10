@@ -59,28 +59,49 @@ export default function EarlyAccess({}) {
               }}
             >
               <div
-                className="h-[370px] flex items-center justify-center rounded-[20px] md:mt-0 mt-0 mx-auto"
+                className="h-[420px] md:h-[370px] flex items-center justify-center rounded-[20px] md:mt-0 mt-0 mx-auto overflow-hidden"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div
-                  className="flex flex-col  bg-cover bg-center w-full h-full rounded-[20px] p-5 gap-2 "
-                  style={{
-                    backgroundImage: "url('/lp/MapGame.png')",
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'bottom',
-                    backgroundRepeat: 'no-repeat',
-                  }}
-                >
-                  <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                    The Depth of Crunch with Digital Convenience
-                  </h1>
-                  <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                    Digital tools unlock new TTRPG features like Dynamic Smart{' '}
-                    <br />
-                    Character Sheets and streamline complex systems with
-                    automated <br />
-                    mechanics and digital maps.
-                  </p>
+                <div className="relative w-full h-full rounded-[20px]">
+                  {/* Mobile/Small screens layout - image above text */}
+                  <div className="md:hidden flex h-full w-full flex-col">
+                    <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url(/lp/MapGameMobile.png)]" />
+                    <div className="hidden sm:block h-[5%]" />
+                    <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                        The Depth of Crunch with Digital Convenience
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                        Digital tools unlock new TTRPG features like Dynamic
+                        Smart Character Sheets and streamline complex systems
+                        with automated mechanics and digital maps.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Desktop and up - keep original layout */}
+                  <div className="hidden md:flex w-full h-full">
+                    <div
+                      className="flex flex-col bg-cover bg-center w-full h-full rounded-[20px] p-5 gap-2"
+                      style={{
+                        backgroundImage: "url('/lp/MapGame.png')",
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'bottom',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                    >
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                        The Depth of Crunch with Digital Convenience
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                        Digital tools unlock new TTRPG features like Dynamic
+                        Smart <br />
+                        Character Sheets and streamline complex systems with
+                        automated <br />
+                        mechanics and digital maps.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
