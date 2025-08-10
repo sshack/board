@@ -144,10 +144,67 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full min-h-[350px] md:h-full flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  className="w-full h-[480px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
                   style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
-                  3
+                  <div className="relative w-full h-full rounded-[20px]">
+                    {/* Mobile layout: image top, text bottom */}
+                    <div className="md:hidden flex h-full w-full flex-col">
+                      <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/CardHero1.png')]" />
+                      <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
+                        <h1 className="text-[20px] leading-[20px] tracking-[-0.8px] font-normal">
+                          An Expanding Catalog of Bespoke TTRPGS
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] leading-[20px] text-[14px]">
+                          A meticulously developed high fantasy follow-up to
+                          Anno Amagium is already waiting in the wings and we
+                          are just getting started. Got a game of your own?
+                          Let's talk!
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Desktop and up: text top, image bottom */}
+                    <div className="hidden md:flex w-full h-full flex-col">
+                      <div className="flex flex-col gap-2 p-5 justify-start">
+                        <h1 className="text-[20px] leading-[20px] tracking-[-0.8px] font-normal">
+                          An Expanding Catalog of Bespoke TTRPGS
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] leading-[20px] text-[14px]">
+                          A meticulously developed high fantasy follow-up to
+                          Anno Amagium is already waiting in the wings and we
+                          are just getting started. Got a game of your own?
+                          Let's talk!
+                        </p>
+                      </div>
+                      <div className="flex flex-row gap-4 px-5 pb-5 justify-start">
+                        <div
+                          className="w-[143px] h-[172px] opacity-70"
+                          style={{
+                            backgroundImage: "url('/lp/CardHero1.png')",
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
+                        />
+                        <div
+                          className="w-[143px] h-[172px] opacity-50"
+                          style={{
+                            backgroundImage: "url('/lp/CardHero1.png')",
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
+                        />
+                        <div
+                          className="w-[143px] h-[172px] opacity-70"
+                          style={{
+                            backgroundImage: "url('/lp/CardHero1.png')",
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
