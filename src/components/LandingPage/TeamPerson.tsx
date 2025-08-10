@@ -7,16 +7,7 @@ import "swiper/css";
 const TeamPerson: React.FC = () => {
   return (
     <div className="w-full min-h-screen bg-[url('/lp/bg-img-mob-001.png')] md:bg-[url('/lp/bgroleplay.png')] bg-cover bg-center relative overflow-hidden pt-20 md:pt-36">
-      <div className="absolute inset-0 opacity-10">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, #3b82f6 1px, transparent 0)`,
-            backgroundSize: "20px 20px",
-          }}
-        ></div>
-      </div>
-
+      <div className="pointer-events-none flex !w-full h-80 absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent" />
       <div className="relative z-10 container mx-auto md:px-4 py-16">
         <div className="mb-20">
           <div className="px-6 md:text-center md:mb-36 mt-10">

@@ -1,8 +1,9 @@
 export default function IntroductionGame() {
   return (
-    <section className="w-full bg-black text-white py-20 relative overflow-hidden">
+    <section className="w-full bg-black text-white md:py-20 relative overflow-hidden">
+      {/*Versão Desktop*/}
       <div
-        className="relative w-full h-[726px]"
+        className="hidden md:block relative w-full h-[726px]"
         style={{
           backgroundImage: "url('/lp/foundAmmo.png')",
           backgroundSize: "cover",
@@ -54,94 +55,40 @@ export default function IntroductionGame() {
         />
       </div>
 
-      <div className="w-full flex flex-col items-center justify-center py-20">
-        <div className="text-[24px] text-white mb-8 text-center">
-          <h3>Start Exploring the Anno Amagium Universe with our Rule Books</h3>
-        </div>
-        <div className="flex flex-col md:flex-row gap-4 w-full justify-center">
-          {/* Card 1 */}
-          <div
-            className="flex flex-col justify-between bg-[linear-gradient(111deg,rgba(25,159,236,0.10)_0.9%,rgba(25,159,236,0.55)_100%)] rounded-[12px] p-6 relative overflow-hidden"
-            style={{ width: "416px", height: "240px" }}
-          >
-            <div>
-              <h4 className="text-white text-lg font-semibold mb-2">
-                Get “Anno Amagium: <br />
-                The RPG – Universe Guide and Lore”
-              </h4>
-              <p className="text-[rgba(255,255,255,0.7)] text-sm mb-4">
-                by following us on Instagram
-              </p>
+      {/*Versão Mobile*/}
+      <div className="md:hidden w-full">
+        <div className="relative mx-3 my-4 rounded-2xl overflow-hidden bg-[url('/lp/anno-amagium-mob.png')] bg-cover bg-center">
+          <div className="absolute w-full pointer-events-none" />
+          <div className="relative px-6 pt-8 pb-10">
+            <div className="relative w-full flex mb-6">
+              <img src="/lp/screenshotAmoo-mobile.png" alt="" className="" />
+              <img
+                src="/lp/badge-amagium.png"
+                alt=""
+                className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full border-4 border-white"
+              />
             </div>
-            <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold w-fit">
-              Follow
-            </button>
-            <img
-              src="/lp/poster.png"
-              alt="Anno Amagium Book"
-              className="w-[169px] h-[206px] absolute bottom-[-90px] right-0 rotate-[-20deg] pointer-events-none"
-            />
-            <img
-              src="/lp/instagram-icon.png"
-              alt="Instagram"
-              className="w-8 absolute top-4 right-4 pointer-events-none"
-            />
-          </div>
-          {/* Card 2 */}
-          <div
-            className="flex flex-col justify-between bg-[linear-gradient(111deg,rgba(25,159,236,0.10)_0.9%,rgba(25,159,236,0.55)_100%)] rounded-[12px] p-6 relative overflow-hidden"
-            style={{ width: "416px", height: "240px" }}
-          >
-            <div>
-              <h4 className="text-white text-lg font-semibold mb-2">
-                Get “Anno Amagium: <br />
-                The RPG - Character Creation and Advancement”
-              </h4>
-              <p className="text-[rgba(255,255,255,0.7)] text-sm mb-4">
-                by signing up for our mailing list
+
+            <div className="flex flex-col">
+              <img
+                src="/lp/titleAmmo.png"
+                alt="ANNO AMAGIUM"
+                className="w-[260px] mb-1"
+              />
+              <h2 className="text-white uppercase text-[18px] leading-[24px] tracking-[0.12em] font-semibold mb-4">
+                The Roleplaying Game
+              </h2>
+
+              <p className="text-white/90 text-[14px] leading-[22px] max-w-[300px] mb-6">
+                A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying
+                Game is based on the Anno Amagium Universe, with over five years
+                of stories, worldbuilding, and mechanical development.
               </p>
+
+              <button className="w-full max-w-[292px] h-[56px] rounded-full bg-white text-black text-[16px]">
+                Subscribe to our waiting list
+              </button>
             </div>
-            <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold w-fit">
-              Follow
-            </button>
-            <img
-              src="/lp/poster.png"
-              alt="Anno Amagium Book"
-              className="w-[169px] h-[206px] absolute bottom-[-90px] right-0 rotate-[-20deg] pointer-events-none"
-            />
-            <img
-              src="/lp/mail-icon.png"
-              alt="Mail"
-              className="w-8 absolute top-4 right-4 pointer-events-none"
-            />
-          </div>
-          {/* Card 3 */}
-          <div
-            className="flex flex-col justify-between bg-[linear-gradient(111deg,rgba(25,159,236,0.10)_0.9%,rgba(25,159,236,0.55)_100%)] rounded-[12px] p-6 relative overflow-hidden"
-            style={{ width: "416px", height: "240px" }}
-          >
-            <div>
-              <h4 className="text-white text-lg font-semibold mb-2">
-                Get “Anno Amagium: <br />
-                The RPG - Character Creation and Advancement”
-              </h4>
-              <p className="text-[rgba(255,255,255,0.7)] text-sm mb-4">
-                by signing up for our mailing list
-              </p>
-            </div>
-            <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold w-fit">
-              Sign Up
-            </button>
-            <img
-              src="/lp/poster.png"
-              alt="Anno Amagium Book"
-              className="w-[169px] h-[206px] absolute bottom-[-90px] right-0 rotate-[-20deg] pointer-events-none"
-            />
-            <img
-              src="/lp/mail-icon.png"
-              alt="Mail"
-              className="w-8 absolute top-4 right-4 pointer-events-none"
-            />
           </div>
         </div>
       </div>
