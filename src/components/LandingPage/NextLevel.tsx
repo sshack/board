@@ -50,10 +50,47 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full min-h-[320px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  className="w-full h-[480px] md:h-full flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
                   style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
-                  1
+                  <div className="relative w-full h-full rounded-[20px]">
+                    {/* Mobile layout: image top, text bottom */}
+                    <div className="md:hidden flex h-full w-full flex-col">
+                      <div className="flex-1 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/MoneyMobile.png')]" />
+                      <div className="flex-1 flex flex-col gap-2 p-5 justify-end">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                          Flexible Pricing
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
+                          We are still working on price points, but we plan on
+                          using a Seat-based system. We hope to launch with a
+                          F2P option providing limited storage and accommodating
+                          small sessions. Basic subscribers will enjoy increased
+                          storage and can join any campaign. Professional
+                          subscribers can host seats for up to 8 player
+                          characters simultaneously.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Desktop and up: text left, image right */}
+                    <div className="hidden md:flex relative w-full h-full md:bg-[url(/lp/Money.png)] md:bg-no-repeat md:bg-right md:bg-[length:40%_auto] md:pr-[40%]">
+                      <div className="flex flex-col gap-2 p-5 md:h-auto justify-center">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                          Flexible Pricing
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[22px]">
+                          We are still working on price points, but we plan on
+                          using a Seat-based system. We hope to launch with a
+                          F2P option providing limited storage and accommodating
+                          small sessions. Basic subscribers will enjoy increased
+                          storage and can join any campaign. Professional
+                          subscribers can host seats for up to 8 player
+                          characters simultaneously.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
