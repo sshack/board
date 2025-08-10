@@ -43,7 +43,7 @@ export default function NextLevel({}) {
           <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-[1062px] gap-4">
             <div className="w-full self-stretch flex flex-col items-center justify-center gap-3">
               <div
-                className="p-[1px] rounded-[20px] w-full"
+                className="p-[1px] rounded-[20px] w-full h-full"
                 style={{
                   background:
                     'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
@@ -102,10 +102,37 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full min-h-[240px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  className="w-full h-[370px] md:h-[262px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
                   style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
-                  2
+                  <div className="relative w-full h-full rounded-[20px]">
+                    {/* Mobile layout: image top, text bottom */}
+                    <div className="md:hidden flex h-full w-full flex-col">
+                      <div className="h-2/3 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/achievementsMobile.png')]" />
+                      <div className="h-1/3 flex flex-col gap-2 p-5 justify-end">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
+                          Platform Wide Achievements
+                        </h1>
+                        <p className="text-[14px] text-[rgba(255,255,255,0.5)] leading-[20px]">
+                          Show off your stats with platform-wide achievements
+                          and game-specific achievements later on.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Desktop and up: text left, image right */}
+                    <div className="hidden md:flex relative w-full h-full md:bg-[url('/lp/achievements.png')] md:bg-no-repeat md:bg-right md:bg-[length:40%_auto] md:pr-[40%]">
+                      <div className="flex flex-col gap-2 p-5 md:h-auto justify-center">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-normal">
+                          Platform Wide Achievements
+                        </h1>
+                        <p className="text-[14px] text-[rgba(255,255,255,0.5)] leading-[20px]">
+                          Show off your stats with platform-wide achievements
+                          and game-specific achievements later on.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
