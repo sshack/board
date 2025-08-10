@@ -7,8 +7,8 @@ export default function CharactersSection({
 }: CharactersSectionProps) {
   return (
     <>
-      {/* Characters Section */}
-      <div className="pb-20 flex flex-col lg:flex-row gap-8 left-0">
+      {/* Characters Section // Versão Desktop */}
+      <div className="hidden md:flex pb-20 flex-col lg:flex-row gap-8 left-0">
         {/* Left Side - Characters Heading */}
         <div className="lg:w-1/4">
           <h2 className="text-[24px] leading-[40px] font-normal text-white mb-8">
@@ -98,6 +98,118 @@ export default function CharactersSection({
                   mind. 
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Characters Section // Versão Mobile */}
+      <div className="px-6 flex flex-col w-full">
+        <h2 className="pb-4 text-[18px] leading-6 font-normal text-white">
+          Characters
+        </h2>
+
+        {/* Card 1 */}
+        <div className="flex flex-col w-full overflow-hidden">
+          <div className="flex flex-col h-full">
+            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="flex pt-4 flex-col">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
+                <summary className="flex items-center justify-between cursor-pointer">
+                  <h3 className="text-[16px] font-normal text-white">
+                    Tons of Build Options
+                  </h3>
+                  <svg
+                    className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
+                  <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
+                    Create a character that reflects your identity and
+                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
+                    traits, 24 ability refinements, and 41 weapon types—at
+                    launch, with more added regularly.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 2 */}
+        <div className="flex flex-col w-full overflow-hidden">
+          <div className="flex flex-col h-full">
+            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="flex pt-4 flex-col">
+              <details className="group [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex items-center justify-between cursor-pointer">
+                  <h3 className="text-[16px] font-normal text-white">
+                    Tons of Build Options
+                  </h3>
+                  <svg
+                    className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
+                  <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
+                    Create a character that reflects your identity and
+                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
+                    traits, 24 ability refinements, and 41 weapon types—at
+                    launch, with more added regularly.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        {/* Card 3 */}
+        <div className="flex flex-col w-full overflow-hidden">
+          <div className="flex flex-col h-full">
+            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="flex pt-4 flex-col">
+              <details className="group [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex items-center justify-between cursor-pointer">
+                  <h3 className="text-[16px] font-normal text-white">
+                    Tons of Build Options
+                  </h3>
+                  <svg
+                    className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
+                  <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
+                    Create a character that reflects your identity and
+                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
+                    traits, 24 ability refinements, and 41 weapon types—at
+                    launch, with more added regularly.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
         </div>

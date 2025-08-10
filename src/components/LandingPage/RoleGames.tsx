@@ -1,20 +1,8 @@
 import React from "react";
-import CharactersSection from "./CharactersSection";
-import LoreSection from "./LoreSection";
-import CombatSection from "./CombatSection";
-import SkillsSection from "./SkillsSection";
 export default function RoleGames() {
   return (
-    <div
-      className="w-full h-[3120px] relative overflow-hidden"
-      style={{
-        backgroundImage: `url(/lp/fundoSectionGamesRole.png)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="px-[80px] container mx-auto pr-10 py-20 relative">
+    <div className="w-full md:h-[3120px] bg-black md:bg-[url('/lp/fundoSectionGamesRole.png')] bg-center bg-cover bg-no-repeat relative overflow-hidden">
+      <div className="px-6 md:px-[80px] container mx-auto pr-10 py-20 relative">
         {/* Gradiente de transição na parte superior */}
         <div
           className="absolute top-0 left-0 right-0 h-32 w-full"
@@ -28,11 +16,11 @@ export default function RoleGames() {
         />
 
         {/* Header Section */}
-        <div className=" mb-32">
-          <h1 className="text-[56px] font-semibold text-white mb-6 font-sans">
+        <div className="pb-20 md:mb-32">
+          <h1 className="text-[40px] leading-[48px] tracking-[-1.6px] md:text-[56px] font-semibold text-white">
             Anno Amagium the Roleplaying Game
           </h1>
-          <p className="text-[16px]  text-white leading-relaxed max-w-[850px]">
+          <p className="pt-4 text-sm md:text-[16px]  text-white leading-relaxed md:max-w-[850px]">
             <span className="text-[#199FEC]">
               A next generation TTRPG with entirely new game systems
             </span>{" "}
@@ -42,12 +30,6 @@ export default function RoleGames() {
             magic.
           </p>
         </div>
-
-        {/* Characters Section */}
-        <CharactersSection />
-        <LoreSection />
-        <CombatSection />
-        <SkillsSection />
       </div>
 
       {/* Gradiente de transição para o fundo preto */}
