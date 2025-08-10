@@ -7,6 +7,7 @@ import NextLevel from '@/components/LandingPage/NextLevel';
 import DragonCon from '../components/LandingPage/DragonCon';
 import TabletopGameplay from '../components/LandingPage/TabletopGameplay';
 import IntroductionGame from '../components/LandingPage/IntroductionGame';
+import Exploring from '../components/LandingPage/Exploring';
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
       <NextLevel />
       <TabletopGameplay />
       <IntroductionGame />
+      <Exploring />
       {/* <CardSections /> */}
       {/* <SignUpSection /> */}
     </main>
