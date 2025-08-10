@@ -95,15 +95,15 @@ export default function EarlyAccess({}) {
               }}
             >
               <div
-                className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[350px] md:h-[262px]"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div className="relative w-full h-[400px] md:h-[262px] rounded-[20px]">
+                <div className="relative w-full h-full rounded-[20px]">
                   {/* Mobile/Small screens layout */}
                   <div className="md:hidden flex h-full w-full flex-col">
-                    <div className="h-1/2 sm:h-[45%] w-full bg-[url(/lp/NewPerson.png)] bg-no-repeat bg-top bg-cover" />
+                    <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url(/lp/NewPersonMobile.png)]" />
                     <div className="hidden sm:block h-[5%]" />
-                    <div className="h-1/2 sm:h-[50%] flex flex-col gap-2 p-5 justify-end">
+                    <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
                       <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
                         Ever-Improving Experiences
                       </h1>
