@@ -16,11 +16,18 @@ const Arrow: React.FC = () => (
 export default function NextLevel({}) {
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
-      <div className="flex flex-col  items-center justify-center w-full gap-1">
-        <h1 className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] mb-4">
-          {' '}
-          Next-Level Features
-        </h1>
+      <div className="flex flex-col items-start md:items-center justify-center w-full">
+        <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm mb-4">
+          Beta
+        </p>
+        <div className="relative">
+          <p className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
+            Next-Level Features
+          </p>
+          <span className="absolute min-w-[100px] top-1 -right-16 px-3 hidden md:inline-flex items-center justify-center py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold shadow-sm transform rotate-6">
+            After launch
+          </span>
+        </div>
 
         <p className="text-[16px] leading-[24px] font-normal text-[#199FEC]">
           The next chapter of Echelon is already being written{' '}
@@ -36,40 +43,80 @@ export default function NextLevel({}) {
           <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-[1062px] gap-4">
             <div className="w-full self-stretch flex flex-col items-center justify-center gap-3">
               <div
-                className="w-full min-h-[320] flex items-center justify-center rounded-2xl mx-auto"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                className="p-[1px] rounded-[20px] w-full"
+                style={{
+                  background:
+                    'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                }}
               >
-                1
+                <div
+                  className="w-full min-h-[320px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                >
+                  1
+                </div>
               </div>
 
               <div
-                className="w-full min-h-[240px] flex items-center justify-center rounded-2xl mx-auto"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                className="p-[1px] rounded-[20px] w-full"
+                style={{
+                  background:
+                    'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                }}
               >
-                2
+                <div
+                  className="w-full min-h-[240px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                >
+                  2
+                </div>
               </div>
 
               <div
-                className="w-full min-h-[350px] md:h-full flex items-center justify-center rounded-2xl mx-auto"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                className="p-[1px] rounded-[20px] w-full"
+                style={{
+                  background:
+                    'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                }}
               >
-                3
+                <div
+                  className="w-full min-h-[350px] md:h-full flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                >
+                  3
+                </div>
               </div>
             </div>
 
             <div className="w-full flex flex-col items-center justify-center gap-3">
               <div
-                className="w-full h-[468px] flex items-start justify-start rounded-lg mx-auto"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                className="p-[1px] rounded-[20px] w-full"
+                style={{
+                  background:
+                    'linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                }}
               >
-                4
+                <div
+                  className="w-full h-[468px] flex items-start justify-start rounded-[20px] mx-auto overflow-hidden"
+                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                >
+                  4
+                </div>
               </div>
 
               <div
-                className="w-full h-[488px] flex items-start justify-start rounded-lg mx-auto"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                className="p-[1px] rounded-[20px] w-full"
+                style={{
+                  background:
+                    'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                }}
               >
-                5
+                <div
+                  className="w-full h-[488px] flex items-start justify-start rounded-[20px] mx-auto overflow-hidden"
+                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                >
+                  5
+                </div>
               </div>
             </div>
           </div>

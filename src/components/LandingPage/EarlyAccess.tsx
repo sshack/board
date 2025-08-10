@@ -19,12 +19,14 @@ export default function EarlyAccess({}) {
           Beta
         </p>
 
-        <p className="relative text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
-          Early Access Features
+        <div className="relative flex">
+          <p className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
+            Early Access Features
+          </p>
           <span className="absolute top-1 -right-6 hidden md:inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold shadow-sm transform rotate-6">
             Beta
           </span>
-        </p>
+        </div>
 
         <div className="flex flex-wrap items-center gap-2 lg:gap-3 text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center mb-2">
           <span className="text-[#199FEC]">Assemble your party</span>
