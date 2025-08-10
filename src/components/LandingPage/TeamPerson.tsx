@@ -33,7 +33,7 @@ const TeamPerson: React.FC = () => {
           </div>
           <div className="max-w-7xl mx-auto">
             {/* Mobile: Carrossel */}
-            <div className="md:hiddendd">
+            <div className="md:hidden">
               <Swiper
                 spaceBetween={16}
                 slidesPerView={1.2}
@@ -42,7 +42,7 @@ const TeamPerson: React.FC = () => {
               >
                 {teamMembers.map((member) => (
                   <SwiperSlide key={member.id} className="!h-auto pt-[88px]">
-                    <div className=" bg-[#0B1C2C] rounded-lg overflow-hidden shadow-lg h-[508px] flex flex-col">
+                    <div className=" bg-[#0B1C2C] rounded-2xl overflow-hidden shadow-lg h-[508px] flex flex-col">
                       <div className="relative flex items-center justify-center flex-shrink-0 h-[308px]">
                         {member.image ? (
                           <img
@@ -56,13 +56,34 @@ const TeamPerson: React.FC = () => {
                           </div>
                         )}
                       </div>
-                      <div className="h-full bg-gray-900 pt-8 p-6">
-                        <h3 className="text-white text-[20px] mb-2">
+                      <div className="h-full bg-gray-900 pt-8 px-6">
+                        <h3 className="text-white text-[20px]">
                           {member.name}
                         </h3>
                         <p className="text-[#199FEC] text-[14px]">
                           {member.role}
                         </p>
+                        <div className="mt-5  space-y-2 flex flex-col">
+                          <div className=" flex text-white text-[14px] gap-2">
+                            <p className="text-[#199FEC]">Location:</p>
+                            <span className="break-words">
+                              {member.location}
+                            </span>
+                          </div>
+                          <div className="flex text-white text-[14px] gap-2">
+                            <p className="text-[#199FEC]">Expertise:</p>
+                            <span className="break-words">
+                              {member.expertise}
+                            </span>
+                          </div>
+                          <div className="flex items-start justify-center bg-pink-950 text-white text-[14px] gap-2">
+                            <p>
+                              <p className="text-[#199FEC]">Fun Fact:</p>{" "}
+                              aosdoaskdoa dasodkaosdkasd asdoaksdoa asdkoaksdoa
+                              dasdokaksdoasd okdasos
+                            </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>
