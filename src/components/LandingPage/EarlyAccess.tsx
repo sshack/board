@@ -15,19 +15,15 @@ export default function EarlyAccess({}) {
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
       <div className="flex flex-col items-start md:items-center justify-center w-full">
-        {/* Mobile Beta (under md) */}
         <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm mb-4">
           Beta
         </p>
 
-        {/* Desktop Beta (md and up) placed above heading, not tilted */}
-        <p className="hidden md:inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-center shadow-sm mb-4">
-          Beta
-        </p>
-
-        {/* Big text as a single <p> */}
-        <p className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
+        <p className="relative text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
           Early Access Features
+          <span className="absolute top-1 -right-6 hidden md:inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold shadow-sm transform rotate-6">
+            Beta
+          </span>
         </p>
 
         <div className="flex flex-wrap items-center gap-2 lg:gap-3 text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center mb-2">
