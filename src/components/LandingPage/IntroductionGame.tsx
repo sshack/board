@@ -57,38 +57,41 @@ export default function IntroductionGame() {
 
       {/*Versão Mobile*/}
       <div className="md:hidden w-full">
-        <div className="relative mx-3 my-4 rounded-2xl overflow-hidden bg-[url('/lp/anno-amagium-mob.png')] bg-cover bg-center">
-          <div className="absolute w-full pointer-events-none" />
-          <div className="relative px-6 pt-8 pb-10">
+        <div className="flex flex-col rounded-2xl w-full h-full overflow-hidden bg-[url('/lp/anno-amagium-mob.png')] bg-cover bg-center pt-16 items-center">
+          <div className="flex items-center justify-center">
             <div className="relative w-full flex mb-6">
-              <img src="/lp/screenshotAmoo-mobile.png" alt="" className="" />
               <img
-                src="/lp/badge-amagium.png"
+                src="/lp/anno-amagium-product-mob.png"
+                className="items-center justify-center"
+              />
+              <img
+                src="/lp/anno-amagium-logo.png"
                 alt=""
-                className="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full border-4 border-white"
+                className="absolute -top-6 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full"
               />
             </div>
+          </div>
+          <div className="flex flex-col pt-12 pb-10">
+            <img
+              src="/lp/titleAmmo.png"
+              alt="ANNO AMAGIUM"
+              className="w-[260px] mb-1"
+            />
+            <img
+              src="/lp/the-roleplaying-game.png"
+              alt="ANNO AMAGIUM"
+              className="w-[260px] mb-1"
+            />
 
-            <div className="flex flex-col">
-              <img
-                src="/lp/titleAmmo.png"
-                alt="ANNO AMAGIUM"
-                className="w-[260px] mb-1"
-              />
-              <h2 className="text-white uppercase text-[18px] leading-[24px] tracking-[0.12em] font-semibold mb-4">
-                The Roleplaying Game
-              </h2>
+            <p className="pt-5 text-white/90 text-[14px] leading-[22px] max-w-[300px] mb-6">
+              A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying Game
+              is based on the Anno Amagium Universe, with over five years of
+              stories, worldbuilding, and mechanical development.
+            </p>
 
-              <p className="text-white/90 text-[14px] leading-[22px] max-w-[300px] mb-6">
-                A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying
-                Game is based on the Anno Amagium Universe, with over five years
-                of stories, worldbuilding, and mechanical development.
-              </p>
-
-              <button className="w-full max-w-[292px] h-[56px] rounded-full bg-white text-black text-[16px]">
-                Subscribe to our waiting list
-              </button>
-            </div>
+            <button className="w-full px-6 py-3 rounded-full bg-white text-black leading-6 font-normal text-[16px]">
+              Subscribe to our waiting list
+            </button>
           </div>
         </div>
       </div>
