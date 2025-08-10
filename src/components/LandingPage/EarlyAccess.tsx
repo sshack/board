@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 const Arrow: React.FC = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -186,32 +184,42 @@ export default function EarlyAccess({}) {
               }}
             >
               <div
-                className="h-[316px] flex items-center justify-center rounded-[20px] mx-auto"
+                className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[450px] md:h-[316px]"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div className="flex flex-row gap-4 items-center justify-center">
-                  <div className="flex flex-col gap-3 p-5">
-                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                      Commitment to Craftsmanship
-                    </h1>
-                    <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                      Echelon vows to champion creators with our content from
-                      art and authorship, to game design and user-experience
-                      interfaces. We welcome our players to use any tools that
-                      suit their needs, but our official content will always be
-                      100% handcrafted by real meatba—Err, humans.
-                    </p>
+                <div className="flex items-center justify-center relative w-full h-full rounded-[20px]">
+                  {/* Mobile/Small screens layout */}
+                  <div className="md:hidden flex h-full w-full flex-col">
+                    <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url(/lp/CreatorPartnershipMobile.png)]" />
+                    <div className="hidden sm:block h-[5%]" />
+                    <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                        Commitment to Craftsmanship
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                        Echelon vows to champion creators with our content from
+                        art and authorship, to game design and user-experience
+                        interfaces. We welcome our players to use any tools that
+                        suit their needs, but our official content will always
+                        be 100% handcrafted by real meatba—Err, humans.
+                      </p>
+                    </div>
                   </div>
 
-                  <div>
-                    <Image
-                      src="/lp/CreatorPartnership.png"
-                      alt="CreatorPartnership"
-                      width={1400}
-                      height={1400}
-                      quality={100}
-                      className="object-cover"
-                    />
+                  {/* Desktop and up */}
+                  <div className="hidden md:flex relative w-full md:h-auto md:bg-[url(/lp/CreatorPartnership.png)] md:bg-no-repeat md:bg-right md:bg-[length:33.333%_auto] md:pr-[33.333%]">
+                    <div className="flex flex-col gap-2 p-5 md:h-auto justify-center">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                        Commitment to Craftsmanship
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                        Echelon vows to champion creators with our content from
+                        art and authorship, to game design and user-experience
+                        interfaces. We welcome our players to use any tools that
+                        suit their needs, but our official content will always
+                        be 100% handcrafted by real meatba—Err, humans.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
