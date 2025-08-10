@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function NextLevel({}) {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] mt-[60px] px-6 md:px-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 py-40 md:mt-0">
         <div className="flex flex-col items-start gap-4 order-2 md:order-1 w-full md:w-auto">
           <p className="text-2xl font-medium leading-10 tracking-tight">
