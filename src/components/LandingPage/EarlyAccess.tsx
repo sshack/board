@@ -95,30 +95,38 @@ export default function EarlyAccess({}) {
               }}
             >
               <div
-                className="h-[262px] flex items-center justify-center rounded-[20px] mx-auto"
+                className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[350px] md:h-[262px]"
                 style={{ backgroundColor: 'rgb(4 25 36)' }}
               >
-                <div className="flex flex-row gap-1 items-center justify-center">
-                  <div className="flex flex-col gap-2 p-5">
-                    <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                      Ever-Improving Experiences
-                    </h1>
-                    <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
-                      We’ll expand our titles with free maps, campaign ideas,
-                      and in-game content—including new illustrations, spell
-                      icons, weapon art, and more.
-                    </p>
+                <div className="relative w-full h-full rounded-[20px]">
+                  {/* Mobile/Small screens layout */}
+                  <div className="md:hidden flex h-full w-full flex-col">
+                    <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url(/lp/NewPersonMobile.png)]" />
+                    <div className="hidden sm:block h-[5%]" />
+                    <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                        Ever-Improving Experiences
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                        We’ll expand our titles with free maps, campaign ideas,
+                        and in-game content—including new illustrations, spell
+                        icons, weapon art, and more.
+                      </p>
+                    </div>
                   </div>
 
-                  <div>
-                    <Image
-                      src="/lp/NewPerson.png"
-                      alt="New Person"
-                      width={1400}
-                      height={1400}
-                      quality={100}
-                      className="object-cover"
-                    />
+                  {/* Desktop and up */}
+                  <div className="hidden md:flex relative w-full md:h-auto md:bg-[url(/lp/NewPerson.png)] md:bg-no-repeat md:bg-right md:bg-[length:50%_auto] md:pr-[50%]">
+                    <div className="flex flex-col gap-2 p-5 md:h-auto justify-center">
+                      <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                        Ever-Improving Experiences
+                      </h1>
+                      <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                        We’ll expand our titles with free maps, campaign ideas,
+                        and in-game content—including new illustrations, spell
+                        icons, weapon art, and more.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
