@@ -218,10 +218,47 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full h-[468px] flex items-start justify-start rounded-[20px] mx-auto overflow-hidden"
+                  className="w-full h-[480px] md:h-[468px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
                   style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
-                  4
+                  <div className="relative w-full h-full rounded-[20px]">
+                    {/* Mobile layout: image top, text bottom */}
+                    <div className="md:hidden flex h-full w-full flex-col">
+                      <div className="flex-1 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/compaignMobile.png')]" />
+                      <div className="flex-1 flex flex-col gap-2 p-5 justify-end">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                          Play Fully Remotely or In-Person with Digital Elements
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                          Join a campaign that match your taste and schedule.
+                          GMs set content, scope, and timing when creating
+                          campaigns, and Echelon’s filters help you discover the
+                          perfect fit—whether it’s a quick one-shot or an
+                          ongoing epic.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Desktop and up: text above image (image larger portion) */}
+                    <div className="hidden md:flex w-full h-full flex-col">
+                      <div className="flex-[2] flex flex-col gap-2 p-5 justify-start">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                          Play Fully Remotely or In-Person with Digital Elements
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                          Join a campaign that match your taste and schedule.
+                          GMs set content, scope, and timing when creating
+                          campaigns, and Echelon’s filters help you discover the
+                          perfect fit—whether it’s a quick one-shot or an
+                          ongoing epic.
+                        </p>
+                      </div>
+                      <div
+                        className="h-2/3 w-full bg-no-repeat bg-bottom bg-cover"
+                        style={{ backgroundImage: "url('/lp/compaign.png')" }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
 
