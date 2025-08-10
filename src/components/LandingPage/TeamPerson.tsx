@@ -1,8 +1,8 @@
-'use client';
-import React from 'react';
-import { teamMembers } from '@/utils/mocks';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
+"use client";
+import React from "react";
+import { teamMembers } from "@/utils/mocks";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const TeamPerson: React.FC = () => {
   return (
@@ -12,14 +12,14 @@ const TeamPerson: React.FC = () => {
           className="absolute inset-0"
           style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, #3b82f6 1px, transparent 0)`,
-            backgroundSize: '20px 20px',
+            backgroundSize: "20px 20px",
           }}
         ></div>
       </div>
 
       <div className="relative z-10 container mx-auto md:px-4 py-16">
         <div className="mb-20">
-          <div className="px-6 md:text-center mb-[] md:mb-36 mt-10">
+          <div className="px-6 md:text-center md:mb-36 mt-10">
             <h1 className=" text-[40px] leading-[48px] tracking-[-1.6px] md:text-[56px] md:text-5xl font-semibold text-white mb-4">
               Meet the people <br className="md:hidden" />
               who <br className="hidden md:block" />
@@ -42,7 +42,7 @@ const TeamPerson: React.FC = () => {
               >
                 {teamMembers.map((member) => (
                   <SwiperSlide key={member.id} className="!h-auto pt-[88px]">
-                    <div className=" bg-[#0B1C2C] rounded-2xl overflow-hidden shadow-lg h-[508px] flex flex-col">
+                    <div className=" bg-[#0B1C2C] rounded-2xl overflow-hidden shadow-lg h-[520px] flex flex-col">
                       <div className="relative flex items-center justify-center flex-shrink-0 h-[308px]">
                         {member.image ? (
                           <img
@@ -56,7 +56,7 @@ const TeamPerson: React.FC = () => {
                           </div>
                         )}
                       </div>
-                      <div className="h-full bg-gray-900 pt-8 px-6">
+                      <div className="h-full w-full bg-gray-900 p-5">
                         <h3 className="text-white text-[20px]">
                           {member.name}
                         </h3>
@@ -78,7 +78,7 @@ const TeamPerson: React.FC = () => {
                           </div>
                           <div className="text-white text-[14px]">
                             <p>
-                              <span className="text-[#199FEC]">Fun Fact:</span>{' '}
+                              <span className="text-[#199FEC]">Fun Fact:</span>{" "}
                               {member.funFact}
                             </p>
                           </div>
@@ -118,47 +118,6 @@ const TeamPerson: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-        <div className="bg-black p-6 md:bg-transparent py-10 md:py-0 flex justify-center md:mb-20">
-          <div className="h-[748px] w-full md:w-[1280px] md:h-[496px] bg-[url('/lp/are-you-our-next-team-member-mob-bg.png')] md:bg-[url('/lp/fundoRecrutamento.png')] relative bg-cover bg-no-repeat rounded-2xl overflow-hidden">
-            <div className="flex px-6 py-[300px] md:py-12 md:items-center md:justify-between md:px-12">
-              <div>
-                <p className="text-[#3b82f6] text-sm font-medium md:mb-20">
-                  Are you our next team member?
-                </p>
-
-                <h2 className="pt-7 text-[28px] leading-9 md:pt-0 md:text-[44px] md:w-[700px] font-normal text-white mb-6 tracking-[-1.12px]">
-                  We're looking for creative minds to help us build the ultimate
-                  online gaming platform.
-                </h2>
-
-                <div className="space-y-3 pt-11 md:pt-0 md:pb-10">
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-[#3b82f6] mr-3 transform rotate-45"></div>
-                    <span className="text-[#199FEC] text-[14px]">
-                      Character and Creature Concept Artist
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <div className="w-2 h-2 bg-[#3b82f6] mr-3 transform rotate-45"></div>
-                    <span className="text-[#199FEC] text-[14px]">
-                      2D Level Designer - Battle Map Creator
-                    </span>
-                  </div>
-                </div>
-
-                <div className="md:hidden pt-10">
-                  <button className="md:hidden w-full bg-[#199FEC] text-white py-3 md:px-8 rounded-full text-[16px]">
-                    Apply Now
-                  </button>
-                </div>
-
-                <button className="hidden md:block bg-[#199FEC] text-white py-3 md:px-8 rounded-full text-[16px]">
-                  Apply Now
-                </button>
-              </div>
             </div>
           </div>
         </div>
