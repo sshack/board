@@ -2,10 +2,11 @@ import EarlyAccess from '@/components/LandingPage/EarlyAccess';
 import HomeSection from '@/components/LandingPage/HomeSection';
 import SignUpSection from '@/components/LandingPage/SignUpSection';
 import CardSections from '@/components/LandingPage/CardSections';
-import RolePlayGameHome from '@/components/LandingPage/RolePlayGameHome';
+
 import NextLevel from '@/components/LandingPage/NextLevel';
 import DragonCon from '../components/LandingPage/DragonCon';
 import TabletopGameplay from '../components/LandingPage/TabletopGameplay';
+import IntroductionGame from '../components/LandingPage/IntroductionGame';
 
 export default function HomePage() {
   return (
@@ -15,7 +16,7 @@ export default function HomePage() {
       <EarlyAccess />
       <NextLevel />
       <TabletopGameplay />
-      <RolePlayGameHome />
+      <IntroductionGame />
       {/* <CardSections /> */}
       {/* <SignUpSection /> */}
     </main>

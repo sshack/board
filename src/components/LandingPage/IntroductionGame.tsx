@@ -1,13 +1,20 @@
 export default function IntroductionGame() {
   return (
     <section className="w-full bg-black text-white md:py-20 relative overflow-hidden">
+      <div className="hidden md:flex w-full justify-center absolute top-16 left-0 right-0 z-20">
+        <div className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FC5212] px-3 py-1 text-white text-[16px] leading-6 font-normal">
+          <span>Introducing Our New Game</span>
+          <span>•</span>
+          <span>Beta Begins Q4 2025</span>
+        </div>
+      </div>
       {/*Versão Desktop*/}
       <div
         className="hidden md:block relative w-full h-[726px]"
         style={{
           backgroundImage: "url('/lp/foundAmmo.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
         {/* Gradiente inferior para resolver o efeito de corte */}
@@ -15,28 +22,37 @@ export default function IntroductionGame() {
           className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
           style={{
             background:
-              "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
+              'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)',
           }}
         />
 
         {/* Conteúdo do lado esquerdo */}
-        <div className="absolute top-0 left-0 p-12 z-20 max-w-2xl">
-          {/* Release Information */}
-          <p className="text-white text-[18px] mb-24">Beta Begins Q4 2025</p>
+        <div className="absolute top-0 left-0 px-20 z-20 max-w-2xl">
+          <img
+            src="/lp/trbe.png"
+            alt="ANNO AMAGIUM"
+            className="pt-20"
+            style={{ maxWidth: '400px' }}
+          />
 
           {/* Game Title */}
           <img
             src="/lp/titleAmmo.png"
             alt="ANNO AMAGIUM"
-            className=""
-            style={{ maxWidth: "400px" }}
+            className="pt-[81px]"
+            style={{ maxWidth: '400px' }}
           />
 
           {/* Game Type */}
-          <h2 className="text-[44px] text-white mb-6">The Roleplaying Game</h2>
+          <img
+            src="/lp/text2.png"
+            alt="ANNO AMAGIUM"
+            className="pt-2"
+            style={{ maxWidth: '400px', height: '45px' }}
+          />
 
           {/* Description */}
-          <p className=" text-white text-[18px] leading-relaxed mb-8">
+          <p className="pt-6 w-[552px] text-white text-[18px] leading-relaxed mb-8">
             A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying Game is
             based on the Anno Amagium Universe, with over five years of stories,
             worldbuilding, and mechanical development.
