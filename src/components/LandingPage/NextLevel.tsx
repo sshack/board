@@ -144,8 +144,8 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full h-[480px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
-                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                  className="w-full h-[480px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden bg-yellow-500"
+                  // style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
                   <div className="relative w-full h-full rounded-[20px]">
                     {/* Mobile layout: image top, text bottom */}
@@ -270,10 +270,49 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full h-[488px] flex items-start justify-start rounded-[20px] mx-auto overflow-hidden"
+                  className="w-full h-[480px] md:h-[488px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
                   style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
-                  5
+                  <div className="relative w-full h-full rounded-[20px]">
+                    {/* Mobile layout: image top, text bottom */}
+                    <div className="md:hidden flex h-full w-full flex-col">
+                      <div className="flex-1 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/marketplaceMobile.png')]" />
+                      <div className="flex-1 flex flex-col gap-2 p-5 justify-end">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                          Creator Marketplace
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                          Do you like homebrews? Us too. Ever wished there was
+                          an easy way to monetize your ferret-kin drunken fist
+                          pyromancer? Whether you are a cartographer, a portrait
+                          artist, a campaign author, mechanical theory-crafter,
+                          or an all-in-one GM, it is our goal to support you.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Desktop and up: text above image */}
+                    <div className="hidden md:flex w-full h-full flex-col">
+                      <div className="flex-1 flex flex-col gap-2 p-5 justify-start">
+                        <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
+                          Creator Marketplace
+                        </h1>
+                        <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
+                          Do you like homebrews? Us too. Ever wished there was
+                          an easy way to monetize your ferret-kin drunken fist
+                          pyromancer? Whether you are a cartographer, a portrait
+                          artist, a campaign author, mechanical theory-crafter,
+                          or an all-in-one GM, it is our goal to support you.
+                        </p>
+                      </div>
+                      <div
+                        className="h-2/3 w-full bg-no-repeat bg-bottom bg-cover"
+                        style={{
+                          backgroundImage: "url('/lp/marketplace.png')",
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
