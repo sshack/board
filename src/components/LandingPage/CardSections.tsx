@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const CardSections = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-4 py-6 items-center px-6">
       {/* Card Discord */}
-      <div className="md:pt-20 relative w-full md:w-[632px] md:pb-12 h-auto md:h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-between p-6 overflow-hidden">
+      <div className="md:pt-20 relative w-full md:w-[632px] md:pb-12 h-[550px] md:h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-end md:justify-between p-6 overflow-hidden">
         <img
           src="/lp/lines.png"
           alt=""
@@ -13,14 +13,21 @@ const CardSections = () => {
         <Image
           src="/lp/maskDiscord.png"
           alt="Discord"
-          width={450}
+          width={500}
           height={366}
-          className="relative z-10 rounded-md mb-6 w-[90%] max-w-[400px] h-auto"
+          className="hidden md:block z-10 rounded-md mb-6 w-[90%] max-w-[400px] h-auto"
+        />
+        <Image
+          src="/lp/maskDiscord.png"
+          alt="Discord"
+          width={480}
+          height={390}
+          className="absolute md:hidden top-2 -right-6 z-10 rounded-md mb-6 w-[105%] max-w-none h-auto"
         />
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Join the{" "}
+              Join the{' '}
               <span className="text-[#00B4FF]">ConQuesting community</span> on
               the Echelon Discord <br className="md:hidden" /> Server
             </h2>
@@ -32,7 +39,7 @@ const CardSections = () => {
       </div>
 
       {/* Card Instagram */}
-      <div className="relative w-full md:w-[632px] h-auto md:h-[730px] rounded-2xl bg-surface-primary flex flex-col md:pt-20 md:items-center md:justify-between p-6 md:pb-12 overflow-hidden">
+      <div className="md:pt-20 relative w-full md:w-[632px] md:pb-12 h-[550px] md:h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-end md:justify-between p-6 overflow-hidden">
         <img
           src="/lp/lines.png"
           alt=""
@@ -43,12 +50,19 @@ const CardSections = () => {
           alt="Instagram"
           width={500}
           height={500}
-          className="relative z-10 rounded-md mb-6 w-full max-w-[400px] h-auto items-center justify-center"
+          className="hidden md:block z-10 rounded-md mb-6 w-[90%] max-w-[400px] h-auto"
+        />
+        <Image
+          src="/lp/maskCell.png"
+          alt="Instagram"
+          width={480}
+          height={390}
+          className="absolute md:hidden top-2 -left-14 z-10 rounded-md mb-6 w-[105%] max-w-none h-auto"
         />
         <div className="flex flex-col items-center justify-center">
-          <div className="pr-20 md:pr-0 text-[28px] leading-[32px] md:text-[44px] md:leading-[48px] md:text-center relative z-10">
+          <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Follow us on <br /> Instagram for{" "}
+              Follow us on <br /> Instagram for{' '}
               <span className="text-[#00B4FF]">
                 more <br className="md:hidden" />
                 loot <br className="hidden md:block" />
