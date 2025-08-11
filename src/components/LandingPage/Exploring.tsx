@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function NextLevel({}) {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px] md:mb-[180px]">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 py-40 md:mt-0">
         <div className="flex flex-col items-start gap-4 md:gap-[28px] order-2 md:order-1 w-full md:w-auto">
           <div className="w-full flex items-center justify-start md:justify-center">
@@ -153,23 +153,28 @@ export default function NextLevel({}) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="flex flex-col items-start justify-between gap-12">
-          <div className="flex flex-col items-start justify-between gap-6">
-            <p>Digital TTRPG Publishing</p>
-            <p>
-              In the future, we plan to offer digital adaptation and publishing
-              services for original tabletop RPGs. Meet with us for a
-              consultation to build your game, share it with the world, and get
-              paid when people download your books.
-            </p>
-          </div>
-          <button className="btn w-fit">Follow</button>
+      <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-8 mt-12 md:mt-16">
+        <div className="w-full md:w-auto order-1 md:order-2 grid grid-cols-3 gap-4 md:gap-8 justify-items-center">
+          <div className="w-[112px] h-[136px] md:w-[224px] md:h-[272px] bg-[url(/lp/exploring1.png)] bg-cover bg-center rounded-xl" />
+          <div className="w-[112px] h-[136px] md:w-[224px] md:h-[272px] bg-[url(/lp/exploring2.png)] bg-cover bg-center rounded-xl" />
+          <div className="w-[112px] h-[136px] md:w-[224px] md:h-[272px] bg-[url(/lp/exploring1.png)] bg-cover bg-center rounded-xl" />
         </div>
-        <div className="flex flex-row items-start justify-between gap-8">
-          <div className="w-[224px] h-[272px] bg-[url(/lp/exploring1.png)]" />
-          <div className="w-[224px] h-[272px] bg-[url(/lp/exploring2.png)]" />
-          <div className="w-[224px] h-[272px] bg-[url(/lp/exploring1.png)]" />
+
+        <div className="flex flex-col items-start gap-6 md:gap-8 md:min-w-[50%] md:flex-1 order-2 md:order-1">
+          <p
+            className="font-semibold text-[28px] md:text-[44px] leading-[36px] md:leading-[48px] tracking-[-1.12px] md:tracking-[-1.76px]"
+            style={{ color: 'var(--Secondary-S500, #199FEC)' }}
+          >
+            Digital <span className="text-white">TTRPG</span> Publishing
+          </p>
+          <p className="text-white font-medium text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]">
+            In the future, we plan to offer digital adaptation and publishing
+            services for original tabletop RPGs. Meet with us for a consultation
+            to build your game, share it with the world, and get paid when
+            people download your books.
+          </p>
+          <button className="btn w-full md:hidden">Book a call with us</button>
+          <button className="btn w-fit hidden md:inline-flex">Follow</button>
         </div>
       </div>
     </section>

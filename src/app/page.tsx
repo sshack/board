@@ -19,8 +19,8 @@ export default function HomePage() {
       <TabletopGameplay />
       <IntroductionGame />
       <Exploring />
-      {/* <CardSections /> */}
-      {/* <SignUpSection /> */}
+      <CardSections />
+      <SignUpSection />
     </main>
   );
 }
