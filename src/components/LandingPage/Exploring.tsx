@@ -153,6 +153,25 @@ export default function NextLevel({}) {
           </div>
         </div>
       </div>
+      <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col items-start justify-between gap-12">
+          <div className="flex flex-col items-start justify-between gap-6">
+            <p>Digital TTRPG Publishing</p>
+            <p>
+              In the future, we plan to offer digital adaptation and publishing
+              services for original tabletop RPGs. Meet with us for a
+              consultation to build your game, share it with the world, and get
+              paid when people download your books.
+            </p>
+          </div>
+          <button className="btn w-fit">Follow</button>
+        </div>
+        <div className="flex flex-row items-start justify-between gap-8">
+          <div className="w-[224px] h-[272px] bg-[url(/lp/exploring1.png)]" />
+          <div className="w-[224px] h-[272px] bg-[url(/lp/exploring2.png)]" />
+          <div className="w-[224px] h-[272px] bg-[url(/lp/exploring1.png)]" />
+        </div>
+      </div>
     </section>
   );
 }
