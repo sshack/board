@@ -33,8 +33,9 @@ export default function Exploring({}) {
                       "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
-                  <div className="flex flex-col justify-between p-6 flex-1 gap-4">
-                    <div className="flex flex-col items-start gap-2">
+                  {/* bloco cinza: agora respeita w-2/3 */}
+                  <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
+                    <div className="z-10 flex flex-col items-start gap-2">
                       <p className="text-white text-lg font-medium leading-7">
                         Get “Anno Amagium: The RPG - Core Rules”
                       </p>
@@ -43,21 +44,14 @@ export default function Exploring({}) {
                       </p>
                     </div>
 
-                    <button className="btn w-fit">Download as PDF</button>
+                    <button className="btn w-fit">Follow</button>
                   </div>
 
-                  <div className="relative w-32 h-full rounded-r-2xl shrink-0">
-                    <Image
-                      src="/lp/poster.png"
-                      alt="ConQuest Poster"
-                      width={108}
-                      height={132}
-                      className="absolute inset-0 object-contain m-auto"
-                    />
-                  </div>
+                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-001.png')] rounded-r-2xl shrink-0"></div>
                 </div>
               </div>
             </div>
+
             <div
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
@@ -79,8 +73,9 @@ export default function Exploring({}) {
                       "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
-                  <div className="flex flex-col justify-between p-6 flex-1 gap-4">
-                    <div className="flex flex-col items-start gap-2">
+                  {/* bloco cinza: agora respeita w-2/3 */}
+                  <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
+                    <div className="z-10 flex flex-col items-start gap-2">
                       <p className="text-white text-lg font-medium leading-7">
                         Get “Anno Amagium: The RPG - Universe Guide and Lore”
                       </p>
@@ -92,15 +87,7 @@ export default function Exploring({}) {
                     <button className="btn w-fit">Follow</button>
                   </div>
 
-                  <div className="relative w-32 h-full  rounded-r-2xl shrink-0">
-                    <Image
-                      src="/lp/poster.png"
-                      alt="ConQuest Poster"
-                      width={108}
-                      height={132}
-                      className="absolute inset-0 object-contain m-auto"
-                    />
-                  </div>
+                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-002.png')] rounded-r-2xl shrink-0"></div>
                 </div>
               </div>
             </div>
@@ -113,39 +100,42 @@ export default function Exploring({}) {
               }}
             >
               <div
-                className="relative w-full h-[268px] shrink-0 rounded-xl border bg-black"
+                className="p-[1px] rounded-xl w-full md:flex-1"
                 style={{
-                  borderColor:
-                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
+                  background:
+                    "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
                 }}
               >
                 <div
-                  className="flex h-full w-full rounded-xl"
+                  className="relative w-full h-[268px] shrink-0 rounded-xl border bg-black"
                   style={{
-                    background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                    borderColor:
+                      "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
                   }}
                 >
-                  <div className="flex flex-col justify-between p-6 flex-1 gap-4">
-                    <div className="flex flex-col items-start gap-2">
-                      <p className="text-white text-lg font-medium leading-7">
-                        Get “Anno Amagium: The RPG - Core Rules”
-                      </p>
-                      <p className="text-white/50 text-[14px] font-medium leading-5">
-                        by following us on Instagram
-                      </p>
+                  <div
+                    className="flex h-full w-full rounded-xl"
+                    style={{
+                      background:
+                        "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                    }}
+                  >
+                    {/* bloco cinza: agora respeita w-2/3 */}
+                    <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
+                      <div className="z-10 flex flex-col items-start gap-2">
+                        <p className="text-white text-lg font-medium leading-7">
+                          Get “Anno Amagium: The RPG - Character Creation and
+                          Advancement”
+                        </p>
+                        <p className="text-white/50 text-[14px] font-medium leading-5">
+                          by signing up for our mailing list
+                        </p>
+                      </div>
+
+                      <button className="btn w-fit">Follow</button>
                     </div>
 
-                    <button className="btn w-fit">Follow</button>
-                  </div>
-                  <div className="relative w-32 h-full  rounded-r-2xl shrink-0">
-                    <Image
-                      src="/lp/poster.png"
-                      alt="ConQuest Poster"
-                      width={108}
-                      height={132}
-                      className="absolute inset-0 object-contain m-auto"
-                    />
+                    <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/sign-up-001.png')] rounded-r-2xl shrink-0"></div>
                   </div>
                 </div>
               </div>
