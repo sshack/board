@@ -2,18 +2,17 @@ import React from 'react';
 
 const OtherRewardsSection: React.FC = () => {
   return (
-    <section className="w-full bg-black text-white px-4 py-12">
+    <section className="w-full text-white px-4 py-12 !bg-yellow-950">
       <div className="flex flex-col md:flex-row items-start justify-center gap-8 max-w-[1200px] mx-auto">
-        {/* Texto à esquerda */}
-        <div className="flex flex-col space-y-6 max-w-[576px] flex-1">
+        <div className="flex flex-col max-w-[576px] flex-1 space-y-4 md:space-y-6">
           <div>
-            <h2 className="text-[44px] md:text-4xl font-bold">
+            <h2 className="text-white font-semibold font-['Inter'] text-[40px] leading-[44px] tracking-[-1.6px] md:text-[44px] md:leading-[48px] md:tracking-[-1.76px]">
               What are the{' '}
-              <span className="text-blue-500">other possible rewards</span>?
+              <span className="text-[#199FEC]">other possible rewards?</span>
             </h2>
           </div>
           <div>
-            <p className="text-[19px] text-white">
+            <p className="text-white font-medium font-['Inter'] text-[16px] leading-[24px] md:text-[18px] md:leading-[28px]">
               The greatest kind of rewards. Books of sorcery and adventure.
               Gaming grimoires. Digital copies of TTRPG rulebooks—yours to keep,
               free of charge. Don’t believe us? Consider the following a down
@@ -21,32 +20,47 @@ const OtherRewardsSection: React.FC = () => {
             </p>
           </div>
         </div>
-        {/* Bloco azul à direita */}
+
         <div
-          className="h-[326px] w-full md:w-[634px] flex rounded-[12px] mt-8 md:mt-0 overflow-hidden"
+          className="p-[1px] rounded-[12px] w-full md:w-[634px] mt-8 md:mt-0"
           style={{
             background:
-              'linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%)',
+              'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
           }}
         >
-          {/* Conteúdo do bloco azul, se houver */}
-          <div className="flex flex-col justify-between p-8 w-full">
-            <div>
-              <h3 className="text-white font-normal text-[32px] mb-4">
-                Anno Amagium:
-                <br />
-                The RPG - Core Rules
-              </h3>
-              <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold">
-                Download
-              </button>
+          <div
+            className="relative w-full h-[326px] rounded-[12px] border bg-black overflow-hidden"
+            style={{
+              borderColor:
+                'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
+            }}
+          >
+            <div
+              className="flex h-full w-full rounded-[12px]"
+              style={{
+                background:
+                  'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+              }}
+            >
+              <div className="flex flex-col justify-between p-8 w-full h-full">
+                <div className="flex flex-col items-start justify-between h-full">
+                  <h3 className="text-white font-normal text-[32px] mb-4">
+                    Anno Amagium:
+                    <br />
+                    The RPG - Core Rules
+                  </h3>
+                  <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold">
+                    Download
+                  </button>
+                </div>
+                <img
+                  src="/lp/poster.png"
+                  alt="Anno Amagium Book"
+                  className="absolute bottom-0 right-0 w-[140px] md:w-[191px] md:h-[233px]"
+                  style={{ transform: 'rotate(-20deg)' }}
+                />
+              </div>
             </div>
-            <img
-              src="/lp/poster.png"
-              alt="Anno Amagium Book"
-              className="w-[140px] bottom-0 right-0 md:static md:w-[191px] md:h-[233px] md:ml-auto md:mr-0 self-end"
-              style={{ transform: 'rotate(-20deg)' }}
-            />
           </div>
         </div>
       </div>
