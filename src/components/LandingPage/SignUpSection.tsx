@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 const SignUpSection: React.FC = () => {
   return (
-    <section className="w-full md:w-[1360px] flex justify-center items-center min-h-screen  text-white mx-auto px-4 md:py-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
       {/* Gradient border wrapper */}
       <div
         className="p-[1px] rounded-[20px] w-full max-w-[500px] md:max-w-full"
         style={{
           background:
-            "linear-gradient(90deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+            'linear-gradient(90deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
         }}
       >
         <div className="bg-[url('/lp/join-our-party-bg-mob.png')] h-[760px] bg-cover bg-center grid md:bg-[url('/lp/fundo2last.png')] grid-cols-1 md:grid-cols-2 p-6 md:p-20 items-center rounded-[20px] md:overflow-hidden md:w-full">
@@ -43,9 +43,9 @@ const SignUpSection: React.FC = () => {
           <div
             className="hidden md:block w-[798px] h-[532px]"
             style={{
-              backgroundImage: "url(/lp/fundo1last.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundImage: 'url(/lp/fundo1last.png)',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
             }}
           ></div>
         </div>

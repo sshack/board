@@ -25,7 +25,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         className={`${cormorant.className} ${inter.className} w-full max-w-[100vw] overflow-x-hidden`}
       >
         <Header />
-        <main className="w-full overflow-x-hidden">{children}</main>
+        <main className="w-full overflow-x-hidden px-0 md:px-4">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
