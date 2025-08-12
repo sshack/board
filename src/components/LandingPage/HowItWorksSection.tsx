@@ -2,7 +2,7 @@ import React from 'react';
 
 const HowItWorksSection: React.FC = () => {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 pt-[124px] md:pt-[200px] pb-16 md:pb-[212px]">
       <div className="flex flex-col space-y-2 items-center">
         <h2 className="text-[56px] md:text-4xl font-bold text-center leading-[64px]">
           How Does This Work?
@@ -17,7 +17,7 @@ const HowItWorksSection: React.FC = () => {
           <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/mapMobile.png')] md:bg-[url('/lp/map.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
 
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-end md:justify-center items-start p-8">
-            <h3 className="text-white text-[44px] font-bold mb-2 leading-tight">
+            <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
               Receive a Mystery <br /> Quest Scroll
             </h3>
             <p className="text-[rgba(255,255,255,0.5)] mb-6">
@@ -34,9 +34,9 @@ const HowItWorksSection: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 items-center w-full">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
-          {/* Bloco da direita */}
+          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-end md:justify-center items-start p-8">
-            <h3 className="text-white text-[44px] font-bold mb-2 leading-tight">
+            <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
               Complete your quest
             </h3>
             <p className="text-[rgba(255,255,255,0.5)] text-base mb-6 leading-[28px]">
@@ -44,8 +44,6 @@ const HowItWorksSection: React.FC = () => {
               consent, of course
             </p>
           </div>
-          {/* Bloco da esquerda */}
-          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
         </div>
       </div>
       <div className="flex md:hidden items-center justify-center h-20 w-full py-5">
@@ -53,11 +51,9 @@ const HowItWorksSection: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 items-center w-full">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
-          {/* Bloco da esquerda */}
           <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map3.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
-          {/* Bloco da direita */}
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-center items-start p-8">
-            <h3 className="text-white text-[40px] font-bold mb-2 leading-tight">
+            <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
               Return to the Quest Giver to claim your badge ribbons...{' '}
               <span className="text-[#199FEC]">and other possible rewards</span>
             </h3>
