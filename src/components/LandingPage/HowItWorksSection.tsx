@@ -29,7 +29,6 @@ const HowItWorksSection: React.FC = () => {
           </div>
         </div>
       </div>
-
       <div className="flex flex-col space-y-4 items-center">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
           {/* Bloco da direita */}
@@ -46,7 +45,6 @@ const HowItWorksSection: React.FC = () => {
           <div className="h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2.png')] bg-cover bg-center"></div>
         </div>
       </div>
-
       <div className="flex flex-col space-y-4 items-center">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
           {/* Bloco da esquerda */}

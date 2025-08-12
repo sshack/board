@@ -1,8 +1,12 @@
 import React from "react";
+import CharactersSection from "./CharactersSection";
+import LoreSection from "./LoreSection";
+import CombatSection from "./CombatSection";
+import SkillsSection from "./SkillsSection";
 export default function RoleGames() {
   return (
-    <div className="!bg-red-500 w-full md:h-[3120px] bg-black md:bg-[url('/lp/fundoSectionGamesRole.png')] bg-center bg-cover bg-no-repeat relative overflow-hidden">
-      <div className="!bg-pink-100 px-6 md:px-[80px] container mx-auto pr-10 py-20 relative">
+    <div className="w-full md:px-20 md:h-[3120px] bg-black md:bg-[url('/lp/fundoSectionGamesRole.png')] bg-center bg-cover bg-no-repeat relative overflow-hidden">
+      <div className=" px-6 md:px-[80px] container mx-auto pr-10 py-20 relative">
         {/* Gradiente de transição na parte superior */}
         <div
           className="absolute top-0 left-0 right-0 h-32 w-full"
@@ -16,7 +20,7 @@ export default function RoleGames() {
         />
 
         {/* Header Section */}
-        <div className="bg-green-600 ">
+        <div className="">
           <h1 className="text-[40px] leading-[48px] tracking-[-1.6px] md:text-[56px] font-semibold text-white">
             Anno Amagium the Roleplaying Game
           </h1>
@@ -31,8 +35,12 @@ export default function RoleGames() {
           </p>
         </div>
       </div>
+      <CharactersSection />
+      <LoreSection />
+      <CombatSection />
+      <SkillsSection />
 
-      {/* Gradiente de transição para o fundo preto
+      {/* Gradiente de transição para o fundo preto */}
       <div
         className="absolute bottom-0 left-0 right-0 h-32 w-full"
         style={{
@@ -42,7 +50,7 @@ export default function RoleGames() {
           marginLeft: "calc(-50vw + 50%)",
           marginRight: "calc(-50vw + 50%)",
         }}
-      /> */}
+      />
     </div>
   );
 }
