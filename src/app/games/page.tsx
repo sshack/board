@@ -4,7 +4,7 @@ import RoleGames from "@/components/LandingPage/RoleGames";
 import IntroductionGame from "@/components/LandingPage/IntroductionGame";
 import CreateExp from "@/components/LandingPage/CreateExp";
 import ConQuestingCard from "@/components/LandingPage/ConQuestingCard";
-import AnnoCards from "@/components/LandingPage/AnnoCards";
+import Exploring from "@/components/LandingPage/Exploring";
 import CharactersSection from "@/components/LandingPage/CharactersSection";
 import LoreSection from "@/components/LandingPage/LoreSection";
 import CombatSection from "@/components/LandingPage/CombatSection";
@@ -16,7 +16,7 @@ export default function UpdatesPage() {
       <CreateExp />
       <ConQuestingCard />
       <IntroductionGame />
-      <AnnoCards />
+      <Exploring />
       <RoleGames />
       <CharactersSection />
       <LoreSection />

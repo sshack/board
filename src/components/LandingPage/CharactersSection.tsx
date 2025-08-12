@@ -147,12 +147,12 @@ export default function CharactersSection({
         {/* Card 2 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-2-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
                   <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                    Heroics from the Get-Go
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -168,10 +168,11 @@ export default function CharactersSection({
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Forget killing rats in a basement. A Level
+                    1 Anno Amagium character is comparable to a Level 5
+                    character in most other TTRPGs, ensuring you can reach
+                    meaningful stakes and take on serious challenges right out
+                    of the gate.
                   </p>
                 </div>
               </details>
@@ -182,12 +183,12 @@ export default function CharactersSection({
         {/* Card 3 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-3-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
-                  <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                  <h3 className="max-w-[303px] text-[16px] font-normal text-white">
+                    Modular Character Growth with Meaningful Milestones
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -203,10 +204,10 @@ export default function CharactersSection({
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Most “classless” game systems sacrifice satisfying power
+                    surges in favor of incremental improvement. Anno Amagium is
+                    built with both incremental growth and major level-ups in
+                    mind. 
                   </p>
                 </div>
               </details>

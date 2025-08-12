@@ -99,20 +99,20 @@ export default function LoreSection() {
       </div>
 
       {/* Characters Section // Versão Mobile */}
-      <div className="px-6 flex flex-col w-full">
+      <div className="px-6 pt-20 flex flex-col w-full">
         <h2 className="pb-4 text-[18px] leading-6 font-normal text-white">
-          Characters
+          Skills
         </h2>
 
         {/* Card 1 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-1-sk-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
                   <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                    Specialize in Anything
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -128,10 +128,9 @@ export default function LoreSection() {
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Earn skill ranks in everything from stealth and negotiations
+                    to alchemy and basketweaving. Simply invest points into an
+                    area of interest to raise your proficiency in it.
                   </p>
                 </div>
               </details>
@@ -142,12 +141,12 @@ export default function LoreSection() {
         {/* Card 2 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-2-sk-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
                   <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                    Negotiation-Based Challenges
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -163,10 +162,11 @@ export default function LoreSection() {
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Players are encouraged to lobby for bonuses based on
+                    pertinent, synergistic skills. Have ranks in talking,
+                    storytelling, and intimidation? Choose one skill to define
+                    your overall approach to a challenge, and then explain how
+                    your supplementary skills can help.
                   </p>
                 </div>
               </details>
@@ -177,12 +177,12 @@ export default function LoreSection() {
         {/* Card 3 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-3-sk-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
-                  <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                  <h3 className="max-w-[303px] text-[16px] font-normal text-white">
+                    Robust Crafting and Performance Framework
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -198,10 +198,11 @@ export default function LoreSection() {
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Whether forging a sword to slay devils or performing for a
+                    Fae Monarch, some moments deserve more than a basic skill
+                    check. Anno Amagium’s Endeavor System brings high-stakes
+                    crafting and performance to life with a risk-reward mechanic
+                    that makes major efforts feel truly epic.
                   </p>
                 </div>
               </details>

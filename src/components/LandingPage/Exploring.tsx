@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-export default function NextLevel({}) {
+export default function Exploring({}) {
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px] md:mb-[180px]">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 py-40 md:mt-0">
@@ -16,21 +16,21 @@ export default function NextLevel({}) {
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
                 background:
-                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="relative w-full h-[268px] shrink-0 rounded-xl border bg-black"
                 style={{
                   borderColor:
-                    'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
+                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
                 }}
               >
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -62,21 +62,21 @@ export default function NextLevel({}) {
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
                 background:
-                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="relative w-full h-[268px] shrink-0 rounded-xl border bg-black"
                 style={{
                   borderColor:
-                    'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
+                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
                 }}
               >
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -109,21 +109,21 @@ export default function NextLevel({}) {
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
                 background:
-                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="relative w-full h-[268px] shrink-0 rounded-xl border bg-black"
                 style={{
                   borderColor:
-                    'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
+                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
                 }}
               >
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
                   <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -163,7 +163,7 @@ export default function NextLevel({}) {
         <div className="flex flex-col items-start gap-6 md:gap-8 md:min-w-[50%] md:flex-1 order-2 md:order-1">
           <p
             className="font-semibold text-[28px] md:text-[44px] leading-[36px] md:leading-[48px] tracking-[-1.12px] md:tracking-[-1.76px]"
-            style={{ color: 'var(--Secondary-S500, #199FEC)' }}
+            style={{ color: "var(--Secondary-S500, #199FEC)" }}
           >
             Digital <span className="text-white">TTRPG</span> Publishing
           </p>

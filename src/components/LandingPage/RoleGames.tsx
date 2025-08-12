@@ -16,7 +16,7 @@ export default function RoleGames() {
         />
 
         {/* Header Section */}
-        <div className="pb-20 md:mb-32">
+        <div className="md:mb-32">
           <h1 className="text-[40px] leading-[48px] tracking-[-1.6px] md:text-[56px] font-semibold text-white">
             Anno Amagium the Roleplaying Game
           </h1>

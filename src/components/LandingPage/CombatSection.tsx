@@ -101,20 +101,20 @@ export default function LoreSection() {
       </div>
 
       {/* Characters Section // Versão Mobile */}
-      <div className="px-6 flex flex-col w-full">
+      <div className="px-6 pt-20 flex flex-col w-full">
         <h2 className="pb-4 text-[18px] leading-6 font-normal text-white">
-          Characters
+          Combat
         </h2>
 
         {/* Card 1 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-1-com-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
                   <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                    Momentum Matters
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -130,10 +130,12 @@ export default function LoreSection() {
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Combat is driven by strategic decisions and seasoned with
+                    RNG designed to champion improvisation over rote strategies
+                    or optimized ability rotations. The impact of successes and
+                    failures persist from turn to turn, buffing certain stats to
+                    the detriment of others, encouraging players to make
+                    tactical pivots mid-fight.
                   </p>
                 </div>
               </details>
@@ -144,12 +146,12 @@ export default function LoreSection() {
         {/* Card 2 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-2-com-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
                   <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                    A Multitude of Spells
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
@@ -165,10 +167,12 @@ export default function LoreSection() {
                 </summary>
                 <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
                   <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Create a character that reflects your identity and
-                    playstyle. Choose from 11 backgrounds, 200+ curricula, 100
-                    traits, 24 ability refinements, and 41 weapon types—at
-                    launch, with more added regularly.
+                    Anno Amagium maximizes its magical premise with hundreds of
+                    spells to explore. Beyond classics like telekinesis,
+                    elemental magic, and summoning, you’ll wield egregoric magic
+                    (holy and infernal), qi-based martial arts, spell-hacking,
+                    and abilities drawn from real-world traditions like
+                    totemism, animism, occultism, and chaos magic.
                   </p>
                 </div>
               </details>
@@ -179,12 +183,12 @@ export default function LoreSection() {
         {/* Card 3 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-1-cha-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
+            <div className="w-full h-[160px] bg-[url('/lp/card-3-com-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">
-              <details className="group [&_summary::-webkit-details-marker]:hidden">
+              <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
                 <summary className="flex items-center justify-between cursor-pointer">
-                  <h3 className="text-[16px] font-normal text-white">
-                    Tons of Build Options
+                  <h3 className="max-w-[303px] text-[16px] font-normal text-white">
+                    Enormous Turn-to-Turn Optionality with Ridiculous Combos
                   </h3>
                   <svg
                     className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
