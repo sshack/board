@@ -29,10 +29,13 @@ const HowItWorksSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-4 items-center">
-        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
+      <div className="flex md:hidden items-center justify-center h-20 w-full py-5">
+        <div className="h-[40px] w-[73px] bg-[url('/lp/connector.png')] bg-cover" />
+      </div>
+      <div className="flex flex-col space-y-4 items-center w-full">
+        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
           {/* Bloco da direita */}
-          <div className="h-[440px] w-full md:w-[50%] flex flex-col justify-center items-start p-8 bg-[#199fec26]">
+          <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-end md:justify-center items-start p-8">
             <h3 className="text-white text-[44px] font-bold mb-2 leading-tight">
               Complete your quest
             </h3>
@@ -42,18 +45,18 @@ const HowItWorksSection: React.FC = () => {
             </p>
           </div>
           {/* Bloco da esquerda */}
-          <div className="h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2.png')] bg-cover bg-center"></div>
+          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
         </div>
       </div>
-      <div className="flex flex-col space-y-4 items-center">
-        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
+      <div className="flex md:hidden items-center justify-center h-20 w-full py-5">
+        <div className="h-[40px] w-[73px] bg-[url('/lp/connector.png')] bg-cover" />
+      </div>
+      <div className="flex flex-col space-y-4 items-center w-full">
+        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
           {/* Bloco da esquerda */}
-          <div className="h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map3.png')] bg-cover bg-center"></div>
+          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map3.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
           {/* Bloco da direita */}
-          <div
-            className="h-[440px] w-full md:w-[50%] flex flex-col justify-center items-start bg-transparent p-8"
-            style={{ background: 'rgba(25, 159, 236, 0.15)' }}
-          >
+          <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-center items-start p-8">
             <h3 className="text-white text-[40px] font-bold mb-2 leading-tight">
               Return to the Quest Giver to claim your badge ribbons...{' '}
               <span className="text-[#199FEC]">and other possible rewards</span>
