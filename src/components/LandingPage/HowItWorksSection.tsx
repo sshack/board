@@ -11,8 +11,9 @@ const HowItWorksSection: React.FC = () => {
           ConQuesting is easy. Follow these three steps.
         </p>
       </div>
-      <div className="flex flex-col space-y-4 items-center w-full !bg-pink-800">
-        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
+
+      <div className="flex flex-col space-y-4 items-center w-full">
+        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] rounded-2xl">
           <div
             className="h-[440px] w-full md:w-[50%] flex justify-center items-center"
             style={{
@@ -38,6 +39,7 @@ const HowItWorksSection: React.FC = () => {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col space-y-4 items-center">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
           {/* Bloco da direita */}
@@ -64,6 +66,7 @@ const HowItWorksSection: React.FC = () => {
           ></div>
         </div>
       </div>
+
       <div className="flex flex-col space-y-4 items-center">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px]">
           {/* Bloco da esquerda */}
