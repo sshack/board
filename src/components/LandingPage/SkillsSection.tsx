@@ -99,13 +99,13 @@ export default function LoreSection() {
       </div>
 
       {/* Characters Section // Versão Mobile */}
-      <div className="px-6 pt-20 flex flex-col w-full">
+      <div className="px-6 pt-20 flex flex-col w-full md:hidden">
         <h2 className="pb-4 text-[18px] leading-6 font-normal text-white">
           Skills
         </h2>
 
         {/* Card 1 */}
-        <div className="flex flex-col w-full overflow-hidden">
+        <div className="flex flex-col w-full overflow-hidden md:hidden">
           <div className="flex flex-col h-full">
             <div className="w-full h-[160px] bg-[url('/lp/card-1-sk-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
             <div className="flex pt-4 flex-col">

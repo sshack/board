@@ -2,7 +2,7 @@ export default function LoreSection() {
   return (
     <>
       {/* Characters Section // Version Desktop */}
-      <div className="hidden m:flex pb-20 flex-col lg:flex-row gap-8 left-0">
+      <div className="hidden md:flex pb-20 flex-col lg:flex-row gap-8 left-0">
         {/* Left Side - Characters Heading */}
         <div className="lg:w-1/4">
           <h2 className="text-[24px] leading-[40px] font-normal text-white mb-8">
@@ -107,7 +107,7 @@ export default function LoreSection() {
       </div>
 
       {/* Characters Section // Versão Mobile */}
-      <div className="px-6 pt-20 flex flex-col w-full">
+      <div className="px-6 pt-20 flex flex-col w-full md:hidden">
         <h2 className="pb-4 text-[18px] leading-6 font-normal text-white">
           Lore
         </h2>

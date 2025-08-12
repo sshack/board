@@ -101,7 +101,7 @@ export default function LoreSection() {
       </div>
 
       {/* Characters Section // Versão Mobile */}
-      <div className="px-6 pt-20 flex flex-col w-full">
+      <div className="px-6 pt-20 flex flex-col w-full md:hidden">
         <h2 className="pb-4 text-[18px] leading-6 font-normal text-white">
           Combat
         </h2>
