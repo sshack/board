@@ -3,11 +3,11 @@ import React from 'react';
 const HowItWorksSection: React.FC = () => {
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 pt-[124px] md:pt-[200px] pb-16 md:pb-[212px]">
-      <div className="flex flex-col space-y-2 items-center">
-        <h2 className="text-[56px] md:text-4xl font-bold text-center leading-[64px]">
+      <div className="flex flex-col mb-6 md:mb-[45px] space-y-2 md:items-center items-start">
+        <h2 className="text-[40px] mb-4 md:text-[56px] md:text-4xl font-bold text-start md:text-center leading-[48px] md:leading-[64px]">
           How Does This Work?
         </h2>
-        <p className="text-center text-[#199FEC] text-[18px] leading-[28px]">
+        <p className="text-start md:text-center text-[#199FEC] text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]">
           ConQuesting is easy. Follow these three steps.
         </p>
       </div>
@@ -34,7 +34,7 @@ const HowItWorksSection: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 items-center w-full">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
-          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
+          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2Mobile.png')] md:bg-[url('/lp/map2.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-end md:justify-center items-start p-8">
             <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
               Complete your quest
@@ -51,7 +51,7 @@ const HowItWorksSection: React.FC = () => {
       </div>
       <div className="flex flex-col space-y-4 items-center w-full">
         <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
-          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map3.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
+          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map3Mobile.png')] md:bg-[url('/lp/map3.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-center items-start p-8">
             <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
               Return to the Quest Giver to claim your badge ribbons...{' '}
