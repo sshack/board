@@ -1,7 +1,6 @@
 'use client';
 
 import HeroSection from '../../components/LandingPage/HeroSection';
-import ClaimSection from '../../components/LandingPage/ClaimSection';
 import HowItWorksSection from '../../components/LandingPage/HowItWorksSection';
 import OtherRewardsSection from '../../components/LandingPage/OtherRewardsSection';
 import FAQSection from '../../components/LandingPage/FAQSection';
