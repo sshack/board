@@ -147,7 +147,7 @@ export default function Reward() {
       </div>
 
       {/*VERSÃO MOBILE*/}
-      <div className="flex flex-col md:flex-row items-center justify-between w-full p-6 md:hidden bg-pink-900">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full p-6 md:hidden">
         <div className="flex w-full flex-col items-start">
           <p className="text-[28px] font-medium leading-9 tracking-[-1.12px]">
             Useful Links
@@ -245,12 +245,12 @@ export default function Reward() {
             </div>
 
             <div
-              className="p-[1px] rounded-xl w-full h-[132px]"
+              className="p-[1px] rounded-xl w-full h-[211px]"
               style={{
                 background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
               }}
             >
-              <div className="relative w-full h-[130px] shrink-0 rounded-xl bg-black overflow-hidden">
+              <div className="relative w-full h-[209px] shrink-0 rounded-xl bg-black overflow-hidden">
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
@@ -264,7 +264,7 @@ export default function Reward() {
                     </p>
                     <button className="btn w-fit">Download as PDF</button>
                   </div>
-                  <div className="absolute right-0 bg-cover bg-right w-1/2 h-full bg-[url('/lp/card-mob-poster-02.png')] shrink-0"></div>
+                  <div className="absolute right-0 bg-cover bg-right w-1/2 h-full bg-[url('/lp/card-mob-poster.png')] shrink-0"></div>
                 </div>
               </div>
             </div>
