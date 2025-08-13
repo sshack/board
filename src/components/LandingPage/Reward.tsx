@@ -152,51 +152,62 @@ export default function Reward() {
           <p className="text-[28px] font-medium leading-9 tracking-[-1.12px]">
             Useful Links
           </p>
-          <div className="p-[1px] rounded-xl">
-            <div
-              className="flex flex-col items-center justify-between w-full gap-4 pt-6 rounded-xl"
-              style={{
-                background:
-                  'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
-              }}
-            >
-              <div className="rounded-xl w-full h-full relative">
-                <div className="relative flex flex-col justify-between rounded-[12px] p-4 h-32 ">
-                  <p className="text-white text-sm font-medium leading-5 pb-4">
+          <div
+            className="p-[1px] rounded-xl w-full h-32 mt-6"
+            style={{
+              background:
+                'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+            }}
+          >
+            <div className="relative w-full h-full shrink-0 rounded-xl bg-black overflow-hidden">
+              <div
+                className="flex h-full w-full rounded-xl"
+                style={{
+                  background:
+                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                }}
+              >
+                <div className="w-full relative flex flex-col justify-between p-4 gap-4">
+                  <p className="text-white text-sm font-medium leading-5 max-w-[70%]">
                     Follow us on Instagram for more loot and quests!
                   </p>
                   <button className="btn w-fit">Follow</button>
-                  <div className="w-1/3">
-                    <img
-                      src="/lp/instagram.svg"
-                      alt="Instagram"
-                      className="absolute bottom-0 right-0 h-full w-auto"
-                    />
-                  </div>
                 </div>
+                <img
+                  src="/lp/instagram.svg"
+                  alt="Instagram"
+                  className="absolute bottom-0 right-4 h-full w-auto"
+                />
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-between w-full gap-4 pt-6">
-            <div
-              className="rounded-xl w-full h-full relative"
-              style={{
-                background:
-                  'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
-              }}
-            >
-              <div className="relative flex flex-col justify-between rounded-[12px] p-4 h-[144px] ">
-                <p className="text-white text-sm font-medium leading-5 pb-4">
-                  Join the ConQuesting community on the Echelon Discord Server
-                </p>
-                <button className="btn w-fit">Join</button>
-                <div className="w-1/3">
-                  <img
-                    src="/lp/discord.svg"
-                    alt="Discord"
-                    className="absolute bottom-0 right-0 h-full w-auto"
-                  />
+
+          <div
+            className="p-[1px] rounded-xl w-full h-[144px] mt-6"
+            style={{
+              background:
+                'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+            }}
+          >
+            <div className="relative w-full h-full shrink-0 rounded-xl bg-black overflow-hidden">
+              <div
+                className="flex h-full w-full rounded-xl"
+                style={{
+                  background:
+                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                }}
+              >
+                <div className="w-full relative flex flex-col justify-between p-4 gap-4">
+                  <p className="text-white text-sm font-medium leading-5 max-w-[70%]">
+                    Join the ConQuesting community on the Echelon Discord Server
+                  </p>
+                  <button className="btn w-fit">Join</button>
                 </div>
+                <img
+                  src="/lp/discord.svg"
+                  alt="Discord"
+                  className="absolute bottom-0 right-4 h-full w-auto"
+                />
               </div>
             </div>
           </div>
@@ -207,22 +218,54 @@ export default function Reward() {
             Claim Your First Reward Here
           </p>
           <div className="flex flex-col items-center justify-between w-full gap-4">
-            <div className="flex h-[211px] w-full bg-[url('/lp/card-mob-poster.png')] bg-left bg-no-repeat bg-cover rounded-[12px]">
-              <div className="flex flex-col p-4 w-2/3 items-start justify-between">
-                <p className="text-white text-[16px] font-medium leading-6 pb-4">
-                  Get the Epic Quest Tome — quest book packed with adventures to
-                  choose from
-                </p>
-                <button className="btn w-fit ">Download as PDF</button>
+            <div
+              className="p-[1px] rounded-xl w-full h-[211px]"
+              style={{
+                background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
+              }}
+            >
+              <div className="relative w-full h-[209px] shrink-0 rounded-xl bg-black overflow-hidden">
+                <div
+                  className="flex h-full w-full rounded-xl"
+                  style={{
+                    background:
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                  }}
+                >
+                  <div className="w-2/3 relative flex flex-col justify-between p-4 gap-4">
+                    <p className="text-white text-[16px] font-medium leading-6">
+                      Get the Epic Quest Tome — quest book packed with
+                      adventures to choose from
+                    </p>
+                    <button className="btn w-fit">Download as PDF</button>
+                  </div>
+                  <div className="absolute right-0 bg-cover bg-right w-1/2 h-full bg-[url('/lp/card-mob-poster.png')] shrink-0"></div>
+                </div>
               </div>
             </div>
 
-            <div className="flex h-[132px] w-full bg-[url('/lp/card-mob-poster-02.png')] bg-left bg-no-repeat bg-cover rounded-[12px]">
-              <div className="flex flex-col p-4 w-2/3 items-start justify-between">
-                <p className="text-white text-[16px] font-medium leading-6 pb-4">
-                  Anno Amagium: The RPG - Core Rules
-                </p>
-                <button className="btn w-fit ">Download as PDF</button>
+            <div
+              className="p-[1px] rounded-xl w-full h-[132px]"
+              style={{
+                background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
+              }}
+            >
+              <div className="relative w-full h-[130px] shrink-0 rounded-xl bg-black overflow-hidden">
+                <div
+                  className="flex h-full w-full rounded-xl"
+                  style={{
+                    background:
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                  }}
+                >
+                  <div className="w-2/3 relative flex flex-col justify-between p-4 gap-4">
+                    <p className="text-white text-[16px] font-medium leading-6">
+                      Anno Amagium: The RPG - Core Rules
+                    </p>
+                    <button className="btn w-fit">Download as PDF</button>
+                  </div>
+                  <div className="absolute right-0 bg-cover bg-right w-1/2 h-full bg-[url('/lp/card-mob-poster-02.png')] shrink-0"></div>
+                </div>
               </div>
             </div>
           </div>
