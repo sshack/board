@@ -25,19 +25,21 @@ const FAQSection: React.FC = () => {
   return (
     <>
       {/*VERSÃO DESKTOP*/}
-      <section className="hidden w-max-4xl md:block bg-black text-white px-4 md:px-0 py-16">
-        <h2 className="text-[44px] md:text-4xl font-bold text-center mb-12">
+      <section className="hidden !bg-red-500 max-w-[1440px] w-full md:block bg-black text-white px-4 md:px-0 py-16">
+        <h2 className="text-[44px] font-bold text-center mb-12">
           Frequently Asked Questions
         </h2>
-        <div className="max-w-4xl mx-auto divide-y divide-[#2A4152]">
+        <div className=" mx-auto divide-y divide-[#2A4152]">
           {faqs.map((item, idx) => (
             <div key={item.q} className="group">
               <button
                 className="w-full flex justify-between items-center py-6 px-4 md:px-8 text-left focus:outline-none"
                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
               >
-                <span className="font-normal text-[20px]">{item.q}</span>
-                <span className="ml-4 text-2xl transition-transform duration-200">
+                <span className="max-w-4xl font-normal text-[20px]">
+                  {item.q}
+                </span>
+                <span className="max-w-4xl ml-4 text-2xl transition-transform duration-200">
                   {openIndex === idx ? "↑" : "↓"}
                 </span>
               </button>
@@ -59,7 +61,7 @@ const FAQSection: React.FC = () => {
 
       {/*VERSÃO MOBILE*/}
       <section className="w-full  bg-black text-white px-4 md:hidden">
-        <div className="w-full mx-auto divide-y divide-[#2A4152]">
+        <div className="border-b border-b-[#2A4152] w-full mx-auto divide-y divide-[#2A4152]">
           <h2 className="text-[28px] font-normal leading-9 tracking-[-1.12px] pb-10">
             Frequently <br />
             Asked Questions

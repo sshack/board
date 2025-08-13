@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function Reward() {
   return (
@@ -14,14 +14,14 @@ export default function Reward() {
               className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl border"
               style={{
                 borderColor:
-                  'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
+                  "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
               }}
             >
               <div
                 className="flex h-full w-full rounded-2xl"
                 style={{
                   background:
-                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                    "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                 }}
               >
                 <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -47,14 +47,14 @@ export default function Reward() {
               className="relative w-full md:w-[416px] h-[268px] shrink-0 rounded-2xl border"
               style={{
                 borderColor:
-                  'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
+                  "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
               }}
             >
               <div
                 className="flex h-full w-full rounded-2xl"
                 style={{
                   background:
-                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                    "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                 }}
               >
                 <div className="flex flex-col justify-between p-6 flex-1 gap-4">
@@ -88,7 +88,7 @@ export default function Reward() {
                 className="relative flex flex-col justify-between h-full w-full rounded-2xl p-6"
                 style={{
                   background:
-                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                    "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                 }}
               >
                 <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
@@ -107,7 +107,7 @@ export default function Reward() {
                 className="relative flex flex-col justify-between h-full w-full rounded-2xl p-6"
                 style={{
                   background:
-                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                    "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                 }}
               >
                 <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
@@ -131,25 +131,27 @@ export default function Reward() {
           <p className="text-[28px] font-medium leading-9 tracking-[-1.12px]">
             Useful Links
           </p>
-          <div className="flex flex-col items-center justify-between w-full gap-4 pt-6">
+          <div className="bg-pink-500 p-[1px] rounded-xl">
             <div
-              className="rounded-xl w-full h-full relative"
+              className="flex flex-col items-center justify-between w-full gap-4 pt-6 rounded-xl"
               style={{
                 background:
-                  'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                  "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
               }}
             >
-              <div className="relative flex flex-col justify-between rounded-[12px] p-4 h-32 ">
-                <p className="text-white text-sm font-medium leading-5 pb-4">
-                  Follow us on Instagram for more loot and quests!
-                </p>
-                <button className="btn w-fit">Follow</button>
-                <div className="w-1/3">
-                  <img
-                    src="/lp/instagram.svg"
-                    alt="Instagram"
-                    className="absolute bottom-0 right-0 h-full w-auto"
-                  />
+              <div className="rounded-xl w-full h-full relative">
+                <div className="relative flex flex-col justify-between rounded-[12px] p-4 h-32 ">
+                  <p className="text-white text-sm font-medium leading-5 pb-4">
+                    Follow us on Instagram for more loot and quests!
+                  </p>
+                  <button className="btn w-fit">Follow</button>
+                  <div className="w-1/3">
+                    <img
+                      src="/lp/instagram.svg"
+                      alt="Instagram"
+                      className="absolute bottom-0 right-0 h-full w-auto"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,7 +161,7 @@ export default function Reward() {
               className="rounded-xl w-full h-full relative"
               style={{
                 background:
-                  'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
+                  "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
               }}
             >
               <div className="relative flex flex-col justify-between rounded-[12px] p-4 h-[144px] ">

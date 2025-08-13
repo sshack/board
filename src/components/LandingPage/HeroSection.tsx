@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React from 'react';
-import Arrow from '../icons/arrow';
-import Reward from './Reward';
+import Image from "next/image";
+import React from "react";
+import Arrow from "../icons/arrow";
+import Reward from "./Reward";
 
 const HeroSection: React.FC = () => {
   return (
@@ -106,22 +106,26 @@ const HeroSection: React.FC = () => {
               rulebooks.
             </p>
             <div className="pt-9 w-full flex flex-col items-start text-[16px] leading-6 font-normal">
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 w-full">
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Assemble your party
-                  <Arrow className="mx-2" />
-                </span>
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Select your quests
-                  <Arrow className="mx-2" />
-                </span>
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Snap your pics
-                  <Arrow className="mx-2" />
-                </span>
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Save your spots
-                </span>
+              <div className="flex flex-col items-center gap-x-4 gap-y-2 w-full">
+                <div className="flex">
+                  <span className="inline-flex items-center whitespace-nowrap">
+                    Assemble your party
+                    <Arrow className="mx-2" />
+                  </span>
+                  <span className="inline-flex items-center whitespace-nowrap">
+                    Select your quests
+                    <Arrow className="mx-2" />
+                  </span>
+                </div>
+                <div className="flex">
+                  <span className="inline-flex items-center whitespace-nowrap">
+                    Snap your pics
+                    <Arrow className="mx-2" />
+                  </span>
+                  <span className="inline-flex items-center whitespace-nowrap">
+                    Save your spots
+                  </span>
+                </div>
               </div>
             </div>
           </div>
