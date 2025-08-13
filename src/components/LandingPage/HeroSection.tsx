@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import Arrow from "../icons/arrow";
-import Reward from "./Reward";
+import Image from 'next/image';
+import React from 'react';
+import Arrow from '../icons/arrow';
+import Reward from './Reward';
 
 const HeroSection: React.FC = () => {
   return (
@@ -41,14 +41,22 @@ const HeroSection: React.FC = () => {
               cosplay-focused scavenger hunt. Instead of DragonCon normally,
               select your quests, save your places, and get your loot!
             </p>
-            <div className="flex flex-wrap items-center gap-2 lg:gap-3 text-[18px] leading-[28px] font-medium">
-              <span>Assemble your party</span>
-              <Arrow />
-              <span>Select your quests</span>
-              <Arrow />
-              <span>Save your spots</span>
-              <Arrow />
-              <span>Claim your loot</span>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[18px] leading-[28px] font-medium">
+              <span className="inline-flex items-center whitespace-nowrap">
+                Assemble your party
+                <Arrow className="mx-2" />
+              </span>
+              <span className="inline-flex items-center whitespace-nowrap">
+                Select your quests
+                <Arrow className="mx-2" />
+              </span>
+              <span className="inline-flex items-center whitespace-nowrap">
+                Save your spots
+                <Arrow className="mx-2" />
+              </span>
+              <span className="inline-flex items-center whitespace-nowrap">
+                Claim your loot
+              </span>
             </div>
           </div>
 
@@ -97,19 +105,23 @@ const HeroSection: React.FC = () => {
               fandoms. Prizes include badge ribbons, pins, and digital TTRPG
               rulebooks.
             </p>
-            <div className="pt-9 w-[327px] flex flex-col items-center text-[16px] leading-6 font-normal">
-              <div className="flex ">
-                <span>Assemble your party</span>
-                <Arrow className="" />
-                <span>Select your quests</span>
-                <div className="flex flex-col"></div>
-              </div>
-              <div className="flex">
-                <Arrow />
-                <span>Snap your pics</span>
-                <Arrow />
-                <span>Save your spots</span>
-                <Arrow />
+            <div className="pt-9 w-full flex flex-col items-start text-[16px] leading-6 font-normal">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 w-full">
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Assemble your party
+                  <Arrow className="mx-2" />
+                </span>
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Select your quests
+                  <Arrow className="mx-2" />
+                </span>
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Snap your pics
+                  <Arrow className="mx-2" />
+                </span>
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Save your spots
+                </span>
               </div>
             </div>
           </div>

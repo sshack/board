@@ -1,11 +1,12 @@
-import { IconProps } from "../../utils/types";
+import { IconProps } from '../../utils/types';
 
 export function Arrow({ className, ...props }: IconProps) {
   return (
     <svg
-      width="22"
-      height="22"
-      viewBox="0 0 20 20"
+      width="8"
+      height="8"
+      viewBox="0 0 8 8"
+      preserveAspectRatio="xMidYMid meet"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       {...props}
