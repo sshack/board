@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Arrow from "../icons/arrow";
+import Reward from "./Reward";
 
 const HeroSection: React.FC = () => {
   return (
@@ -64,7 +65,7 @@ const HeroSection: React.FC = () => {
       </section>
 
       {/*VERSÃO MOBILE*/}
-      <section className="w-full h-[880px] bg-[url('/lp/fundoHeroSection-mob.png')] bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8 pt-20 md:pt-36">
+      <section className="w-full h-[880px] bg-[url('/lp/fundoHeroSection-mob.png')] bg-cover bg-center bg-gray-900 text-white flex flex-col md:px-20 gap-8 pt-20 md:pt-36 md:hidden">
         <div className="flex items-start z-0 justify-start flex-row gap-3 px-6">
           <span className="text-[rgba(255,255,255,0.5)] text-16px font-normal">
             Home
@@ -124,6 +125,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </section>
+      <Reward />
     </>
   );
 };
