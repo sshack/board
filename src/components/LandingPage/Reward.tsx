@@ -221,7 +221,8 @@ export default function Reward() {
             <div
               className="p-[1px] rounded-xl w-full h-[211px]"
               style={{
-                background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
+                background:
+                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div className="relative w-full h-[209px] shrink-0 rounded-xl bg-black overflow-hidden">
@@ -247,7 +248,8 @@ export default function Reward() {
             <div
               className="p-[1px] rounded-xl w-full h-[211px]"
               style={{
-                background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
+                background:
+                  'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div className="relative w-full h-[209px] shrink-0 rounded-xl bg-black overflow-hidden">
