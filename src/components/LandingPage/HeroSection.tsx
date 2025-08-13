@@ -105,24 +105,22 @@ const HeroSection: React.FC = () => {
               fandoms. Prizes include badge ribbons, pins, and digital TTRPG
               rulebooks.
             </p>
-            <div className="pt-9 w-full flex flex-col items-start text-[16px] leading-6 font-normal">
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 w-full">
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Assemble your party
-                  <Arrow className="mx-2" />
-                </span>
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Select your quests
-                  <Arrow className="mx-2" />
-                </span>
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Snap your pics
-                  <Arrow className="mx-2" />
-                </span>
-                <span className="inline-flex items-center whitespace-nowrap">
-                  Save your spots
-                </span>
-              </div>
+            <div className="flex flex-wrap items-center text-[16px] leading-[28px] font-medium">
+              <span className="inline-flex items-center whitespace-nowrap">
+                Assemble your party
+                <Arrow className="mx-2" />
+              </span>
+              <span className="inline-flex items-center whitespace-nowrap">
+                Select your quests
+                <Arrow className="mx-2" />
+              </span>
+              <span className="inline-flex items-center whitespace-nowrap">
+                Save your spots
+                <Arrow className="mx-2" />
+              </span>
+              <span className="inline-flex items-center whitespace-nowrap">
+                Claim your loot
+              </span>
             </div>
           </div>
 
