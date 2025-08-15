@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
                   alt="Conquesting Logo"
                   width={180}
                   height={180}
-                  className=""
+                  className="w-[180px] min-w-[180px] h-[180px] min-h-[180px] object-contain"
                 />
               </div>
             </div>
@@ -142,7 +142,7 @@ const HeroSection: React.FC = () => {
               alt="Conquesting Logo"
               width={180}
               height={180}
-              className="shrink-0"
+              className="w-[180px] h-[180px] object-contain shrink-0"
             />
           </div>
         </div>
