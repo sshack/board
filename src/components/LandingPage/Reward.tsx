@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Reward() {
   return (
@@ -96,7 +97,14 @@ export default function Reward() {
                       </p>
                     </div>
 
-                    <button className="btn w-fit">Follow</button>
+                    <Link
+                      href="https://www.instagram.com/gameonechelon/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-fit btn"
+                    >
+                      Follow
+                    </Link>
                   </div>
 
                   <img
@@ -131,7 +139,14 @@ export default function Reward() {
                       </p>
                     </div>
 
-                    <button className="btn w-fit">Follow</button>
+                    <Link
+                      href="https://discord.gg/8vg87vZyfS"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-fit btn"
+                    >
+                      Join community
+                    </Link>
                   </div>
 
                   <img

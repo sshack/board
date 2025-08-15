@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
 
 const CardSections = () => {
   return (
@@ -27,14 +28,19 @@ const CardSections = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Join the{' '}
+              Join the{" "}
               <span className="text-[#00B4FF]">ConQuesting community</span> on
               the Echelon Discord <br className="md:hidden" /> Server
             </h2>
           </div>
-          <button className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#00B4FF] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base">
+          <Link
+            href="https://discord.gg/8vg87vZyfS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#00B4FF] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base flex items-center justify-center"
+          >
             Join community
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -62,7 +68,7 @@ const CardSections = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Follow us on <br /> Instagram for{' '}
+              Follow us on <br /> Instagram for{" "}
               <span className="text-[#00B4FF]">
                 more <br className="md:hidden" />
                 loot <br className="hidden md:block" />
@@ -70,9 +76,14 @@ const CardSections = () => {
               </span>
             </h2>
           </div>
-          <button className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#00B4FF] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base">
+          <Link
+            href="https://www.instagram.com/gameonechelon/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-nowrap mt-6 px-6 w-full md:w-[170px] py-2 h-12 rounded-full bg-[#00B4FF] text-white font-medium hover:bg-[#0094d4] transition relative z-10 text-[16px] md:text-base flex items-center justify-center"
+          >
             Follow us
-          </button>
+          </Link>
         </div>
       </div>
     </div>

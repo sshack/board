@@ -1,4 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
+import { Navigate } from "react-big-calendar";
 
 export default function ConQuestingCard({}) {
   return (
@@ -95,10 +97,15 @@ export default function ConQuestingCard({}) {
                     Claim your loot
                   </span>
                 </div>
-
-                <button className="bg-[#199FEC] text-white text-[18px] px-6 md:px-6 py-3 rounded-full font-medium w-full md:w-[200px] mt-10 md:mt-4">
-                  Go ConQuesting
-                </button>
+                <Link
+                  href="/conquesting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#199FEC] text-white text-[18px] px-6 md:px-6 py-3 rounded-full font-medium w-full md:w-[200px] mt-10 md:mt-4
+"
+                >
+                  Go Conquesting 123123
+                </Link>
               </div>
             </div>
           </div>

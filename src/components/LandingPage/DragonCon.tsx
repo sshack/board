@@ -1,4 +1,5 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function DragonCon({}) {
   return (
@@ -97,9 +98,14 @@ export default function DragonCon({}) {
                 </span>
               </div>
 
-              <button className="bg-[#199FEC] text-white text-[18px] px-6 md:px-6 py-3 rounded-full font-medium w-full md:w-[200px] mt-10 md:mt-4">
-                Go ConQuesting
-              </button>
+              <Link
+                href="/conquesting"
+                rel="noopener noreferrer"
+                className="bg-[#199FEC] text-white text-[18px] px-6 md:px-6 py-3 rounded-full font-medium w-full md:w-[200px] mt-10 md:mt-4
+"
+              >
+                Go Conquesting
+              </Link>
             </div>
           </div>
         </div>
