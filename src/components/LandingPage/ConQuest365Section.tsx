@@ -27,7 +27,7 @@ const ConQuest365Section: React.FC = () => {
   return (
     <>
       {/*Versão Desktop*/}
-      <section className="hidden w-full bg-black text-white px-4 md:px-0 py-16">
+      <section className="hidden md:block w-full bg-black text-white px-4 md:px-0 py-16">
         <h2 className="text-[56px] md:text-4xl font-bold text-center mb-12">
           ConQuesting 365
         </h2>

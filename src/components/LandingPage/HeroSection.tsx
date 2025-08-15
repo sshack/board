@@ -7,12 +7,11 @@ const HeroSection: React.FC = () => {
   return (
     <>
       {/*VERSÃO DESKTOP*/}
-      <section
-        className="hidden w-full bg-cover bg-center bg-gray-900 text-white md:flex flex-col md:px-20 gap-8 pt-20 md:pt-36"
-        style={{ backgroundImage: `url('/lp/fundoHeroSection.png')` }}
-      >
-        <div className="flex items-start z-0 justify-start flex-row gap-[12px] px-[40px]">
-          <span className="text-[rgba(255,255,255,0.5)] text-16px font-normal">
+      <section className="hidden md:flex relative max-w-[1440px] w-full h-[1323px] bg-[url('/lp/fundoConquesting.png')] bg-cover bg-no-repeat bg-gray-900 text-white flex-col">
+        <div className="absolute -right-3 top-0 bg-[url('/lp/mapHeroSection.png')] bg-cover bg-right bg-no-repeat w-full h-full"></div>
+
+        <div className="pt-[109px] pl-10 flex items-start justify-start flex-row z-10">
+          <span className="text-[rgba(255,255,255,0.5)] text-[16px] font-normal">
             Home
           </span>
           <svg
@@ -31,17 +30,32 @@ const HeroSection: React.FC = () => {
           </svg>
           <span className="text-[16px]">ConQuesting</span>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8">
-          <div className="w-full md:w-2/3 space-y-4 text-left order-2 md:order-1">
-            <h1 className="text-[48px] lg:text-[124px] leading-[56px] lg:leading-[108px] font-bold tracking-[-2px] lg:tracking-[-7.44px]">
-              Start Your <br className="hidden md:block" /> ConQuest
-            </h1>
-            <p className="text-[18px] lg:text-[20px] leading-[28px] font-medium tracking-[-0.8px] w-full md:max-w-xl">
-              ConQuesting is a free questing experience in the format of a
-              cosplay-focused scavenger hunt. Instead of DragonCon normally,
-              select your quests, save your places, and get your loot!
-            </p>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[18px] leading-[28px] font-medium">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full pt-[212px] z-10">
+          <div className=" flex  flex-col w-full space-y-4 text-left px-20">
+            <div className="flex ">
+              <div className="flex flex-col">
+                <h1 className="text-[124px] leading-[108px] font-bold tracking-[-7.44px] pb-8">
+                  Start Your <br className="hidden md:block" /> ConQuest
+                </h1>
+                <p className="text-[20px] leading-[28px] font-normal tracking-[-0.8px] pb-6 ">
+                  ConQuesting is a free live questing experience in the form of
+                  a cosplay- <br />
+                  focused photo-scavenger hunt. It is held in Atlanta at
+                  DragonCon annually. <br /> Select your quests, snap your pics,
+                  and get your loot!
+                </p>
+              </div>
+              <div className="pl-[274px] flex justify-center items-start ">
+                <Image
+                  src="/lp/conquesting-logo.png"
+                  alt="Conquesting Logo"
+                  width={180}
+                  height={180}
+                  className=""
+                />
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-[18px] leading-[28px] font-medium">
               <span className="inline-flex items-center whitespace-nowrap">
                 Assemble your party
                 <Arrow className="mx-2" />
@@ -58,16 +72,7 @@ const HeroSection: React.FC = () => {
                 Claim your loot
               </span>
             </div>
-          </div>
-
-          <div className="w-full md:w-1/3 flex justify-center items-start order-1 md:order-2">
-            <Image
-              src="/lp/conquesting-logo.png"
-              alt="Conquesting Logo"
-              width={180}
-              height={180}
-              className="shrink-0"
-            />
+            <Reward />
           </div>
         </div>
       </section>
@@ -105,22 +110,26 @@ const HeroSection: React.FC = () => {
               fandoms. Prizes include badge ribbons, pins, and digital TTRPG
               rulebooks.
             </p>
-            <div className="flex flex-wrap items-center text-[16px] leading-[28px] font-medium">
-              <span className="inline-flex items-center whitespace-nowrap">
-                Assemble your party
+            <div className="mt-9 flex flex-wrap items-center text-[16px] leading-[28px] font-medium">
+              <div className="items-center flex justify-center">
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Assemble your party
+                  <Arrow className="mx-2" />
+                </span>
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Select your quests
+                </span>
+              </div>
+              <div className="items-center flex justify-center">
                 <Arrow className="mx-2" />
-              </span>
-              <span className="inline-flex items-center whitespace-nowrap">
-                Select your quests
-                <Arrow className="mx-2" />
-              </span>
-              <span className="inline-flex items-center whitespace-nowrap">
-                Save your spots
-                <Arrow className="mx-2" />
-              </span>
-              <span className="inline-flex items-center whitespace-nowrap">
-                Claim your loot
-              </span>
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Save your spots
+                  <Arrow className="mx-2" />
+                </span>
+                <span className="inline-flex items-center whitespace-nowrap">
+                  Claim your loot
+                </span>
+              </div>
             </div>
           </div>
 
@@ -135,7 +144,9 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </section>
-      <Reward />
+      <div className="md:hidden">
+        <Reward />
+      </div>
     </>
   );
 };
