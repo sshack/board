@@ -1,16 +1,19 @@
-import Image from "next/image";
-import React from "react";
-import Arrow from "../icons/arrow";
-import Reward from "./Reward";
+import Image from 'next/image';
+import React from 'react';
+import Arrow from '../icons/arrow';
+import Reward from './Reward';
 
 const HeroSection: React.FC = () => {
   return (
     <>
       {/*VERSÃO DESKTOP*/}
-      <section className="hidden md:flex relative max-w-[1440px] w-full h-[1323px] bg-[url('/lp/fundoConquesting.png')] bg-cover bg-no-repeat bg-gray-900 text-white flex-col">
-        <div className="absolute -right-3 top-0 bg-[url('/lp/mapHeroSection.png')] bg-cover bg-right bg-no-repeat w-full h-full"></div>
+      <section className="hidden md:flex relative max-w-[1440px] w-full h-[1323px] bg-cover bg-no-repeat bg-gray-900 text-white flex-col overflow-hidden">
+        <div className="absolute flex justify-center items-end inset-0 bg-[url('/lp/testBackground.png')] bg-cover bg-pink-950 bg-no-repeat">
+          <div className="w-full h-1 bg-black" />
+        </div>
+        {/* <div className="absolute -right-3 top-0 bg-[url('/lp/mapHeroSection.png')] bg-cover bg-right bg-no-repeat w-full h-full z-10"></div> */}
 
-        <div className="pt-[109px] pl-10 flex items-start justify-start flex-row z-10">
+        <div className="pt-[109px] pl-10 flex items-start justify-start flex-row z-50">
           <span className="text-[rgba(255,255,255,0.5)] text-[16px] font-normal">
             Home
           </span>
@@ -30,7 +33,7 @@ const HeroSection: React.FC = () => {
           </svg>
           <span className="text-[16px]">ConQuesting</span>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full pt-[212px] z-10">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full pt-[212px] z-50">
           <div className=" flex  flex-col w-full space-y-4 text-left px-20">
             <div className="flex ">
               <div className="flex flex-col">
