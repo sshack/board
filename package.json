@@ -21,6 +21,7 @@
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.3.0",
     "framer-motion": "^11.11.10",
+    "googleapis": "^156.0.0",
     "input-otp": "^1.2.4",
     "install": "^0.13.0",
     "jotai": "^2.12.3",

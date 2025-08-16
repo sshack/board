@@ -1,6 +1,48 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 
 const SignUpSection: React.FC = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!name.trim() || !email.trim()) {
+      setError('Please provide both name and email.');
+      return;
+    }
+    setLoading(true);
+    setError(null);
+    setMessage(null);
+
+    try {
+      const res = await fetch('/api/submit-signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setMessage('Thanks for joining!');
+        setName('');
+        setEmail('');
+      } else {
+        setError(data.message || 'Something went wrong, please try again.');
+      }
+    } catch {
+      setError('Something went wrong, please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] my-[60px] px-6 md:px-0">
       {/* Gradient border wrapper */}
@@ -19,23 +61,37 @@ const SignUpSection: React.FC = () => {
               <br />
               Sign Up For Updates
             </h2>
-            <form className="space-y-4">
+            <form
+              className="space-y-4 w-full flex flex-col items-center"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="text"
                 placeholder="Full Name*"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full max-w-[448px] px-4 py-3 rounded-[8px] bg-[rgba(255,255,255,0.15)] text-white placeholder-gray-500 focus:outline-none"
+                required
               />
               <input
                 type="email"
                 placeholder="Email*"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full max-w-[448px] rounded-[8px] px-4 py-3 bg-[rgba(255,255,255,0.15)] text-white placeholder-gray-500 focus:outline-none"
+                required
               />
               <button
                 type="submit"
-                className="w-full max-w-[448px] bg-white text-black text-[16px] px-4 py-3 rounded-full"
+                disabled={loading}
+                className="w-full max-w-[448px] bg-white text-black text-[16px] px-4 py-3 rounded-full disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Subscribe
+                {loading ? 'Submitting...' : 'Subscribe'}
               </button>
+              {message && (
+                <p className="text-green-500 text-center">{message}</p>
+              )}
+              {error && <p className="text-red-500 text-center">{error}</p>}
             </form>
           </div>
 
