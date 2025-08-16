@@ -54,10 +54,6 @@ function getSheets() {
   return google.sheets({ version: 'v4', auth: getAuth() });
 }
 
-/**
- * Computes the next auto-incrementing id based on the current number of rows.
- * Assumes the first row is a header row.
- */
 export async function getNextId(
   spreadsheetId = process.env.GOOGLE_SHEET_ID
 ): Promise<number> {
@@ -72,7 +68,7 @@ export async function getNextId(
   });
 
   const rows = data.values ?? [];
-  // Header present ⇒ next id = rows.length (because header counts as row 1)
+
   return rows.length === 0 ? 1 : rows.length;
 }
 
