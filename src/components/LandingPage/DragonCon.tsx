@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Arrow from '../icons/arrow';
+import Image from "next/image";
+import Link from "next/link";
+import Arrow from "../icons/arrow";
 
 export default function DragonCon({}) {
   return (
@@ -14,9 +14,9 @@ export default function DragonCon({}) {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between w-full">
-            <div className="w-full md:w-auto md:max-w-[580px] space-y-4 text-left order-2 md:order-1 md:flex md:flex-col md:h-full md:justify-between">
-              <div className="md:hidden mb-4">
-                <p className="text-[#199FEC] text-16px font-normal">
+            <div className="w-full md:w-auto md:max-w-[580px] space-y-3 text-left order-2 md:order-1 md:flex md:flex-col md:h-full md:justify-between">
+              <div className="md:hidden mb-5">
+                <p className="text-[#199FEC] text-[14px] md:text-[16px] font-normal">
                   Begin your adventure here!
                 </p>
               </div>
@@ -26,7 +26,7 @@ export default function DragonCon({}) {
                 <span className="md:hidden"> </span>DragonCon 2025
               </h1>
               {/* Mobile copy */}
-              <p className="text-[18px] lg:text-[20px] leading-[28px] font-medium tracking-[-0.8px] w-full pb-6 md:hidden">
+              <p className="text-[14px] leading-5 font-normal w-full pb-5 md:hidden">
                 ConQuesting is a cosplay-focused photo-scavenger hunt where you
                 earn free rewards by tracking down cosplays from your favorite
                 fandoms. Prizes include badge ribbons, pins, and digital TTRPG
@@ -40,7 +40,7 @@ export default function DragonCon({}) {
                 your loot!
               </p>
 
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-[18px] leading-[28px] font-medium w-full">
+              <div className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 text-[18px] leading-[28px] font-medium w-full">
                 <span className="inline-flex items-center whitespace-nowrap">
                   Assemble your party
                   <Arrow className="mx-2" />
@@ -57,13 +57,24 @@ export default function DragonCon({}) {
                   Claim your loot
                 </span>
               </div>
+              {/*Button Mobile*/}
+              <div className="flex w-full md:hidden">
+                <Link
+                  href="/conquesting"
+                  rel="noopener noreferrer"
+                  className="bg-[#199FEC] rounded-full w-full text-center px-6 py-3 text-[16px] leading-6"
+                >
+                  Go ConQuesting
+                </Link>
+              </div>
 
+              {/*Button Desktop*/}
               <Link
                 href="/conquesting"
                 rel="noopener noreferrer"
-                className="bg-[#199FEC] text-white text-[18px] px-6 md:px-6 py-3 rounded-full font-medium w-full md:w-[200px] mt-10 md:mt-4"
+                className="hidden bg-[#199FEC] w-full md:block text-white text-[18px] px-6 md:px-6 py-3 rounded-full md:font-medium md:w-[200px] md:mt-4"
               >
-                Go Conquesting
+                Go ConQuesting
               </Link>
             </div>
           </div>

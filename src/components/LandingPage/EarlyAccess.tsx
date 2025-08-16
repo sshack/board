@@ -20,7 +20,7 @@ export default function EarlyAccess({}) {
         </p>
 
         <div className="relative flex">
-          <p className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
+          <p className="text-white text-[40px] leading-[48px] tracking-[-1.6px] md:text-[56px]  md:leading-[64px] font-semibold md:tracking-[-2.4px] text-left md:text-center mb-[28px]">
             Early Access Features
           </p>
           <span className="absolute top-1 -right-6 hidden md:inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold shadow-sm transform rotate-6">
@@ -28,22 +28,30 @@ export default function EarlyAccess({}) {
           </span>
         </div>
 
-        <div className="flex flex-wrap items-center gap-2 lg:gap-3 text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center mb-2">
-          <span className="text-[#199FEC]">Assemble your party</span>
+        {/*Versão Desktop*/}
+        <div className="hidden md:flex flex-wrap items-center gap-2 lg:gap-3 text-[14px] leading-[20px] font-normal self-start md:self-center text-left md:text-center mb-2">
+          <span className="text-[#199FEC]">Free Seems Fair</span>
           <Arrow />
           <span>
             Betas are for figuring things out, and not everything will work
-            correctly.{' '}
+            correctly.{" "}
           </span>
         </div>
-        <p className="text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center">
+        <p className="hidden md:flex text-[16px] leading-[24px] font-normal self-start md:self-center text-left md:text-center">
           You are doing us a favor by playing. We want to make our trial run as
-          accessible as possible,{' '}
+          accessible as possible,{" "}
           <a className="cursor-auto text-[#199FEC]">
-            {' '}
+            {" "}
             so the first beta test will be 100% on us.
           </a>
         </p>
+
+        {/*Versão Mobile*/}
+        <div className="flex md:hidden">
+          <p>
+            <span className="text-[#199FEC]">Free Seems Fair</span>
+          </p>
+        </div>
       </div>
 
       <div className="w-full flex flex-col items-center justify-center mt-20 md:w-[1062px]">
@@ -53,12 +61,12 @@ export default function EarlyAccess({}) {
               className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
-                  'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="h-[420px] md:h-[370px] flex items-center justify-center rounded-[20px] md:mt-0 mt-0 mx-auto overflow-hidden"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                style={{ backgroundColor: "rgb(4 25 36)" }}
               >
                 <div className="relative w-full h-full rounded-[20px]">
                   {/* Mobile/Small screens layout - image above text */}
@@ -83,9 +91,9 @@ export default function EarlyAccess({}) {
                       className="flex flex-col bg-cover bg-center w-full h-full rounded-[20px] p-5 gap-2"
                       style={{
                         backgroundImage: "url('/lp/MapGame.png')",
-                        backgroundSize: 'contain',
-                        backgroundPosition: 'bottom',
-                        backgroundRepeat: 'no-repeat',
+                        backgroundSize: "contain",
+                        backgroundPosition: "bottom",
+                        backgroundRepeat: "no-repeat",
                       }}
                     >
                       <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
@@ -108,12 +116,12 @@ export default function EarlyAccess({}) {
               className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
-                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[350px] md:h-[262px]"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                style={{ backgroundColor: "rgb(4 25 36)" }}
               >
                 <div className="flex items-center justify-center relative w-full h-full rounded-[20px]">
                   <div className="md:hidden flex h-full w-full flex-col">
@@ -154,12 +162,12 @@ export default function EarlyAccess({}) {
               className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
-                  'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[350px] md:h-[316px]"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                style={{ backgroundColor: "rgb(4 25 36)" }}
               >
                 <div className="flex items-center justify-center relative w-full h-full rounded-[20px]">
                   {/* Mobile/Small screens layout */}
@@ -199,12 +207,12 @@ export default function EarlyAccess({}) {
               className="p-[1px] rounded-[20px] w-full"
               style={{
                 background:
-                  'linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                  "linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
               <div
                 className="flex items-center justify-center rounded-[20px] mx-auto overflow-hidden h-[450px] md:h-[316px]"
-                style={{ backgroundColor: 'rgb(4 25 36)' }}
+                style={{ backgroundColor: "rgb(4 25 36)" }}
               >
                 <div className="flex items-center justify-center relative w-full h-full rounded-[20px]">
                   {/* Mobile/Small screens layout */}
