@@ -7,19 +7,19 @@ const CardSections = () => {
       {/* Card Discord */}
       <div className="md:pt-20 relative w-full md:w-[632px] md:pb-12 h-[550px] md:h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-end md:justify-between p-6 overflow-hidden">
         <img
-          src="/lp/lines.png"
+          src="/lp/CardSection/lines.png"
           alt=""
           className="absolute top-0 left-0 w-full h-auto z-0 pointer-events-none"
         />
         <Image
-          src="/lp/maskDiscord.png"
+          src="/lp/CardSection/maskDiscord.png"
           alt="Discord"
           width={500}
           height={366}
           className="hidden md:block z-10 rounded-md mb-6 w-[90%] max-w-[400px] h-auto"
         />
         <Image
-          src="/lp/maskDiscord.png"
+          src="/lp/CardSection/maskDiscord.png"
           alt="Discord"
           width={480}
           height={390}
@@ -47,19 +47,19 @@ const CardSections = () => {
       {/* Card Instagram */}
       <div className="md:pt-20 relative w-full md:w-[632px] md:pb-12 h-[550px] md:h-[730px] rounded-2xl bg-surface-primary flex flex-col items-center justify-end md:justify-between p-6 overflow-hidden">
         <img
-          src="/lp/lines.png"
+          src="/lp/CardSection/lines.png"
           alt=""
           className="absolute top-0 left-0 w-full h-auto z-0 pointer-events-none"
         />
         <Image
-          src="/lp/maskCell.png"
+          src="/lp/CardSection/maskCell.png"
           alt="Instagram"
           width={500}
           height={500}
           className="hidden md:block z-10 rounded-md mb-6 w-[90%] max-w-[400px] h-auto"
         />
         <Image
-          src="/lp/maskCell.png"
+          src="/lp/CardSection/maskCell.png"
           alt="Instagram"
           width={480}
           height={390}

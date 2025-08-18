@@ -4,7 +4,7 @@ import Header from "./Header";
 
 const UpdateGame = () => {
   return (
-    <section className="bg-black w-full bg-[url('/lp/bgroleplay.png')] bg-cover bg-center text-white mb-40 pt-20 md:pt-36 relative">
+    <section className="bg-black w-full bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center text-white mb-40 pt-20 md:pt-36 relative">
       <div className="pointer-events-none flex !w-full h-[2500px] absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent md:h-40" />
       <div className="max-w-[1280px] mx-auto pt-20 md:pt-40 sm:px-6 md:px-0 z-10 relative">
         {/* Título */}
@@ -20,11 +20,11 @@ const UpdateGame = () => {
           <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
             <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
               <Image
-                src="/lp/cardUpdate001.png"
+                src="/lp/Update/cardUpdate001.png"
                 alt="Anno Amagium"
                 width={400}
                 height={248}
-                className="w-full h-full object-cover object-[center_top]"
+                className="w-full h-full"
               />
             </div>
             <div className="p-4 md:w-[400px] md:h-[224px] md:p-6">
@@ -45,7 +45,7 @@ const UpdateGame = () => {
           <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
             <div className="w-full h-[200px] md:h-[248px] relative overflow-hidden">
               <Image
-                src="/lp/cardUpdate002.png"
+                src="/lp/Update/cardUpdate002.png"
                 alt="Echelon"
                 width={450}
                 height={300}
@@ -71,13 +71,13 @@ const UpdateGame = () => {
             <div
               className="w-full h-[200px] md:h-[248px] flex items-center justify-center relative overflow-hidden"
               style={{
-                backgroundImage: "url('/lp/fundo2last.png')",
+                backgroundImage: "url('/lp/Update/fundo2last.png')",
                 backgroundSize: "200% 100%",
                 backgroundPosition: "left center",
               }}
             >
               <Image
-                src="/lp/conquesting-logo.png"
+                src="/lp/Update/conquesting-logo.png"
                 alt="DragonCon"
                 width={100}
                 height={100}

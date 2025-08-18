@@ -1,7 +1,7 @@
 export default function NextMember() {
   return (
     <div className="bg-black p-6 w-full md:bg-transparent py-10 md:py-0 flex justify-center md:mb-20">
-      <div className="h-[748px] w-full md:w-[1280px] md:h-[496px] bg-[url('/lp/are-you-our-next-team-member-mob-bg.png')] md:bg-[url('/lp/fundoRecrutamento.png')] relative bg-cover bg-no-repeat rounded-2xl overflow-hidden">
+      <div className="h-[748px] w-full md:w-[1280px] md:h-[496px] bg-[url('/lp/NextMember/are-you-our-next-team-member-mob-bg.png')] md:bg-[url('/lp/NextMember/fundoRecrutamento.png')] relative bg-cover bg-no-repeat rounded-2xl overflow-hidden">
         <div className="flex px-6 py-[300px] md:py-12 md:items-center md:justify-between md:px-12">
           <div>
             <p className="text-[#3b82f6] text-sm font-medium md:mb-20">

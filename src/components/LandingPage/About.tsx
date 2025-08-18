@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="bg-black md:bg-[url(/lp/fundoSectionTeam.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen relative overflow-hidden">
+    <div className="bg-black md:bg-[url(/lp/About/fundoSectionTeam.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen relative overflow-hidden">
       <div className="container mx-auto px-6 py-16 mt-20 relative z-10">
         {/* Top Section - Echelon */}
         <div className="md:text-center mb-24 md:mb-64">
@@ -20,7 +20,7 @@ export default function About() {
 
         {/* Bottom Section - ToWhitVentures */}
         <div className="w-full h-[627px] md:w-[1280px] md:h-[448px] mx-auto flex">
-          <div className="relative bg-[url(/lp/aboutMob002.png)] md:bg-[url(/lp/want-to-work-with-echelon-bg.png)] bg-right flex rounded-2xl p-8 md:p-12 shadow-2xl w-full h-full overflow-hidden">
+          <div className="relative bg-[url(/lp/About/aboutMob002.png)] md:bg-[url(/lp/About/want-to-work-with-echelon-bg.png)] bg-right flex rounded-2xl p-8 md:p-12 shadow-2xl w-full h-full overflow-hidden">
             <div className="grid md:grid-cols-2 gap-8 md:items-center md:justify-center w-full h-full">
               {/* Left Side - Text Content */}
               <div className="md:space-y-12">
@@ -45,9 +45,9 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="w-full h-[211px] absolute bottom-6 bg-right bg-[url('/lp/aboutMob001.png')] bg-no-repeat right-0 md:hidden"></div>
+              <div className="w-full h-[211px] absolute bottom-6 bg-right bg-[url('/lp/About/aboutMob001.png')] bg-no-repeat right-0 md:hidden"></div>
 
-              <div className="hidden md:block md:bg-[url(/lp/towhitventures-website-img.png)] bg-cover bg-center bg-no-repeat relative w-[536px] h-[322px]"></div>
+              <div className="hidden md:block md:bg-[url(/lp/About/towhitventures-website-img.png)] bg-cover bg-center bg-no-repeat relative w-[536px] h-[322px]"></div>
             </div>
           </div>
         </div>

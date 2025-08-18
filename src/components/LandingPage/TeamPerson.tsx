@@ -6,7 +6,7 @@ import "swiper/css";
 
 const TeamPerson: React.FC = () => {
   return (
-    <div className="w-full min-h-screen bg-[url('/lp/bg-img-mob-001.png')] md:bg-[url('/lp/bgroleplay.png')] bg-cover bg-center relative overflow-hidden pt-20 md:pt-36">
+    <div className="w-full min-h-screen bg-[url('/lp/TeamPerson/bg-img-mob-001.png')] md:bg-[url('/lp/Update/bgroleplay.png')] bg-cover bg-center relative overflow-hidden pt-20 md:pt-36">
       <div className="pointer-events-none flex !w-full h-80 absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent" />
       <div className="relative z-10 container mx-auto md:px-4 py-16">
         <div className="mb-20">
