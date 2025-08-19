@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const HowItWorksSection: React.FC = () => {
   return (
@@ -33,8 +33,13 @@ const HowItWorksSection: React.FC = () => {
         <div className="h-[40px] w-[73px] bg-[url('/lp/connector.png')] bg-cover" />
       </div>
       <div className="flex flex-col space-y-4 items-center w-full">
-        <div className="flex flex-col md:flex-row justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
-          <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map2Mobile.png')] md:bg-[url('/lp/map2.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
+        <div className="flex flex-col md:flex-row-reverse justify-between items-stretch w-full max-w-[1064px] overflow-hidden rounded-2xl border border-[#199fec4d] bg-[#199fec26]">
+          <div
+            className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center
+      bg-[url('/lp/map2Mobile.png')] md:bg-[url('/lp/map2.png')]
+      bg-contain md:bg-cover bg-top md:bg-right bg-no-repeat"
+          ></div>
+
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-end md:justify-center items-start p-8">
             <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
               Complete your quest
@@ -54,7 +59,7 @@ const HowItWorksSection: React.FC = () => {
           <div className="h-[200px] md:h-[440px] w-full md:w-[50%] flex justify-center items-center bg-[url('/lp/map3Mobile.png')] md:bg-[url('/lp/map3.png')] bg-contain md:bg-cover bg-top md:bg-center bg-no-repeat"></div>
           <div className="md:h-[440px] w-full md:w-[50%] flex flex-col justify-center items-start p-8">
             <h3 className="text-white text-[28px] md:text-[40px] font-bold mb-2 leading-tight">
-              Return to the Quest Giver to claim your badge ribbons...{' '}
+              Return to the Quest Giver to claim your badge ribbons...{" "}
               <span className="text-[#199FEC]">and other possible rewards</span>
             </h3>
             <p className="text-[rgba(255,255,255,0.5)] text-base mb-6 leading-[28px]">

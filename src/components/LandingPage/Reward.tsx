@@ -17,14 +17,8 @@ export default function Reward() {
                 background: "linear-gradient(rgba(25, 159, 236, 0.30))",
               }}
             >
-              <div className="relative w-full h-[268px] shrink-0 rounded-xl bg-black overflow-hidden">
-                <div
-                  className="flex h-full w-full rounded-xl"
-                  style={{
-                    background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
-                  }}
-                >
+              <div className="relative w-full h-[268px] shrink-0 rounded-xl bg-[url('/lp/get-the-epic-img.png')] bg-center bg-cover overflow-hidden">
+                <div className="flex h-full w-full rounded-xl">
                   <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
                     <div className="z-10 flex flex-col items-start gap-2">
                       <p className="text-white text-lg font-medium leading-7">
@@ -35,8 +29,6 @@ export default function Reward() {
 
                     <button className="btn w-fit">Download as PDF</button>
                   </div>
-
-                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-001.png')] rounded-r-2xl shrink-0"></div>
                 </div>
               </div>
             </div>
@@ -46,14 +38,8 @@ export default function Reward() {
                 background: "linear-gradient(rgba(25, 159, 236, 0.30))",
               }}
             >
-              <div className="relative w-full h-[268px] shrink-0 rounded-xl bg-black overflow-hidden">
-                <div
-                  className="flex h-full w-full rounded-xl"
-                  style={{
-                    background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
-                  }}
-                >
+              <div className="relative w-full h-[268px] shrink-0 rounded-xl bg-[url('/lp/get-core-img.png')] bg-center bg-cover overflow-hidden">
+                <div className="flex h-full w-full rounded-xl">
                   <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
                     <div className="z-10 flex flex-col items-start gap-2">
                       <p className="text-white text-lg font-medium leading-7">
@@ -63,8 +49,6 @@ export default function Reward() {
 
                     <button className="btn w-fit">Download as PDF</button>
                   </div>
-
-                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-001.png')] rounded-r-2xl shrink-0"></div>
                 </div>
               </div>
             </div>
@@ -90,34 +74,35 @@ export default function Reward() {
                       "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
-                  <div className="w-full relative flex flex-col justify-between pr-2 p-6 gap-4">
-                    <div className="z-10 flex flex-col items-start gap-2">
-                      <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
+                  <div className="w-full relative flex flex-col">
+                    <div className="z-10 flex flex-col items-start px-5 pt-5 mb-4">
+                      <p className="text-white text-sm font-medium leading-5 max-w-[60%]">
                         Follow us on Instagram for more loot and quests!
                       </p>
                     </div>
-
-                    <Link
-                      href="https://www.instagram.com/gameonechelon/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-fit btn"
-                    >
-                      Follow
-                    </Link>
+                    <div className="pb-5 px-5">
+                      <Link
+                        href="https://www.instagram.com/gameonechelon/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn w-fit py-2 px-4 rounded-full"
+                      >
+                        Follow
+                      </Link>
+                    </div>
                   </div>
 
                   <img
                     src="/lp/instagram.svg"
                     alt="Instagram"
-                    className="absolute bottom-0 right-4 h-full w-auto"
+                    className="absolute bottom-0 right-0 h-full w-auto"
                   />
                 </div>
               </div>
             </div>
 
             <div
-              className="p-[1px] rounded-xl w-full md:flex-1 md:w-[416px] h-[128px]"
+              className="p-[1px] rounded-xl w-full"
               style={{
                 background:
                   "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
@@ -131,28 +116,29 @@ export default function Reward() {
                       "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
                   }}
                 >
-                  <div className="w-full relative flex flex-col justify-between pr-2 p-6 gap-4">
-                    <div className="z-10 flex flex-col items-start gap-2">
-                      <p className="text-white text-sm font-medium leading-5 max-w-[50%] line-clamp-2">
+                  <div className="w-full relative flex flex-col">
+                    <div className="pt-5 px-5 mb-4 z-10 flex flex-col items-start">
+                      <p className="text-white text-sm font-medium leading-5 max-w-[60%] line-clamp-2">
                         Join the ConQuesting community on the Echelon Discord
                         Server
                       </p>
                     </div>
-
-                    <Link
-                      href="https://discord.gg/8vg87vZyfS"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-fit btn"
-                    >
-                      Join community
-                    </Link>
+                    <div className="px-5 pb-5">
+                      <Link
+                        href="https://discord.gg/8vg87vZyfS"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn w-fit py-2 px-4 rounded-full"
+                      >
+                        Join
+                      </Link>
+                    </div>
                   </div>
 
                   <img
                     src="/lp/discord.svg"
                     alt="Discord"
-                    className="absolute bottom-0 right-4 h-full w-auto"
+                    className="absolute bottom-0 right-0 h-full w-auto"
                   />
                 </div>
               </div>

@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import React from 'react';
-import Arrow from '../icons/arrow';
-import Reward from './Reward';
+import Image from "next/image";
+import React from "react";
+import Arrow from "../icons/arrow";
+import Reward from "./Reward";
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
         </div>
         {/* <div className="absolute -right-3 top-0 bg-[url('/lp/mapHeroSection.png')] bg-cover bg-right bg-no-repeat w-full h-full z-10"></div> */}
 
-        <div className="pt-[109px] pl-10 flex items-start justify-start flex-row z-50">
+        <div className="pt-[109px] mb-[200px] pl-10 flex items-start justify-start flex-row z-50">
           <span className="text-[rgba(255,255,255,0.5)] text-[16px] font-normal">
             Home
           </span>
@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
           </svg>
           <span className="text-[16px]">ConQuesting</span>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full pt-[212px] z-50">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full z-50">
           <div className=" flex  flex-col w-full space-y-4 text-left px-20">
             <div className="flex ">
               <div className="flex flex-col">
