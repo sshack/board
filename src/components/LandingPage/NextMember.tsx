@@ -4,11 +4,11 @@ export default function NextMember() {
       <div className="h-[748px] w-full md:w-[1280px] md:h-[496px] bg-[url('/lp/NextMember/are-you-our-next-team-member-mob-bg.png')] md:bg-[url('/lp/NextMember/fundoRecrutamento.png')] relative bg-cover bg-no-repeat rounded-2xl overflow-hidden">
         <div className="flex px-6 py-[300px] md:py-12 md:items-center md:justify-between md:px-12">
           <div>
-            <p className="text-[#3b82f6] text-sm font-medium md:mb-20">
+            <p className="text-[#199FEC] text-sm font-medium md:mb-20">
               Are you our next team member?
             </p>
 
-            <h2 className="pt-7 text-[28px] leading-9 md:pt-0 md:text-[44px] md:w-[700px] font-normal text-white mb-6 tracking-[-1.12px]">
+            <h2 className="pt-7 text-[28px] leading-9 md:pt-0 md:text-[44px] md:w-[671px] font-semibold md:leading-[48px] text-white mb-6 md:tracking-[-1.76px]">
               We're looking for creative minds to help us build the ultimate
               online gaming platform.
             </h2>

@@ -53,7 +53,7 @@ const SignUpSection: React.FC = () => {
             "linear-gradient(90deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
         }}
       >
-        <div className="bg-[url('/lp/SignUpSection/join-our-party-bg-mob.png')] h-[760px] bg-cover bg-center grid md:bg-[url('/lp/SignUpSection/fundo2last.png')] grid-cols-1 md:grid-cols-2 p-6 md:p-20 items-center rounded-[20px] md:overflow-hidden md:w-full">
+        <div className="relative bg-[url('/lp/SignUpSection/join-our-party-bg-mob.png')] h-[760px] bg-cover bg-center grid md:bg-[url('/lp/SignUpSection/fundo2last.png')] grid-cols-1 md:grid-cols-2 p-6 md:p-20 items-center rounded-[20px] md:overflow-hidden md:w-full">
           {/* Form */}
           <div className="flex pt-16 md:pt-0 flex-col justify-start md:justify-center items-center h-full space-y-10 md:space-y-20 w-full">
             <h2 className="font-semibold text-[32px] leading-[40px] tracking-[-1px] md:text-[56px] md:leading-[64px] md:tracking-[-2.24px]">
@@ -96,14 +96,9 @@ const SignUpSection: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div
-            className="hidden md:block w-[798px] h-[532px]"
-            style={{
-              backgroundImage: "url(/lp/SignUpSection/fundo1last.png)",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          ></div>
+          <div className="hidden md:flex absolute right-0 w-[607px] h-[532px]">
+            <div className="bg-[url('/lp/SignUpSection/fundo1last.png')] bg-cover -bg-center w-full h-full"></div>
+          </div>
         </div>
       </div>
     </section>

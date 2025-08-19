@@ -5,7 +5,7 @@ export default function About() {
     <div className="bg-black md:bg-[url(/lp/About/fundoSectionTeam.png)] bg-cover bg-no-repeat bg-center w-full min-h-screen relative overflow-hidden">
       <div className="container mx-auto px-6 py-16 mt-20 relative z-10">
         {/* Top Section - Echelon */}
-        <div className="md:text-center mb-24 md:mb-64">
+        <div className="md:text-center mb-24 md:mb-[140px]">
           <h1 className="w-[327px] md:w-full text-[40px] leading-[48px] md:text-[56px] font-semibold text-white mb-4 md:leading-[64px] font-sans">
             Curious about Echelon? <br /> We're happy to{" "}
             <br className="md:hidden" />
@@ -47,7 +47,7 @@ export default function About() {
 
               <div className="w-full h-[211px] absolute bottom-6 bg-right bg-[url('/lp/About/aboutMob001.png')] bg-no-repeat right-0 md:hidden"></div>
 
-              <div className="hidden md:block md:bg-[url(/lp/About/towhitventures-website-img.png)] bg-cover bg-center bg-no-repeat relative w-[536px] h-[322px]"></div>
+              <div className="hidden md:block md:bg-[url(/lp/About/towhitventures-img.png)] bg-cover bg-center bg-no-repeat relative w-[536px] h-[322px]"></div>
             </div>
           </div>
         </div>
