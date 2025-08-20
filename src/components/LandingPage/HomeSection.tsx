@@ -5,12 +5,9 @@ const HomeSection: React.FC = () => {
   return (
     <>
       {/*Versão Desktop*/}
-      <section
-        className="hidden w-full bg-cover bg-center bg-gray-900 text-white md:flex flex-col gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] pt-20 md:pt-36"
-        style={{ backgroundImage: `url('/lp/homeSectionBg.png')` }}
-      >
-        <div className="flex flex-col md:flex-row items-center justify-between w-full gap-8">
-          <div className="w-full space-y-8 text-left z-20 px-6 md:px-20">
+      <section className="hidden w-full bg-cover bg-center bg-[url('/lp/homeSectionBg.png')] bg-gray-900 text-white md:flex flex-col gap-8 relative overflow-hidden max-w-[1440px]">
+        <div className=" flex flex-row items-center justify-between w-full gap-8">
+          <div className="w-full space-y-8 text-left z-20 px-6 md:px-20 mt-[236px]">
             <h1 className="text-[60px] md:text-[124px] leading-[56px] lg:leading-[108px] font-bold tracking-[-2px] lg:tracking-[-7.44px]">
               Game. On.
               <br className="hidden md:block" /> Echelon.
@@ -20,31 +17,17 @@ const HomeSection: React.FC = () => {
               and digitally publishing original RPG systems.
             </p>
           </div>
-
-          <div className="hidden md:block absolute -bottom-16 right-0 w-1/2">
-            <Image
-              src="/lp/DasdhbordGame.png"
-              alt="Echelon Logo"
-              width={2000}
-              height={605}
-              quality={100}
-              className="h-auto max-h-[800px]"
-            />
-          </div>
-
-          <div className="md:hidden w-full md:w-[500px] h-auto z-0 ml-10 relative">
-            <Image
-              src="/lp/DasdhbordGame.png"
-              alt="Echelon Logo"
-              width={1034}
-              height={605}
-              quality={100}
-              className="h-auto"
-            />
-            <div className="pointer-events-none flex w-full h-20 absolute bottom-0 z-10 bg-gradient-to-t from-black to-transparent" />
-          </div>
         </div>
-
+        <div className="hidden md:block absolute -bottom-4 right-0 w-1/2">
+          <Image
+            src="/lp/DasdhbordGame.png"
+            alt="Echelon Logo"
+            width={2000}
+            height={605}
+            quality={100}
+            className="h-auto max-h-[800px]"
+          />
+        </div>
         <div className="px-6 md:px-20 pb-6 z-20">
           <button className="bg-[#ffff] text-black text-[18px] px-8 py-3 rounded-full font-medium w-full md:w-[290px]">
             Sign up for our mailing list

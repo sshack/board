@@ -167,20 +167,19 @@ export default function Exploring({}) {
       </div>
       {shouldRenderTtrpg && (
         <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-8 md:gap-8 mt-12 md:mt-16">
-          <div className="w-full md:w-auto order-1 md:order-2 grid grid-cols-3 gap-4 md:gap-8 justify-items-center">
+          <div className="w-full md:w-auto order-1 md:order-2 grid grid-cols-3 gap-4 md:gap-8 justify-items-center ">
             <div className="w-[112px] h-[136px] md:w-[224px] md:h-[272px] bg-[url(/lp/exploring1.png)] bg-cover bg-center rounded-xl" />
             <div className="w-[112px] h-[136px] md:w-[224px] md:h-[272px] bg-[url(/lp/exploring2.png)] bg-cover bg-center rounded-xl" />
             <div className="w-[112px] h-[136px] md:w-[224px] md:h-[272px] bg-[url(/lp/exploring1.png)] bg-cover bg-center rounded-xl" />
           </div>
-
-          <div className="flex flex-col items-start gap-6 md:gap-8 md:min-w-[50%] md:flex-1 order-2 md:order-1">
+          <div className="flex flex-col items-start gap-6 md:gap-0  md:max-w-[576px] md:flex-1 order-2 md:order-1">
             <p
-              className="font-semibold text-[28px] md:text-[44px] leading-[36px] md:leading-[48px] tracking-[-1.12px] md:tracking-[-1.76px]"
+              className="font-semibold text-[28px] md:text-[44px] leading-[36px] md:leading-[28px] tracking-[-1.12px]"
               style={{ color: "var(--Secondary-S500, #199FEC)" }}
             >
               Digital <span className="text-white">TTRPG</span> Publishing
             </p>
-            <p className="text-white font-medium text-[16px] md:text-[18px] leading-[24px] md:leading-[28px]">
+            <p className="text-white font-normal md:mt-6 text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] md: mb-12">
               In the future, we plan to offer digital adaptation and publishing
               services for original tabletop RPGs. Meet with us for a
               consultation to build your game, share it with the world, and get

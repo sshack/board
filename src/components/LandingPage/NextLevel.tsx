@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Arrow: React.FC = () => (
   <svg
@@ -30,9 +30,9 @@ export default function NextLevel({}) {
         </div>
 
         <p className="text-[16px] leading-[24px] font-normal text-[#199FEC]">
-          The next chapter of Echelon is already being written{' '}
+          The next chapter of Echelon is already being written{" "}
           <a className="cursor-auto text-white ">
-            {' '}
+            {" "}
             — here’s a glimpse into what’s to come.
           </a>
         </p>
@@ -46,12 +46,12 @@ export default function NextLevel({}) {
                 className="p-[1px] rounded-[20px] w-full h-full"
                 style={{
                   background:
-                    'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                    "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
                 }}
               >
                 <div
                   className="w-full h-[480px] md:h-full flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
-                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                  style={{ backgroundColor: "rgb(4 25 36)" }}
                 >
                   <div className="relative w-full h-full rounded-[20px]">
                     {/* Mobile layout: image top, text bottom */}
@@ -98,12 +98,12 @@ export default function NextLevel({}) {
                 className="p-[1px] rounded-[20px] w-full"
                 style={{
                   background:
-                    'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                    "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
                 }}
               >
                 <div
                   className="w-full h-[370px] md:h-[262px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
-                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                  style={{ backgroundColor: "rgb(4 25 36)" }}
                 >
                   <div className="relative w-full h-full rounded-[20px]">
                     {/* Mobile layout: image top, text bottom */}
@@ -140,19 +140,22 @@ export default function NextLevel({}) {
                 className="p-[1px] rounded-[20px] w-full"
                 style={{
                   background:
-                    'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                    "linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
                 }}
               >
                 <div
-                  className="w-full h-[480px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden bg-yellow-500"
+                  className="w-full h-[480px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
                   // style={{ backgroundColor: 'rgb(4 25 36)' }}
                 >
-                  <div className="relative w-full h-full rounded-[20px]">
+                  <div className="relative w-full h-full rounded-[20px] md:bg-[url('/lp/expanding-img.png')] bg-center bg-cover mx-[1px] mt-[1px]">
                     {/* Mobile layout: image top, text bottom */}
-                    <div className="md:hidden flex h-full w-full flex-col">
-                      <div className="h-1/2 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/CardHero1.png')]" />
-                      <div className="h-1/2 flex flex-col gap-2 p-5 justify-end">
-                        <h1 className="text-[20px] leading-[20px] tracking-[-0.8px] font-normal">
+                    <div
+                      className="md:hidden flex h-full w-full flex-col"
+                      style={{ backgroundColor: "rgb(4 25 36)" }}
+                    >
+                      <div className="h-[200px] w-full bg-no-repeat bg-contain bg-right bg-[url('/lp/expanding-img-mob.png')]" />
+                      <div className="flex flex-col gap-2 p-5 justify-end">
+                        <h1 className="text-[20px] leading-[28px] tracking-[-0.8px] font-normal">
                           An Expanding Catalog of Bespoke TTRPGS
                         </h1>
                         <p className="text-[rgba(255,255,255,0.5)] leading-[20px] text-[14px]">
@@ -177,32 +180,6 @@ export default function NextLevel({}) {
                           Let's talk!
                         </p>
                       </div>
-                      <div className="flex flex-row gap-4 px-5 pb-5 justify-start">
-                        <div
-                          className="w-[143px] h-[172px] opacity-70"
-                          style={{
-                            backgroundImage: "url('/lp/CardHero1.png')",
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                          }}
-                        />
-                        <div
-                          className="w-[143px] h-[172px] opacity-50"
-                          style={{
-                            backgroundImage: "url('/lp/CardHero1.png')",
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                          }}
-                        />
-                        <div
-                          className="w-[143px] h-[172px] opacity-70"
-                          style={{
-                            backgroundImage: "url('/lp/CardHero1.png')",
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                          }}
-                        />
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -214,12 +191,12 @@ export default function NextLevel({}) {
                 className="p-[1px] rounded-[20px] w-full"
                 style={{
                   background:
-                    'linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                    "linear-gradient(210deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
                 }}
               >
                 <div
                   className="w-full h-[480px] md:h-[468px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
-                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                  style={{ backgroundColor: "rgb(4 25 36)" }}
                 >
                   <div className="relative w-full h-full rounded-[20px]">
                     {/* Mobile layout: image top, text bottom */}
@@ -266,12 +243,12 @@ export default function NextLevel({}) {
                 className="p-[1px] rounded-[20px] w-full"
                 style={{
                   background:
-                    'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
+                    "linear-gradient(300deg, #002C45 0%, #F45111 35%, rgba(25,159,236,0.15) 70%, #002C45 100%)",
                 }}
               >
                 <div
                   className="w-full h-[480px] md:h-[488px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
-                  style={{ backgroundColor: 'rgb(4 25 36)' }}
+                  style={{ backgroundColor: "rgb(4 25 36)" }}
                 >
                   <div className="relative w-full h-full rounded-[20px]">
                     {/* Mobile layout: image top, text bottom */}

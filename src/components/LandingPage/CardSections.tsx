@@ -21,9 +21,9 @@ const CardSections = () => {
         <Image
           src="/lp/CardSection/maskDiscord.png"
           alt="Discord"
-          width={480}
-          height={390}
-          className="absolute md:hidden top-2 -right-6 z-10 rounded-md mb-6 w-[105%] max-w-none h-auto"
+          width={400}
+          height={400}
+          className="absolute md:hidden top-5 left-[21px] z-10 "
         />
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
@@ -54,16 +54,16 @@ const CardSections = () => {
         <Image
           src="/lp/CardSection/maskCell.png"
           alt="Instagram"
-          width={500}
-          height={500}
-          className="hidden md:block z-10 rounded-md mb-6 w-[90%] max-w-[400px] h-auto"
+          width={234}
+          height={402}
+          className="hidden md:block z-10 rounded-md mb-6"
         />
         <Image
           src="/lp/CardSection/maskCell.png"
           alt="Instagram"
-          width={480}
-          height={390}
-          className="absolute md:hidden top-2 -left-14 z-10 rounded-md mb-6 w-[105%] max-w-none h-auto"
+          width={200}
+          height={200}
+          className="absolute md:hidden top-5 left-[21px] z-10 rounded-md"
         />
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
