@@ -1,6 +1,6 @@
 export default function IntroductionGame() {
   return (
-    <section className="w-full bg-black text-white relative">
+    <section className="w-full bg-black md:max-w-[1440px] text-white relative">
       <div className="hidden md:flex w-full justify-center absolute -top-4 left-0 right-0 z-20">
         <div className="inline-flex items-center justify-center gap-2 rounded-full bg-[#FC5212] px-3 py-1 text-white text-[16px] leading-6 font-normal">
           <span>Introducing Our New Game</span>
@@ -9,30 +9,23 @@ export default function IntroductionGame() {
         </div>
       </div>
       {/*Versão Desktop*/}
-      <div
-        className="hidden md:block relative w-full h-[726px]"
-        style={{
-          backgroundImage: "url('/lp/foundAmmo.png')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      <div className="hidden md:block relative w-full h-[726px] bg-[url('/lp/foundAmmo.png')] bg-cover bg-center">
         {/* Gradiente inferior para resolver o efeito de corte */}
         <div
           className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
           style={{
             background:
-              'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)',
+              "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
           }}
         />
 
         {/* Conteúdo do lado esquerdo */}
-        <div className="absolute top-0 left-0 px-20 z-20 max-w-2xl">
+        <div className=" absolute top-0 left-0 pl-20 z-20">
           <img
             src="/lp/trbe.png"
             alt="ANNO AMAGIUM"
             className="pt-20"
-            style={{ maxWidth: '400px' }}
+            style={{ maxWidth: "400px" }}
           />
 
           {/* Game Title */}
@@ -40,7 +33,7 @@ export default function IntroductionGame() {
             src="/lp/titleAmmo.png"
             alt="ANNO AMAGIUM"
             className="pt-[81px]"
-            style={{ maxWidth: '400px' }}
+            style={{ maxWidth: "400px" }}
           />
 
           {/* Game Type */}
@@ -48,7 +41,7 @@ export default function IntroductionGame() {
             src="/lp/text2.png"
             alt="ANNO AMAGIUM"
             className="pt-2"
-            style={{ maxWidth: '400px', height: '45px' }}
+            style={{ maxWidth: "400px", height: "45px" }}
           />
 
           {/* Description */}
@@ -67,7 +60,7 @@ export default function IntroductionGame() {
         <img
           src="/lp/screenshotAmoo.png"
           alt="Screenshot"
-          className="absolute bottom-0 right-0 h-[650px] w-[800px]"
+          className="absolute bottom-0 right-0 h-[650px] w-[740px]"
         />
       </div>
 

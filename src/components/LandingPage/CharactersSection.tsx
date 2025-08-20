@@ -8,16 +8,16 @@ export default function CharactersSection({
   return (
     <>
       {/* Characters Section // Versão Desktop */}
-      <div className="hidden md:flex pb-20 flex-col lg:flex-row gap-8 left-0">
+      <div className="hidden md:flex pb-20 flex-col lg:flex-row left-0">
         {/* Left Side - Characters Heading */}
-        <div className="lg:w-1/4">
+        <div className="">
           <h2 className="text-[24px] leading-[40px] font-normal text-white mb-8">
             Characters
           </h2>
         </div>
 
         {/* Right Side - Three Cards */}
-        <div className="w-[1279px] h-[528px] space-y-6 pt-2">
+        <div className="w-[1279px] h-[528px] space-y-6 pt-2 flex flex-col justify-end items-end">
           {/* Card 1: Tons of Build Options */}
           <div className="w-[898px] h-[160px] rounded-2xl border border-[rgba(25,159,236,0.30)] overflow-hidden">
             <div className="flex h-full">
@@ -79,7 +79,7 @@ export default function CharactersSection({
               <div
                 className="w-[280px] h-[160px] bg-center bg-cover"
                 style={{
-                  backgroundImage: "url(/lp/heroics-from-the-get-go-img.png)",
+                  backgroundImage: "url(/lp/modular-character.png)",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",

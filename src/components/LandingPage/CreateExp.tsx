@@ -18,11 +18,11 @@ export default function CreateExp() {
   return (
     <>
       <section className="w-full">
-        <div className="pt-20 w-full md:h-[1000px] bg-[url('/lp/bgroleplay.png')] bg-cover bg-center pb-20 md:mb-10 overflow-hidden relative">
+        <div className="pt-20 w-full md:h-[1000px] bg-[url('/lp/games-main-bg.png')] bg-cover bg-center pb-20 md:pb-0 overflow-hidden relative">
           <div className="w-full">
-            <div className="w-full mx-auto px-6 md:px-8 flex flex-col items-center">
+            <div className="w-full mx-auto px-6 md:px-8 flex flex-col items-center pb-10">
               {/* Main Statement */}
-              <div className="md:text-center mb-12 pt-10">
+              <div className="md:text-center pt-16 pb-14">
                 <h1 className="text-white text-[40px] tracking-[-1.6px] leading-[48px] md:text-[56px] font-semibold md:leading-[64px]">
                   We create experiences
                   <br className="hidden md:block" /> that redefine the ways
@@ -37,7 +37,7 @@ export default function CreateExp() {
 
           {/* Gradiente do transparente para o preto */}
           <div
-            className="absolute bottom-0 left-0 right-0 h-36 pointer-events-none"
+            className="absolute bottom-0 left-0 right-0 h-36 pointer-events-none z-0"
             style={{
               background:
                 "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",

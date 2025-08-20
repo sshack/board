@@ -2,16 +2,16 @@ export default function LoreSection() {
   return (
     <>
       {/* Characters Section // Version Desktop */}
-      <div className="hidden md:flex pb-20 flex-col lg:flex-row gap-8 left-0">
+      <div className="hidden md:flex pb-20 flex-col lg:flex-row left-0">
         {/* Left Side - Characters Heading */}
-        <div className="lg:w-1/4">
+        <div className="">
           <h2 className="text-[24px] leading-[40px] font-normal text-white mb-8">
             Lore
           </h2>
         </div>
 
         {/* Right Side - Three Cards */}
-        <div className="w-[1279px] h-[648px] space-y-6 pt-2">
+        <div className="w-[1279px] h-[648px] space-y-6 pt-2 flex flex-col items-end justify-end">
           {/* Card 1: Tons of Build Options */}
           <div className="w-[898px] h-[200px] rounded-2xl border border-[rgba(25,159,236,0.30)] overflow-hidden">
             <div className="flex h-full">

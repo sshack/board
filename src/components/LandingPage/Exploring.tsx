@@ -110,7 +110,7 @@ export default function Exploring({}) {
                     </Link>
                   </div>
 
-                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-002.png')] rounded-r-2xl shrink-0"></div>
+                  <div className="absolute right-0 bg-cover bg-no-repeat bg-center w-1/2 h-full bg-[url('/lp/follow-002.png')]"></div>
                 </div>
               </div>
             </div>

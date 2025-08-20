@@ -5,8 +5,8 @@ import CombatSection from "./CombatSection";
 import SkillsSection from "./SkillsSection";
 export default function RoleGames() {
   return (
-    <div className="w-full md:px-20 md:h-[3120px] bg-black md:bg-[url('/lp/fundoSectionGamesRole.png')] bg-center bg-cover bg-no-repeat relative overflow-hidden">
-      <div className=" px-6 md:px-[80px] container mx-auto pr-10 py-20 relative">
+    <div className="w-full md:px-20 md:h-[3120px] md:w-[1440px] bg-black md:bg-[url('/lp/fundoSectionGamesRole.png')] bg-center bg-cover bg-no-repeat relative overflow-hidden">
+      <div className=" px-6 md:px-0 container mx-auto pr-10 py-20 relative">
         {/* Gradiente de transição na parte superior */}
         <div
           className="absolute top-0 left-0 right-0 h-32 w-full"
