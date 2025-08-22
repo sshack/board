@@ -12,12 +12,11 @@ function getAuth() {
     );
   }
 
-  // Convert the private key format - handle both escaped and unescaped newlines
-  const formattedPrivateKey = privateKey.replace(/\\n/g, '\n');
+  const decodedPrivateKey = Buffer.from(privateKey, 'base64').toString('utf8');
 
   return new google.auth.JWT({
     email: clientEmail,
-    key: formattedPrivateKey,
+    key: decodedPrivateKey,
     scopes: SCOPES,
   });
 }
