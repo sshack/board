@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const CardSections = () => {
   return (
@@ -28,7 +28,7 @@ const CardSections = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Join the{" "}
+              Join the{' '}
               <span className="text-[#00B4FF]">ConQuesting community</span> on
               the Echelon Discord <br className="md:hidden" /> Server
             </h2>
@@ -56,19 +56,19 @@ const CardSections = () => {
           alt="Instagram"
           width={234}
           height={402}
-          className="hidden md:block z-10 rounded-md mb-6"
+          className="hidden md:block z-10 rounded-md mb-6 w-fit h-[400px]"
         />
         <Image
           src="/lp/CardSection/maskCell.png"
           alt="Instagram"
           width={200}
           height={200}
-          className="absolute md:hidden top-5 left-[21px] z-10 rounded-md"
+          className="absolute md:hidden top-5 left-1/2 -translate-x-1/2 z-10 rounded-md h-[200px] w-auto"
         />
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Follow us on <br /> Instagram for{" "}
+              Follow us on <br /> Instagram for{' '}
               <span className="text-[#00B4FF]">
                 more <br className="md:hidden" />
                 loot <br className="hidden md:block" />
