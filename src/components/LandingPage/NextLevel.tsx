@@ -144,13 +144,13 @@ export default function NextLevel({}) {
                 }}
               >
                 <div
-                  className="w-full h-[480px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
-                  // style={{ backgroundColor: 'rgb(4 25 36)' }}
+                  className="w-full h-[412px] md:h-[316px] flex items-center justify-center rounded-[20px] mx-auto overflow-hidden"
+                  style={{ backgroundColor: "rgb(4 25 36)" }}
                 >
-                  <div className="relative w-full h-full rounded-[20px] md:bg-[url('/lp/expanding-img.png')] bg-center bg-cover mx-[1px] mt-[1px]">
+                  <div className="relative w-full h-[412px] md:h-full rounded-[20px]">
                     {/* Mobile layout: image top, text bottom */}
                     <div
-                      className="md:hidden flex h-full w-full flex-col"
+                      className="md:hidden flex h-auto w-full flex-col"
                       style={{ backgroundColor: "rgb(4 25 36)" }}
                     >
                       <div className="h-[200px] w-full bg-no-repeat bg-contain bg-right bg-[url('/lp/expanding-img-mob.png')]" />
@@ -168,17 +168,20 @@ export default function NextLevel({}) {
                     </div>
 
                     {/* Desktop and up: text top, image bottom */}
-                    <div className="hidden md:flex w-full h-full flex-col">
-                      <div className="flex flex-col gap-2 p-5 justify-start">
-                        <h1 className="text-[20px] leading-[20px] tracking-[-0.8px] font-normal">
-                          An Expanding Catalog of Bespoke TTRPGS
-                        </h1>
-                        <p className="text-[rgba(255,255,255,0.5)] leading-[20px] text-[14px]">
-                          A meticulously developed high fantasy follow-up to
-                          Anno Amagium is already waiting in the wings and we
-                          are just getting started. Got a game of your own?
-                          Let's talk!
-                        </p>
+                    <div className="flex h-full w-full">
+                      <div className="hidden md:flex w-full h-full flex-col">
+                        <div className="flex flex-col gap-2 px-5 pt-5 justify-start">
+                          <h1 className="text-[20px] leading-[20px] tracking-[-0.8px] font-normal">
+                            An Expanding Catalog of Bespoke TTRPGS DESKTOP
+                          </h1>
+                          <p className="text-[rgba(255,255,255,0.5)] leading-[20px] text-[14px]">
+                            A meticulously developed high fantasy follow-up to
+                            Anno Amagium is already waiting in the wings and we
+                            are just getting started. Got a game of your own?
+                            Let's talk!
+                          </p>
+                        </div>
+                        <div className="h-full w-full bg-bottom mt-2 bg-cover bg-no-repeat bg-[url('/lp/expanding-img.png')]" />
                       </div>
                     </div>
                   </div>

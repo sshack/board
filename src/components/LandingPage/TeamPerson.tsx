@@ -10,7 +10,7 @@ const TeamPerson: React.FC = () => {
       <div className="pointer-events-none flex !w-full h-80 absolute bottom-0 z-0 bg-gradient-to-t from-black to-transparent" />
       <div className="relative z-10 container mx-auto md:px-4">
         <div className="mb-20">
-          <div className="md:mt-[220px] px-6 md:text-center md:mb-36">
+          <div className="mt-[160px] md:mt-[220px] px-6 md:text-center md:mb-36">
             <h1 className=" text-[40px] leading-[48px] tracking-[-1.6px] md:text-[56px] md:leading-[64px] md:tracking-[-2.24px] font-semibold text-white mb-[25px]">
               Meet the people <br className="md:hidden" />
               who <br className="hidden md:block" />
@@ -33,13 +33,13 @@ const TeamPerson: React.FC = () => {
               >
                 {teamMembers.map((member) => (
                   <SwiperSlide key={member.id} className="!h-auto pt-[88px]">
-                    <div className=" bg-[#0B1C2C] rounded-2xl overflow-hidden shadow-lg h-[520px] flex flex-col">
-                      <div className="relative flex items-center justify-center flex-shrink-0 h-[308px]">
+                    <div className=" bg-[#0B1C2C] rounded-2xl overflow-hidden shadow-lg h-full flex flex-col">
+                      <div className="relative flex items-center justify-center h-[308px]">
                         {member.image ? (
                           <img
                             src={member.image}
                             alt={member.name}
-                            className="w-full h-[308px] object-cover shadow-md"
+                            className="w-full h-full object-cover shadow-md"
                           />
                         ) : (
                           <div className="w-[300px] h-[300px] rounded-full bg-gray-300 shadow-md flex items-center justify-center">
@@ -47,14 +47,14 @@ const TeamPerson: React.FC = () => {
                           </div>
                         )}
                       </div>
-                      <div className="h-full w-full bg-gray-900 p-5">
+                      <div className="h-full w-full bg-gray-900 px-5 pt-5 ">
                         <h3 className="text-white text-[20px]">
                           {member.name}
                         </h3>
                         <p className="text-[#199FEC] text-[14px]">
                           {member.role}
                         </p>
-                        <div className="mt-5  space-y-2 flex flex-col">
+                        <div className="mt-5  space-y-2 flex flex-col pb-5">
                           <div className=" flex text-white text-[14px] gap-2">
                             <p className="text-[#199FEC]">Location:</p>
                             <span className="break-words">
@@ -62,10 +62,10 @@ const TeamPerson: React.FC = () => {
                             </span>
                           </div>
                           <div className="flex text-white text-[14px] gap-2">
-                            <p className="text-[#199FEC]">Expertise:</p>
-                            <span className="break-words">
+                            <p>
+                              <span className="text-[#199FEC]">Expertise:</span>{" "}
                               {member.expertise}
-                            </span>
+                            </p>
                           </div>
                           <div className="text-white text-[14px]">
                             <p>

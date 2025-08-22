@@ -50,9 +50,10 @@ export const teamMembers: TeamMember[] = [
     id: "5",
     name: "Hugo Pereira",
     role: "Lead Developer",
-    image: "/lp/TeamPerson/culture.png",
-    location: "São Paulo, Brazil ",
-    expertise: "Developer Sênior",
-    funFact: "Nada",
+    image: "/lp/TeamPerson/hugo-pereira-img.png",
+    location: "Rio de Janeiro, Brazil",
+    expertise: "Software Engineering",
+    funFact:
+      "Probably the only software engineer that knows how to tame horses",
   },
 ];

@@ -66,7 +66,7 @@ export default function IntroductionGame() {
 
       {/*Versão Mobile*/}
       <div className="md:hidden w-full">
-        <div className="flex flex-col rounded-2xl w-full h-full overflow-hidden bg-[url('/lp/anno-amagium-mob.png')] bg-cover bg-center pt-16 items-center">
+        <div className="flex flex-col w-full h-full overflow-hidden bg-[url('/lp/anno-amagium-mob.png')] bg-cover bg-center pt-16 px-6 ">
           <div className="flex items-center justify-center">
             <div className="relative w-full flex mb-6">
               <img
@@ -98,7 +98,7 @@ export default function IntroductionGame() {
               stories, worldbuilding, and mechanical development.
             </p>
 
-            <button className="w-full px-6 py-3 rounded-full bg-white text-black leading-6 font-normal text-[16px]">
+            <button className="w-full py-3 rounded-full bg-white text-black leading-6 font-normal text-[16px]">
               Subscribe to our waiting list
             </button>
           </div>

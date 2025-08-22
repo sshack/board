@@ -9,7 +9,7 @@ export default function Exploring({}) {
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px] md:mb-[180px]">
       <div
-        className={`flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 pt-40 ${
+        className={`flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 pt-10 ${
           pathname === "/games" ? "pb-0" : "pb-40"
         } md:mt-0`}
       >
@@ -179,20 +179,25 @@ export default function Exploring({}) {
             >
               Digital <span className="text-white">TTRPG</span> Publishing
             </p>
-            <p className="text-white font-normal md:mt-6 text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] md: mb-12">
+            <p className="text-white font-normal md:mt-6 text-[16px] md:text-[18px] leading-[24px] md:leading-[28px] md:mb-12">
               In the future, we plan to offer digital adaptation and publishing
               services for original tabletop RPGs. Meet with us for a
               consultation to build your game, share it with the world, and get
               paid when people download your books.
             </p>
-            <button className="btn w-full md:hidden">
-              Book a call with us
-            </button>
             <Link
               href="https://www.instagram.com/gameonechelon/"
               target="_blank"
               rel="noopener noreferrer"
-              className="cursor-pointer text-center px-6 py-3 bg-[#199FEC] rounded-full"
+              className="cursor-pointer text-center w-full py-3 bg-[#199FEC] rounded-full md:hidden"
+            >
+              Book a call with us
+            </Link>
+            <Link
+              href="https://www.instagram.com/gameonechelon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:block cursor-pointer text-center px-6 py-3 bg-[#199FEC] rounded-full"
             >
               Book a call with us
             </Link>
