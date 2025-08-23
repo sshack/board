@@ -1,15 +1,15 @@
-import { Metadata } from 'next';
-import { Cormorant, Inter } from 'next/font/google';
-import Header from '../components/LandingPage/Header';
-import './globals.css';
-import Footer from '../components/LandingPage/Footer';
+import { Metadata } from "next";
+import { Cormorant, Inter } from "next/font/google";
+import Header from "../components/LandingPage/Header";
+import "./globals.css";
+import Footer from "../components/LandingPage/Footer";
 
-const cormorant = Cormorant({ subsets: ['latin'] });
-const inter = Inter({ subsets: ['latin'] });
+const cormorant = Cormorant({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Anno',
-  description: '',
+  title: "Game.On.Echelon",
+  description: "",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

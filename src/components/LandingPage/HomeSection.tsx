@@ -1,7 +1,15 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 
 const HomeSection: React.FC = () => {
+  const scrollToSubscribe = () => {
+    const el = document.getElementById("subscribe-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       {/*Versão Desktop*/}
@@ -29,7 +37,10 @@ const HomeSection: React.FC = () => {
           />
         </div>
         <div className="px-6 md:px-20 pb-6 z-20">
-          <button className="bg-[#ffff] text-black text-[18px] px-8 py-3 rounded-full font-medium w-full md:w-[290px]">
+          <button
+            onClick={scrollToSubscribe}
+            className="bg-[#ffff] text-black text-[18px] px-8 py-3 rounded-full font-medium w-full md:w-[290px]"
+          >
             Sign up for our mailing list
           </button>
         </div>
@@ -52,7 +63,10 @@ const HomeSection: React.FC = () => {
         </div>
         <div className="absolute left-1/2 w-full -translate-x-1/2 bottom-[59px]">
           <div className="flex items-center justify-center pt-[285px]">
-            <button className="rounded-full flex bg-white text-black px-8 py-3">
+            <button
+              onClick={scrollToSubscribe}
+              className="rounded-full flex bg-white text-black px-8 py-3"
+            >
               Sign up for our mailing list
             </button>
           </div>
