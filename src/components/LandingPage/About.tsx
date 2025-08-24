@@ -20,7 +20,7 @@ export default function About() {
 
         {/* Bottom Section - ToWhitVentures */}
         <div className="w-full h-[627px] md:w-[1280px] md:h-[448px] mx-auto flex">
-          <div className="relative bg-[url(/lp/About/aboutMob002.png)] md:bg-[url(/lp/About/want-to-work-with-echelon-bg.png)] bg-right flex rounded-2xl p-8 md:p-12 shadow-2xl w-full h-full overflow-hidden">
+          <div className="relative bg-[url(/lp/About/aboutMob002.png)] md:bg-[url(/lp/About/want-to-work-with-echelon-bg.png)] bg-cover bg-center md:bg-right flex rounded-2xl p-6 md:p-12 shadow-2xl w-full h-full overflow-hidden">
             <div className="grid md:grid-cols-2 gap-8 md:items-center md:justify-center w-full h-full">
               {/* Left Side - Text Content */}
               <div className="md:space-y-12">
@@ -39,7 +39,7 @@ export default function About() {
                   Visit ToWhitVentures Website
                 </button>
                 <div className="pt-10 py-6 md:hidden">
-                  <button className=" bg-white text-black px-6 py-3 rounded-full text-[16px]">
+                  <button className=" bg-white text-black w-full px-6 py-3 rounded-full text-[16px]">
                     Visit ToWhitVentures Website
                   </button>
                 </div>
