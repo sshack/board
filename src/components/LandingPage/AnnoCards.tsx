@@ -8,7 +8,7 @@ export default function AnnoCards() {
         {/* Card 1 */}
         <div
           className="flex flex-col justify-between bg-[linear-gradient(111deg,rgba(25,159,236,0.10)_0.9%,rgba(25,159,236,0.55)_100%)] rounded-[12px] p-6 relative overflow-hidden"
-          style={{ width: "416px", height: "240px" }}
+          style={{ width: '416px', height: '240px' }}
         >
           <div>
             <h4 className="text-white text-lg font-semibold mb-2">
@@ -36,7 +36,7 @@ export default function AnnoCards() {
         {/* Card 2 */}
         <div
           className="flex flex-col justify-between bg-[linear-gradient(111deg,rgba(25,159,236,0.10)_0.9%,rgba(25,159,236,0.55)_100%)] rounded-[12px] p-6 relative overflow-hidden"
-          style={{ width: "416px", height: "240px" }}
+          style={{ width: '416px', height: '240px' }}
         >
           <div>
             <h4 className="text-white text-lg font-semibold mb-2">
@@ -64,7 +64,7 @@ export default function AnnoCards() {
         {/* Card 3 */}
         <div
           className="flex flex-col justify-between bg-[linear-gradient(111deg,rgba(25,159,236,0.10)_0.9%,rgba(25,159,236,0.55)_100%)] rounded-[12px] p-6 relative overflow-hidden"
-          style={{ width: "416px", height: "240px" }}
+          style={{ width: '416px', height: '240px' }}
         >
           <div>
             <h4 className="text-white text-lg font-semibold mb-2">

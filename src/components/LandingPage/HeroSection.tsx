@@ -1,14 +1,14 @@
-import Image from "next/image";
-import React from "react";
-import Arrow from "../icons/arrow";
-import Reward from "./Reward";
+import Image from 'next/image';
+import React from 'react';
+import Arrow from '../icons/arrow';
+import Reward from './Reward';
 
 const HeroSection: React.FC = () => {
   return (
     <>
       {/*VERSÃO DESKTOP*/}
       <section className="hidden md:flex relative max-w-[1440px] w-full h-[1323px] bg-cover bg-no-repeat bg-gray-900 text-white flex-col overflow-hidden">
-        <div className="absolute flex justify-center items-end inset-0 bg-[url('/lp/testBackground.png')] bg-cover bg-pink-950 bg-no-repeat">
+        <div className="absolute flex justify-center items-end inset-0 bg-[url('/lp/testBackground.png')] bg-cover bg-no-repeat">
           <div className="w-full h-1 bg-black" />
         </div>
         {/* <div className="absolute -right-3 top-0 bg-[url('/lp/mapHeroSection.png')] bg-cover bg-right bg-no-repeat w-full h-full z-10"></div> */}
