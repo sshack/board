@@ -47,9 +47,18 @@ export default function EarlyAccess({}) {
         </p>
 
         {/*Versão Mobile*/}
-        <div className="flex md:hidden">
-          <p>
-            <span className="text-[#199FEC]">Free Seems Fair</span>
+        <div className="md:hidden">
+          <p className="text-white text-[14px] leading-5">
+            <span className="inline-flex items-center gap-2 align-middle">
+              <span className="text-[#199FEC] font-medium">
+                Free Seems Fair
+              </span>
+              <Arrow />
+            </span>{" "}
+            Betas are for figuring things out, and not everything will work
+            correctly. You are doing us a favor by playing. We want to make our
+            trial run as accessible as possible, so the first beta test will be
+            100% on us.
           </p>
         </div>
       </div>

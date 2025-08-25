@@ -18,7 +18,7 @@ export default function NextLevel({}) {
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] mt-[60px] px-6 md:px-0">
       <div className="flex flex-col items-start md:items-center justify-center w-full">
         <p className="md:hidden inline-flex items-center justify-center px-3 py-1 rounded-full bg-[var(--Secondary-S500,#199FEC)] text-white text-[16px] leading-none font-semibold self-start shadow-sm mb-4">
-          Beta
+          After Launch
         </p>
         <div className="relative">
           <p className="text-white text-[56px] leading-[64px] font-semibold tracking-[-2.4px] text-left md:text-center mb-[28px]">
@@ -207,7 +207,7 @@ export default function NextLevel({}) {
                       <div className="flex-1 w-full bg-no-repeat bg-top bg-cover bg-[url('/lp/compaignMobile.png')]" />
                       <div className="flex-1 flex flex-col gap-2 p-5 justify-end">
                         <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                          Play Fully Remotely or In-Person with Digital Elements
+                          Integrated Campaign Search and Scheduling
                         </h1>
                         <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
                           Join a campaign that match your taste and schedule.
@@ -223,7 +223,7 @@ export default function NextLevel({}) {
                     <div className="hidden md:flex w-full h-full flex-col">
                       <div className="flex-[2] flex flex-col gap-2 p-5 justify-start">
                         <h1 className="text-[20px] leading-[24px] tracking-[-0.8px] font-semibold">
-                          Play Fully Remotely or In-Person with Digital Elements
+                          Integrated Campaign Search and Scheduling
                         </h1>
                         <p className="text-[rgba(255,255,255,0.5)] leading-[22px]">
                           Join a campaign that match your taste and schedule.
