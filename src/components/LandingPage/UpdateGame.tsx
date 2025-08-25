@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Header from './Header';
 
 const UpdateGame = () => {
@@ -17,73 +18,80 @@ const UpdateGame = () => {
         {/* Cards */}
         <div className="px-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 z-10">
           {/* Card 1 */}
-          <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
-            <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
-              <Image
-                src="/lp/Update/cardUpdate001.png"
-                alt="Anno Amagium"
-                width={400}
-                height={248}
-                className="w-full h-full"
-              />
+          <Link href="/updates/anno-amagium" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform transition-all duration-500 ease-out">
+              <div className="w-full h-[200px] md:h-[248px] overflow-hidden">
+                <Image
+                  src="/lp/Update/cardUpdate001.png"
+                  alt="Anno Amagium"
+                  width={400}
+                  height={248}
+                  className="w-full h-full"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • Aug 22, 2024 • 2 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Announcing Anno Amagium
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying
+                  Game is based on the Anno Amagium Universe, with over five
+                  y...
+                </p>
+              </div>
             </div>
-            <div className="p-5 md:p-6">
-              <p className="text-sm text-gray-400">
-                Hank Whitson • Aug 22, 2024 • 2 min read
-              </p>
-              <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                Announcing Anno Amagium
-              </h3>
-              <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying
-                Game is based on the Anno Amagium Universe, with over five y...
-              </p>
-            </div>
-          </div>
+          </Link>
 
           {/* Card 2 */}
-          <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
-            <div className="w-full h-[200px] md:h-[248px] relative overflow-hidden">
-              <Image
-                src="/lp/Update/cardUpdate002.png"
-                alt="Echelon"
-                width={450}
-                height={300}
-                className="w-full h-full object-cover"
-              />
+          <Link href="/updates/echelon" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform transition-all duration-500 ease-out">
+              <div className="w-full h-[200px] md:h-[248px] relative overflow-hidden">
+                <Image
+                  src="/lp/Update/cardUpdate002.png"
+                  alt="Echelon"
+                  width={450}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • Aug 22, 2024 • 2 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  A Cool Introduction to Echelon
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  A platform for online/hybrid (digitally augmented) tabletop
+                  gaming and digitally publishing original RPG systems.​ Betas
+                  are for figuring things out, and not everything will w...
+                </p>
+              </div>
             </div>
-            <div className="p-5 md:p-6">
-              <p className="text-sm text-gray-400">
-                Hank Whitson • Aug 22, 2024 • 2 min read
-              </p>
-              <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                A Cool Introduction to Echelon
-              </h3>
-              <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                A platform for online/hybrid (digitally augmented) tabletop
-                gaming and digitally publishing original RPG systems.​ Betas are
-                for figuring things out, and not everything will w...
-              </p>
-            </div>
-          </div>
+          </Link>
 
           {/* Card 3 */}
-          <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden">
-            <div className="w-full h-[200px] md:h-[248px]  bg-[url('/lp/Update/cardUpdate003.png')] bg-center bg-cover flex items-center justify-center relative overflow-hidden"></div>
-            <div className="p-5 md:p-6">
-              <p className="text-sm text-gray-400">
-                Hank Whitson • Aug 22, 2024 • 2 min read
-              </p>
-              <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                Here We Go Questin&apos; Again
-              </h3>
-              <p className="text-sm md:text-[16px] text-white/50 font-normal">
-                Friends. Gamers. Fellow adventurers. We bid you fond greetings
-                and a warm welcome to Echelon. As it stands, this site is merely
-                the avatar of an idea. A promise of things to com...
-              </p>
+          <Link href="/updates/conquesting" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform transition-all duration-500 ease-out">
+              <div className="w-full h-[200px] md:h-[248px]  bg-[url('/lp/Update/cardUpdate003.png')] bg-center bg-cover flex items-center justify-center relative overflow-hidden"></div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • Aug 22, 2024 • 2 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Here We Go Questin&apos; Again
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  Friends. Gamers. Fellow adventurers. We bid you fond greetings
+                  and a warm welcome to Echelon. As it stands, this site is
+                  merely the avatar of an idea. A promise of things to com...
+                </p>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
