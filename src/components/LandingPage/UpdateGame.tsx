@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Header from "./Header";
+import React from 'react';
+import Image from 'next/image';
+import Header from './Header';
 
 const UpdateGame = () => {
   return (
@@ -10,7 +10,7 @@ const UpdateGame = () => {
         {/* Título */}
         <h2 className="px-6 text-[40px] leading-[48px] md:text-center sm:text-[36px] md:text-[56px] md:leading-[64px] font-semibold mb-12 md:mb-32">
           Stay on top of <br className="md:hidden" />
-          the latest game <br className="hidden md:block" /> updates, news,{" "}
+          the latest game <br className="hidden md:block" /> updates, news,{' '}
           <br className="md:hidden" /> and reveals right here.
         </h2>
 
@@ -32,7 +32,7 @@ const UpdateGame = () => {
                 Hank Whitson • Aug 22, 2024 • 2 min read
               </p>
               <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                Introducing Anno AmagiumRole Playing Game!
+                Announcing Anno Amagium
               </h3>
               <p className="text-sm md:text-[16px] text-white/50 font-normal">
                 A true, next-gen tabletop RPG, Anno Amagium: The Roleplaying
@@ -57,7 +57,7 @@ const UpdateGame = () => {
                 Hank Whitson • Aug 22, 2024 • 2 min read
               </p>
               <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                Introducing Echelon!
+                A Cool Introduction to Echelon
               </h3>
               <p className="text-sm md:text-[16px] text-white/50 font-normal">
                 A platform for online/hybrid (digitally augmented) tabletop
@@ -75,7 +75,7 @@ const UpdateGame = () => {
                 Hank Whitson • Aug 22, 2024 • 2 min read
               </p>
               <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
-                Find Us on DragonCon!
+                Here We Go Questin&apos; Again
               </h3>
               <p className="text-sm md:text-[16px] text-white/50 font-normal">
                 Friends. Gamers. Fellow adventurers. We bid you fond greetings
