@@ -2,9 +2,9 @@ import React from "react";
 
 const Conquestcards: React.FC = () => {
   return (
-    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px]">
+    <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px] md:mb-14">
       <div
-        className={`flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 pt-40 pb-40 md:mt-0`}
+        className={`flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 pt-40 md:mt-0`}
       >
         <div className="flex flex-col items-start gap-4 md:gap-[28px] order-2 md:order-1 w-full md:w-auto">
           <div className="w-full flex items-center justify-start md:justify-center">
@@ -50,7 +50,7 @@ const Conquestcards: React.FC = () => {
                     <button className="btn w-fit">Follow</button>
                   </div>
 
-                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-002.png')] rounded-r-2xl shrink-0"></div>
+                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-002.png')] bg-no-repeat rounded-r-2xl shrink-0"></div>
                 </div>
               </div>
             </div>
@@ -98,7 +98,7 @@ const Conquestcards: React.FC = () => {
                       <button className="btn w-fit">Follow</button>
                     </div>
 
-                    <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/sign-up-001.png')] rounded-r-2xl"></div>
+                    <div className="absolute right-0 bg-cover bg-no-repeat bg-center w-1/2 h-full bg-[url('/lp/sign-up-001.png')] rounded-r-2xl"></div>
                   </div>
                 </div>
               </div>
@@ -139,7 +139,7 @@ const Conquestcards: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/conquestingGameOnEchelon.png')]"></div>
+                  <div className="absolute right-0 bg-cover bg-no-repeat bg-center w-1/2 h-full bg-[url('/lp/conquestingGameOnEchelon.png')]"></div>
                 </div>
               </div>
             </div>
