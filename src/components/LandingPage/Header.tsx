@@ -1,17 +1,17 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
-import Hamburguer from '../icons/hamburguer';
-import Close from '../icons/close';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+import Hamburguer from "../icons/hamburguer";
+import Close from "../icons/close";
 
 const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/games', label: 'Games' },
-  { href: '/updates', label: 'Updates' },
-  { href: '/team', label: 'Our Team' },
+  { href: "/", label: "Home" },
+  { href: "/games", label: "Games" },
+  { href: "/updates", label: "Updates" },
+  { href: "/team", label: "Our Team" },
 ];
 
 const Header: React.FC = () => {
@@ -19,16 +19,16 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollToSubscribe = () => {
-    const el = document.getElementById('subscribe-section');
+    const el = document.getElementById("subscribe-section");
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      el.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
     const originalStyle = window.document.body.style.overflow;
-    window.document.body.style.overflow = isOpen ? 'hidden' : originalStyle;
+    window.document.body.style.overflow = isOpen ? "hidden" : originalStyle;
     return () => {
       window.document.body.style.overflow = originalStyle;
     };
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="w-full bg-transparent fixed top-0 left-0 right-0 z-[100]">
-      <div className="flex items-center justify-between max-w-[1440px] mx-auto px-4 md:px-10 py-6 w-full">
+      <div className="flex items-center justify-between max-w-[1440px] mx-auto px-6 md:px-10 py-6 w-full">
         <Link href="/" className="flex items-center flex-shrink-0">
           <img
             src="/lp/logoHeader.png"
@@ -62,8 +62,8 @@ const Header: React.FC = () => {
                   <Link
                     href={href}
                     className={clsx(
-                      'font-medium text-[14px] leading-[20px]',
-                      isActive ? 'text-white' : 'text-white/50'
+                      "font-medium text-[14px] leading-[20px]",
+                      isActive ? "text-white" : "text-white/50"
                     )}
                   >
                     {label}
@@ -97,8 +97,8 @@ const Header: React.FC = () => {
 
       <div
         className={clsx(
-          'fixed inset-0 z-[100] bg-black transform transition-transform duration-300 ease-in-out',
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+          "fixed inset-0 z-[100] bg-black transform transition-transform duration-300 ease-in-out",
+          isOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
         <div className="flex justify-end px-6 pt-6 sm:hidden">
@@ -120,8 +120,8 @@ const Header: React.FC = () => {
                 key={href}
                 href={href}
                 className={clsx(
-                  'font-semibold text-[28px] leading-[36px] tracking-[-1.12px]',
-                  isActive ? 'text-[#FC5212]' : 'text-white'
+                  "font-semibold text-[28px] leading-[36px] tracking-[-1.12px]",
+                  isActive ? "text-[#FC5212]" : "text-white"
                 )}
               >
                 {label}

@@ -61,7 +61,7 @@ const HomeSection: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="absolute left-1/2 w-full -translate-x-1/2 bottom-[59px]">
+        <div className="absolute left-1/2 w-full -translate-x-1/2 bottom-[85px]">
           <div className="flex items-center justify-center pt-[285px]">
             <button
               onClick={scrollToSubscribe}

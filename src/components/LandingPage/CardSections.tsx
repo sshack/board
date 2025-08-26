@@ -23,10 +23,10 @@ const CardSections = () => {
           alt="Discord"
           width={400}
           height={400}
-          className="absolute md:hidden top-5 left-[21px] z-10 "
+          className="absolute md:hidden top-5 left-0 w-full flex items-start h-auto rounded-md"
         />
         <div className="flex flex-col items-center justify-center">
-          <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
+          <div className="text-[28px] leading-[36px]  tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
               Join the{" "}
               <span className="text-[#00B4FF]">ConQuesting community</span> on
@@ -66,7 +66,7 @@ const CardSections = () => {
           className="absolute w-fit h-[300px] top-5 left-1/2 -translate-x-1/2 z-10 rounded-md md:hidden"
         />
         <div className="flex flex-col items-center justify-center">
-          <div className="text-[28px] leading-[32px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
+          <div className="text-[28px] leading-[36px] tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
               Follow us on <br /> Instagram for{" "}
               <span className="text-[#00B4FF]">

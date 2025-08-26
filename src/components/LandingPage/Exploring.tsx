@@ -48,8 +48,8 @@ export default function Exploring({}) {
                       <p className="text-white text-lg font-medium leading-7">
                         Get “Anno Amagium: The RPG - Core Rules”
                       </p>
-                      <p className="text-white/50 text-[14px] font-medium leading-5">
-                        Enjoy our first TTRPG book—free of charge
+                      <p className="text-white/50 text-[14px] w-2/3 font-medium leading-5">
+                        by following us on Instagram
                       </p>
                     </div>
 
@@ -95,7 +95,7 @@ export default function Exploring({}) {
                       <p className="text-white text-lg font-medium leading-7">
                         Get “Anno Amagium: The RPG - Universe Guide and Lore”
                       </p>
-                      <p className="text-white/50 text-[14px] font-medium leading-5">
+                      <p className="text-white/50 text-[14px] w-2/3 font-medium leading-5">
                         by following us on Instagram
                       </p>
                     </div>
@@ -143,7 +143,7 @@ export default function Exploring({}) {
                         Get “Anno Amagium: The RPG - Character Creation and
                         Advancement”
                       </p>
-                      <p className="text-white/50 text-[14px] font-medium leading-5">
+                      <p className="text-white/50 w-2/3 text-[14px] font-medium leading-5">
                         by signing up for our mailing list
                       </p>
                     </div>
