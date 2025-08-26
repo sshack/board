@@ -15,7 +15,7 @@ export default function IntroductionGame() {
           className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
           style={{
             background:
-              "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
+              'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)',
           }}
         />
 
@@ -25,7 +25,7 @@ export default function IntroductionGame() {
             src="/lp/trbe.png"
             alt="ANNO AMAGIUM"
             className="pt-20"
-            style={{ maxWidth: "400px" }}
+            style={{ maxWidth: '400px' }}
           />
 
           {/* Game Title */}
@@ -33,7 +33,7 @@ export default function IntroductionGame() {
             src="/lp/titleAmmo.png"
             alt="ANNO AMAGIUM"
             className="pt-[81px]"
-            style={{ maxWidth: "400px" }}
+            style={{ maxWidth: '400px' }}
           />
 
           {/* Game Type */}
@@ -41,7 +41,7 @@ export default function IntroductionGame() {
             src="/lp/text2.png"
             alt="ANNO AMAGIUM"
             className="pt-2"
-            style={{ maxWidth: "400px", height: "45px" }}
+            style={{ maxWidth: '400px', height: '45px' }}
           />
 
           {/* Description */}
@@ -69,10 +69,12 @@ export default function IntroductionGame() {
         <div className="flex flex-col w-full h-full overflow-hidden bg-[url('/lp/anno-amagium-mob.png')] bg-cover bg-center pt-16 px-6 ">
           <div className="flex items-center justify-center">
             <div className="relative w-full flex mb-6">
-              <img
-                src="/lp/anno-amagium-product-mob.png"
-                className="items-center justify-center"
-              />
+              <div className="w-full flex items-center justify-center">
+                <img
+                  src="/lp/anno-amagium-product-mob.png"
+                  className="items-center justify-center"
+                />
+              </div>
               <img
                 src="/lp/anno-amagium-logo.png"
                 alt=""
