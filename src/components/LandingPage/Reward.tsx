@@ -268,23 +268,18 @@ export default function Reward() {
             </div>
 
             <div
-              className="p-[1px] rounded-xl w-full h-[211px]"
+              className="p-[1px] rounded-xl w-full h-full"
               style={{
                 background:
                   "linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
               }}
             >
-              <div className="relative w-full h-[209px] shrink-0 rounded-xl bg-black overflow-hidden">
-                <div
-                  className="flex h-full w-full rounded-xl"
-                  style={{
-                    background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
-                  }}
-                >
+              <div className="relative w-full h-[132px] shrink-0 rounded-xl bg-black overflow-hidden">
+                <div className="flex h-full w-full rounded-xl bg-[url('/lp/get-core-img.png')] bg-top bg-cover">
                   <div className="w-2/3 relative flex flex-col justify-between p-4 gap-4">
                     <p className="text-white text-[16px] font-medium leading-6">
-                      Anno Amagium: The RPG - Core Rules
+                      Anno Amagium: <br />
+                      The RPG - Core Rules
                     </p>
                     <a
                       href="https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
@@ -295,7 +290,6 @@ export default function Reward() {
                       Download as PDF
                     </a>
                   </div>
-                  <div className="absolute right-0 bg-cover bg-right w-1/2 h-full bg-[url('/lp/card-mob-poster.png')] shrink-0"></div>
                 </div>
               </div>
             </div>

@@ -118,7 +118,7 @@ const Conquestcards: React.FC = () => {
                 }}
               >
                 <div
-                  className="flex h-full w-full rounded-xl"
+                  className="hidden md:flex h-full w-full rounded-xl"
                   style={{
                     background:
                       "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
@@ -140,6 +140,36 @@ const Conquestcards: React.FC = () => {
                   </div>
 
                   <div className="absolute right-0 bg-cover bg-no-repeat bg-center w-1/2 h-full bg-[url('/lp/conquestingGameOnEchelon.png')]"></div>
+                </div>
+
+                {/*Versão Mobile*/}
+                <div
+                  className="flex flex-col h-full w-full rounded-xl relative overflow-hidden"
+                  style={{
+                    background:
+                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25,159,236,.10) .9%, rgba(25,159,236,.55) 100%))",
+                  }}
+                >
+                  <div className="flex flex-col h-full w-full rounded-xl relative overflow-hidden bg-[url('/lp/conquestingTagMob.png')] bg-center bg-cover">
+                    {/* pattern pontilhado (apenas visual) */}
+                    <div
+                      className="absolute inset-0 pointer-events-none opacity-30
+                  bg-[radial-gradient(circle,_rgba(25,159,236,0.6)_1px,_transparent_1px)]
+                  bg-[length:12px_12px]"
+                    />
+
+                    <div className="p-6 flex flex-col">
+                      <div className="space-y-3">
+                        <p className="text-white text-[18px] leading-6 font-normal tracking-[-1px]">
+                          Do you have Secret Loot this year?
+                        </p>
+                        <p className="text-white/50 w-full text-[14px] font-normal">
+                          Post your quest pics or videos with #conquesting and
+                          tag @gameonechelon to claim this year's mystery swag.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
