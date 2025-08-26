@@ -18,7 +18,7 @@ export default function CreateExp() {
   return (
     <>
       <section className="w-full">
-        <div className="pt-20 w-full md:h-[1000px] bg-[url('/lp/games-main-bg.png')] bg-cover bg-center pb-20 md:pb-0 overflow-hidden relative">
+        <div className="pt-20 w-full md:h-[1000px] bg-[url('/lp/games-main-bg.png')] bg-cover bg-center md:pb-0 overflow-hidden relative">
           <div className="w-full">
             <div className="w-full mx-auto px-6 md:px-8 flex flex-col items-center pb-10">
               {/* Main Statement */}

@@ -177,15 +177,15 @@ export default function LoreSection() {
         {/* Card 3 */}
         <div className="flex flex-col w-full overflow-hidden">
           <div className="flex flex-col h-full">
-            <div className="w-full h-[160px] bg-[url('/lp/card-3-sk-mob.png')] rounded-2xl bg-center bg-cover bg-no-repeat"></div>
-            <div className="flex pt-4 flex-col">
+            <div className="relative z-0 w-full h-[160px] rounded-2xl bg-center bg-cover bg-no-repeat bg-[url('/lp/card-3-sk-mob.png')] pointer-events-none"></div>
+            <div className="flex pt-4 flex-col relative z-10">
               <details className="group [&_summary::-webkit-details-marker]:hidden mb-7 group-open:mb-0">
-                <summary className="flex items-center justify-between cursor-pointer">
-                  <h3 className="max-w-[303px] text-[16px] font-normal text-white">
+                <summary className="flex w-full items-start justify-between gap-3 cursor-pointer">
+                  <h3 className="flex-1 min-w-0 text-[16px] font-normal text-white">
                     Robust Crafting and Performance Framework
                   </h3>
                   <svg
-                    className="w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180"
+                    className="shrink-0 w-5 h-5 text-white transition-transform duration-300 group-open:rotate-180 pointer-events-none"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -196,14 +196,16 @@ export default function LoreSection() {
                     <path d="M6 9l6 6 6-6" />
                   </svg>
                 </summary>
-                <div className="overflow-hidden transition-all duration-300 max-h-0 group-open:max-h-96 group-open:mt-2">
-                  <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pb-7">
-                    Whether forging a sword to slay devils or performing for a
-                    Fae Monarch, some moments deserve more than a basic skill
-                    check. Anno Amagium’s Endeavor System brings high-stakes
-                    crafting and performance to life with a risk-reward mechanic
-                    that makes major efforts feel truly epic.
-                  </p>
+                <div className="grid grid-rows-[0fr] group-open:grid-rows-[1fr] transition-[grid-template-rows] duration-300">
+                  <div className="overflow-hidden">
+                    <p className="text-[rgba(255,255,255,0.5)] text-[14px] leading-[20px] pt-2 pb-7">
+                      Whether forging a sword to slay devils or performing for a
+                      Fae Monarch, some moments deserve more than a basic skill
+                      check. Anno Amagium’s Endeavor System brings high-stakes
+                      crafting and performance to life with a risk-reward
+                      mechanic that makes major efforts feel truly epic.
+                    </p>
+                  </div>
                 </div>
               </details>
             </div>
