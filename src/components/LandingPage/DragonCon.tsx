@@ -1,45 +1,45 @@
-import Image from "next/image";
-import Link from "next/link";
-import Arrow from "../icons/arrow";
+import Image from 'next/image';
+import Link from 'next/link';
+import Arrow from '../icons/arrow';
 
 export default function DragonCon({}) {
   return (
     <>
       {/*Versão Desktop*/}
-      <div className="hidden md:flex px-6 w-full md:p-20 justify-center items-center">
-        <div className="relative rounded-xl w-full md:w-[1280px] h-full md:h-[496px] bg-[url('/lp/bgDragonConMobile.png')] md:bg-[url('/lp/bgDragonConDesktop.png')] bg-cover">
-          <div className="pt-[200px] md:p-10 md:pt-10 z-40 h-full">
-            <div className="hidden md:flex items-start justify-start flex-row mb-10 md:mb-0">
+      <div className="hidden lg:flex px-6 w-full lg:p-20 justify-center items-center">
+        <div className="relative rounded-xl w-full lg:w-[1280px] h-full lg:h-[496px] bg-[url('/lp/bgDragonConMobile.png')] lg:bg-[url('/lp/bgDragonConDesktop.png')] bg-cover">
+          <div className="pt-[200px] lg:p-10 lg:pt-10 z-40 h-full">
+            <div className="hidden lg:flex items-start justify-start flex-row mb-10 lg:mb-0">
               <p className="text-[#199FEC] text-16px font-normal">
                 Begin your adventure here!
               </p>
             </div>
-            <div className="flex flex-col md:flex-col items-start justify-between w-full ">
-              <div className="w-full md:w-auto md:max-w-[536px] md:pt-32 text-left md:flex md:flex-col md:h-full md:justify-between">
-                <div className="md:hidden mb-4 md:mb-0">
+            <div className="flex flex-col lg:flex-col items-start justify-between w-full ">
+              <div className="w-full lg:w-auto lg:max-w-[536px] lg:pt-32 text-left lg:flex lg:flex-col lg:h-full lg:justify-between">
+                <div className="lg:hidden mb-4 lg:mb-0">
                   <p className="text-[#199FEC] text-16px font-normal">
                     Begin your adventure here!
                   </p>
                 </div>
-                <h1 className="text-[28px] md:text-[44px] leading-[36px] md:leading-[48px] md:mb-5 font-semibold tracking-[-1.12px] md:tracking-[-1.76px] text-white">
+                <h1 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[44px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[48px] lg:mb-5 font-semibold tracking-[-1.12px] sm:tracking-[-1.3px] md:tracking-[-1.5px] lg:tracking-[-1.76px] text-white">
                   Welcome DragonCon 2025
                 </h1>
                 {/* Mobile copy */}
-                <p className="text-[14px] text-white lg:text-[20px] leading-[28px] font-medium tracking-[-0.8px] w-full pb-6 md:hidden">
+                <p className="text-[14px] text-white lg:text-[20px] leading-[28px] font-medium tracking-[-0.8px] w-full pb-6 lg:hidden">
                   ConQuesting is a free live questing experience in the form of
                   a cosplay-focused photo-scavenger hunt. It is held in Atlanta
                   at DragonCon annually. Select your quests, snap your pics, and
                   get your loot!
                 </p>
                 {/* Desktop copy */}
-                <p className="hidden md:block text-[16px] leading-6 font-normal tracking-[-0.64px] w-full mb-4">
+                <p className="hidden lg:block text-[16px] leading-6 font-normal tracking-[-0.64px] w-full mb-4">
                   ConQuesting is a free live questing experience in the form of
                   a cosplay-focused photo-scavenger hunt. It is held in Atlanta
                   at DragonCon annually. Select your quests, snap your pics, and
                   get your loot!
                 </p>
               </div>
-              <div className="hidden md:flex items-center text-[14px] leading-[28px] font-medium">
+              <div className="hidden lg:flex items-center text-[14px] leading-[28px] font-medium">
                 <span className="inline-flex items-center">
                   Assemble your party
                 </span>
@@ -102,13 +102,13 @@ export default function DragonCon({}) {
                 href="/conquesting"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#199FEC] text-white text-[18px] px-6 md:px-6 py-3 rounded-full font-normal w-full md:w-[200px] mt-10 md:my-10 "
+                className="bg-[#199FEC] text-white text-[18px] px-6 lg:px-6 py-3 rounded-full font-normal w-full lg:w-[200px] mt-10 lg:my-10 "
               >
                 Go Conquesting
               </Link>
             </div>
           </div>
-          <div className="absolute left-5 top-8 md:left-auto md:top-1/2 -translate-y-1/2 translate-x-[872px] w-[180px] h-[180px]">
+          <div className="absolute left-5 top-8 lg:left-auto lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-[872px] w-[180px] h-[180px]">
             <div className="relative w-full h-full">
               <Image
                 src="/lp/conquesting-logo.png"
@@ -122,43 +122,43 @@ export default function DragonCon({}) {
         </div>
       </div>
       {/*Versão Mobile*/}
-      <div className="w-full px-6 md:p-20 flex justify-center items-center md:hidden">
-        <div className="relative rounded-xl w-full md:w-[1280px] h-full md:h-[496px] bg-[url('/lp/bgDragonConMobile.png')] md:bg-[url('/lp/bgDragonConDesktop.png')] bg-cover">
-          <div className="p-6 pt-[200px] md:p-10 md:pt-10 z-40 h-full">
-            <div className="hidden md:flex items-start justify-start flex-row mb-10">
+      <div className="w-full px-6 lg:p-20 flex justify-center items-center lg:hidden">
+        <div className="relative rounded-xl w-full lg:w-[1280px] h-full lg:h-[496px] bg-[url('/lp/bgDragonConMobile.png')] lg:bg-[url('/lp/bgDragonConDesktop.png')] bg-cover">
+          <div className="p-6 pt-[200px] lg:p-10 lg:pt-10 z-40 h-full">
+            <div className="hidden lg:flex items-start justify-start flex-row mb-10">
               <p className="text-[#199FEC] text-16px font-normal">
                 Begin your adventure here!
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-between w-full">
-              <div className="w-full md:w-auto md:max-w-[580px] space-y-3 text-left order-2 md:order-1 md:flex md:flex-col md:h-full md:justify-between">
-                <div className="md:hidden mb-5">
-                  <p className="text-[#199FEC] text-[14px] md:text-[16px] font-normal">
+            <div className="flex flex-col lg:flex-row items-center justify-between w-full">
+              <div className="w-full lg:w-auto lg:max-w-[580px] space-y-3 text-left order-2 lg:order-1 lg:flex lg:flex-col lg:h-full lg:justify-between">
+                <div className="lg:hidden mb-5">
+                  <p className="text-[#199FEC] text-[14px] lg:text-[16px] font-normal">
                     Begin your adventure here!
                   </p>
                 </div>
-                <h1 className="text-[28px] md:text-[44px] leading-[36px] md:leading-[48px] lg:leading-[60px] font-semibold tracking-[-1.12px] md:tracking-[-1.76px] text-white">
+                <h1 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[44px] leading-[36px] sm:leading-[40px] md:leading-[44px] lg:leading-[48px] xl:leading-[60px] font-semibold tracking-[-1.12px] sm:tracking-[-1.3px] md:tracking-[-1.5px] lg:tracking-[-1.76px] text-white">
                   Welcome
-                  <br className="md:hidden" />
-                  <span className="md:hidden"> </span>DragonCon 2025
+                  <br className="lg:hidden" />
+                  <span className="lg:hidden"> </span>DragonCon 2025
                 </h1>
                 {/* Mobile copy */}
-                <p className="text-[14px] leading-5 font-normal w-full pb-5 md:hidden">
+                <p className="text-[14px] leading-5 font-normal w-full pb-5 lg:hidden">
                   ConQuesting is a cosplay-focused photo-scavenger hunt where
                   you earn free rewards by tracking down cosplays from your
                   favorite fandoms. Prizes include badge ribbons, pins, and
                   digital TTRPG rulebooks.
                 </p>
                 {/* Desktop copy */}
-                <p className="hidden md:block text-[18px] lg:text-[20px] leading-[28px] font-medium tracking-[-0.8px] w-full md:max-w-xl pb-6 md:pb-0">
+                <p className="hidden lg:block text-[18px] lg:text-[20px] leading-[28px] font-medium tracking-[-0.8px] w-full lg:max-w-xl pb-6 lg:pb-0">
                   ConQuesting is a free live questing experience in the form of
                   a cosplay-focused photo-scavenger hunt. It is held in Atlanta
                   at DragonCon annually. Select your quests, snap your pics, and
                   get your loot!
                 </p>
 
-                <div className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-2 text-[18px] leading-[28px] font-medium w-full">
+                <div className="hidden lg:flex flex-wrap items-center gap-x-3 gap-y-2 text-[18px] leading-[28px] font-medium w-full">
                   <span className="inline-flex items-center whitespace-nowrap">
                     Assemble your party
                     <Arrow className="mx-2" />
@@ -176,7 +176,7 @@ export default function DragonCon({}) {
                   </span>
                 </div>
                 {/*Button Mobile*/}
-                <div className="flex w-full md:hidden">
+                <div className="flex w-full lg:hidden">
                   <Link
                     href="/conquesting"
                     rel="noopener noreferrer"
@@ -190,14 +190,14 @@ export default function DragonCon({}) {
                 <Link
                   href="/conquesting"
                   rel="noopener noreferrer"
-                  className="hidden bg-[#199FEC] w-full md:block text-white text-[18px] px-6 md:px-6 py-3 rounded-full md:font-medium md:w-[200px] md:mt-4"
+                  className="hidden bg-[#199FEC] w-full lg:block text-white text-[18px] px-6 lg:px-6 py-3 rounded-full lg:font-medium lg:w-[200px] lg:mt-4"
                 >
                   Go ConQuesting
                 </Link>
               </div>
             </div>
           </div>
-          <div className="absolute left-5 top-8 md:left-auto md:right-0 md:top-1/2 md:-translate-y-1/2 w-[128px] h-[128px] md:w-[180px] md:h-[180px]">
+          <div className="absolute left-5 top-8 lg:left-auto lg:right-0 lg:top-1/2 lg:-translate-y-1/2 w-[128px] h-[128px] lg:w-[180px] lg:h-[180px]">
             <div className="relative w-full h-full">
               <Image
                 src="/lp/conquesting-logo.png"
