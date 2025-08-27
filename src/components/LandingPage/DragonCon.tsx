@@ -108,7 +108,7 @@ export default function DragonCon({}) {
               </Link>
             </div>
           </div>
-          <div className="absolute left-5 top-8 lg:left-auto lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-[872px] w-[180px] h-[180px]">
+          <div className="absolute left-5 top-8 lg:left-auto lg:right-10 lg:top-1/2 lg:-translate-y-1/2 w-[128px] h-[128px] lg:w-[180px] lg:h-[180px]">
             <div className="relative w-full h-full">
               <Image
                 src="/lp/conquesting-logo.png"
@@ -122,7 +122,7 @@ export default function DragonCon({}) {
         </div>
       </div>
       {/*Versão Mobile*/}
-      <div className="w-full px-6 lg:p-20 flex justify-center items-center lg:hidden">
+      <div className="w-full px-6 pt-10 flex justify-center items-center lg:hidden">
         <div className="relative rounded-xl w-full lg:w-[1280px] h-full lg:h-[496px] bg-[url('/lp/bgDragonConMobile.png')] lg:bg-[url('/lp/bgDragonConDesktop.png')] bg-cover">
           <div className="p-6 pt-[200px] lg:p-10 lg:pt-10 z-40 h-full">
             <div className="hidden lg:flex items-start justify-start flex-row mb-10">
@@ -197,13 +197,13 @@ export default function DragonCon({}) {
               </div>
             </div>
           </div>
-          <div className="absolute left-5 top-8 lg:left-auto lg:right-0 lg:top-1/2 lg:-translate-y-1/2 w-[128px] h-[128px] lg:w-[180px] lg:h-[180px]">
+          <div className="absolute left-5 top-8 w-[128px] h-[128px] md:w-[150px] md:h-[150px]">
             <div className="relative w-full h-full">
               <Image
                 src="/lp/conquesting-logo.png"
                 alt="Conquesting Logo"
                 fill
-                sizes="(max-width: 768px) 128px, 180px"
+                sizes="(max-width: 768px) 128px, (max-width: 1024px) 150px, 180px"
                 className="object-contain"
               />
             </div>
