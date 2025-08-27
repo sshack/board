@@ -123,7 +123,7 @@ export default function ConQuestingCard({}) {
       </div>
 
       {/*Versão Mobile -----------------*/}
-      <div className=" lg:hidden flex px-6 w-full lg:p-20 justify-center items-center">
+      <div className=" lg:hidden flex md:mb-20 lg:mb-0 px-6 w-full lg:p-20 justify-center items-center">
         <div className="relative rounded-xl w-full lg:w-[1280px] h-full lg:h-[496px] bg-[url('/lp/bgDragonConMobile.png')] lg:bg-[url('/lp/bgDragonConDesktop.png')] bg-cover">
           <div className="pt-[200px] lg:p-10 lg:pt-10 z-40 h-full">
             <div className="hidden lg:flex items-start justify-start flex-row mb-10 lg:mb-0">
@@ -238,7 +238,7 @@ export default function ConQuestingCard({}) {
           </div>
         </div>
       </div>
-      <div className="w-full h-full mt-10 bottom-0 bg-[#FC5212] lg:hidden">
+      <div className="w-full h-full mt-10 bottom-0 bg-[#FC5212] md:hidden">
         <div className="p-3 text-[16px] text-white font-normal leading-6 flex flex-col text-center items-center justify-center h-full">
           <p>
             Introducing Our New Game <br />
