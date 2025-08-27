@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Header from "./Header";
+import Image from 'next/image';
+import Header from './Header';
 
 const Arrow: React.FC = () => (
   <svg
@@ -18,20 +18,35 @@ export default function CreateExp() {
   return (
     <>
       <section className="w-full">
-        <div className="pt-20 w-full md:h-[1000px] bg-[url('/lp/games-main-bg.png')] bg-cover bg-center md:pb-0 overflow-hidden relative">
+        <div className="pt-20 w-full lg:h-[1000px] bg-[url('/lp/games-main-bg.png')] bg-cover bg-center lg:pb-0 overflow-hidden relative">
           <div className="w-full">
-            <div className="w-full mx-auto px-6 md:px-8 flex flex-col items-center pb-10">
+            <div className="w-full mx-auto px-6 lg:px-8 flex flex-col items-center pb-10">
               {/* Main Statement */}
-              <div className="md:text-center pt-16 pb-14">
-                <h1 className="text-white text-[40px] tracking-[-1.6px] leading-[48px] md:text-[56px] font-semibold md:leading-[64px]">
+              <div className="text-center pt-16 pb-14">
+                <h1 className="text-white text-[40px] sm:text-[44px] md:text-[48px] lg:text-[56px] tracking-[-1.6px] sm:tracking-[-1.8px] md:tracking-[-2px] lg:tracking-[-2.24px] leading-[48px] sm:leading-[52px] md:leading-[56px] lg:leading-[64px] font-semibold">
                   We create experiences
-                  <br className="hidden md:block" /> that redefine the ways
+                  <br className="hidden lg:block" /> that redefine the ways
                   people game
-                  <br className="hidden md:block" /> with each other IRL and
+                  <br className="hidden lg:block" /> with each other IRL and
                   online.
                 </h1>
               </div>
-              <div className="pt-[38.14px] w-full bg-center md:bg-top h-[208px] bg-[url('/lp/game-details-product-screen-mob-img.png')] md:pt-0 md:bg-[url('/lp/roleplay.png')] md:w-[1200px] md:h-[650px] items-center flex bg-cover"></div>
+              <div className="w-full max-w-[1200px]">
+                <Image
+                  src="/lp/game-details-product-screen-mob-img.png"
+                  alt="Game experience"
+                  width={1200}
+                  height={650}
+                  className="w-full h-auto lg:hidden"
+                />
+                <Image
+                  src="/lp/roleplay.png"
+                  alt="Game experience"
+                  width={1200}
+                  height={650}
+                  className="w-full h-auto hidden lg:block"
+                />
+              </div>
             </div>
           </div>
 
@@ -40,7 +55,7 @@ export default function CreateExp() {
             className="absolute bottom-0 left-0 right-0 h-36 pointer-events-none z-0"
             style={{
               background:
-                "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
+                'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)',
             }}
           ></div>
         </div>
