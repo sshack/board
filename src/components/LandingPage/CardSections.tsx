@@ -23,7 +23,7 @@ const CardSections = () => {
           alt="Discord"
           width={400}
           height={400}
-          className="absolute md:hidden top-5 left-0 w-full flex items-start h-auto rounded-md"
+          className="absolute md:hidden top-1 -right-6 w-[80%] flex items-start h-auto rounded-md"
         />
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[36px]  tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
