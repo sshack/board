@@ -186,7 +186,14 @@ export default function Reward() {
                   <p className="text-white text-sm font-medium leading-5 max-w-[70%]">
                     Follow us on Instagram for more loot and quests!
                   </p>
-                  <button className="btn w-fit">Follow</button>
+                  <Link
+                    href="https://www.instagram.com/gameonechelon/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn w-fit"
+                  >
+                    Follow
+                  </Link>
                 </div>
                 <img
                   src="/lp/instagram.svg"
@@ -216,7 +223,14 @@ export default function Reward() {
                   <p className="text-white text-sm font-medium leading-5 max-w-[70%]">
                     Join the ConQuesting community on the Echelon Discord Server
                   </p>
-                  <button className="btn w-fit">Join</button>
+                  <Link
+                    href="https://discord.gg/8vg87vZyfS"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn w-fit"
+                  >
+                    Join
+                  </Link>
                 </div>
                 <img
                   src="/lp/discord.svg"

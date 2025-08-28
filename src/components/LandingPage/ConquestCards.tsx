@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Conquestcards: React.FC = () => {
@@ -47,7 +48,14 @@ const Conquestcards: React.FC = () => {
                       </p>
                     </div>
 
-                    <button className="btn w-fit">Follow</button>
+                    <Link
+                      href="https://www.instagram.com/gameonechelon/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn w-fit"
+                    >
+                      Follow
+                    </Link>
                   </div>
 
                   <div className="absolute right-0 bg-cover bg-center w-1/2 h-full bg-[url('/lp/follow-002.png')] bg-no-repeat rounded-r-2xl shrink-0"></div>
@@ -95,7 +103,14 @@ const Conquestcards: React.FC = () => {
                         </p>
                       </div>
 
-                      <button className="btn w-fit">Follow</button>
+                      <Link
+                        href="https://www.instagram.com/gameonechelon/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn w-fit"
+                      >
+                        Follow
+                      </Link>
                     </div>
 
                     <div className="absolute right-0 bg-cover bg-no-repeat bg-center w-1/2 h-full bg-[url('/lp/sign-up-001.png')] rounded-r-2xl"></div>

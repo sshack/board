@@ -1,4 +1,11 @@
+"use client";
 export default function IntroductionGame() {
+  const scrollToSubscribe = () => {
+    const el = document.getElementById("subscribe-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="w-full bg-black md:max-w-[1440px] text-white relative">
       <div className="hidden md:flex w-full justify-center absolute -top-4 left-0 right-0 z-20">
@@ -15,7 +22,7 @@ export default function IntroductionGame() {
           className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none z-10"
           style={{
             background:
-              'linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)',
+              "linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 1) 100%)",
           }}
         />
 
@@ -25,7 +32,7 @@ export default function IntroductionGame() {
             src="/lp/trbe.png"
             alt="ANNO AMAGIUM"
             className="pt-20"
-            style={{ maxWidth: '400px' }}
+            style={{ maxWidth: "400px" }}
           />
 
           {/* Game Title */}
@@ -33,7 +40,7 @@ export default function IntroductionGame() {
             src="/lp/titleAmmo.png"
             alt="ANNO AMAGIUM"
             className="pt-[81px]"
-            style={{ maxWidth: '400px' }}
+            style={{ maxWidth: "400px" }}
           />
 
           {/* Game Type */}
@@ -41,7 +48,7 @@ export default function IntroductionGame() {
             src="/lp/text2.png"
             alt="ANNO AMAGIUM"
             className="pt-2"
-            style={{ maxWidth: '400px', height: '45px' }}
+            style={{ maxWidth: "400px", height: "45px" }}
           />
 
           {/* Description */}
@@ -52,7 +59,10 @@ export default function IntroductionGame() {
           </p>
 
           {/* Call to Action Button */}
-          <button className="bg-white text-black px-8 py-4 rounded-full font-normal">
+          <button
+            onClick={scrollToSubscribe}
+            className="bg-white text-black px-8 py-4 rounded-full font-normal"
+          >
             Subscribe to our waiting list
           </button>
         </div>
@@ -100,7 +110,10 @@ export default function IntroductionGame() {
               stories, worldbuilding, and mechanical development.
             </p>
 
-            <button className="w-full py-3 rounded-full bg-white text-black leading-6 font-normal text-[16px]">
+            <button
+              onClick={scrollToSubscribe}
+              className="w-full py-3 rounded-full bg-white text-black leading-6 font-normal text-[16px]"
+            >
               Subscribe to our waiting list
             </button>
           </div>

@@ -4,6 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Exploring({}) {
+  const scrollToSubscribe = () => {
+    const el = document.getElementById("subscribe-section");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const pathname = usePathname();
   const shouldRenderTtrpg = pathname !== "/games";
   return (
@@ -185,22 +191,18 @@ export default function Exploring({}) {
               consultation to build your game, share it with the world, and get
               paid when people download your books.
             </p>
-            <Link
-              href="https://www.instagram.com/gameonechelon/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={scrollToSubscribe}
               className="cursor-pointer text-center w-full py-3 bg-[#199FEC] rounded-full md:hidden"
             >
               Book a call with us
-            </Link>
-            <Link
-              href="https://www.instagram.com/gameonechelon/"
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              onClick={scrollToSubscribe}
               className="hidden md:block cursor-pointer text-center px-6 py-3 bg-[#199FEC] rounded-full"
             >
               Book a call with us
-            </Link>
+            </button>
           </div>
         </div>
       )}

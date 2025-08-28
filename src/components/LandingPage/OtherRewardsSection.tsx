@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const OtherRewardsSection: React.FC = () => {
@@ -45,9 +46,16 @@ const OtherRewardsSection: React.FC = () => {
                       <br />
                       The RPG - Core Rules
                     </h3>
-                    <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold">
+                    <Link
+                      href={
+                        "https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold"
+                    >
                       Download
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -56,7 +64,7 @@ const OtherRewardsSection: React.FC = () => {
         </div>
       </section>
       {/*VERSÃO MOBILE*/}
-      <section className="w-full text-white px-6">
+      <section className="w-full text-white px-6 md:hidden">
         <div className="flex flex-col">
           <div className="flex flex-col">
             <h2 className="text-white font-semibold font-['Inter'] text-[40px] leading-[44px] tracking-[-1.6px] md:text-[44px] md:leading-[48px] md:tracking-[-1.76px]">
@@ -96,9 +104,16 @@ const OtherRewardsSection: React.FC = () => {
                       The RPG - Core Rules
                     </h3>
                     <div className="pb-[7px]">
-                      <button className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold">
+                      <Link
+                        href={
+                          "https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#199FEC] text-white text-[16px] px-6 py-2 rounded-full font-semibold"
+                      >
                         Download
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>

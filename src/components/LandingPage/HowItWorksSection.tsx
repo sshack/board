@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const HowItWorksSection: React.FC = () => {
@@ -23,9 +24,16 @@ const HowItWorksSection: React.FC = () => {
             <p className="text-[rgba(255,255,255,0.5)] mb-6">
               Or select a fan-specific quest from our Epic Quest Tome
             </p>
-            <button className="bg-[#199FEC] text-white text-[16px] px-6 py-3 rounded-full font-semibold w-full md:w-auto whitespace-nowrap">
+            <Link
+              href={
+                "https://storage.googleapis.com/gondola-public-bucket/dragonCon_2025_epic_quest_tome.pdf"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#199FEC] text-white text-[16px] px-6 py-3 rounded-full font-semibold w-full md:w-auto whitespace-nowrap text-center"
+            >
               Download Epic Quest Tome
-            </button>
+            </Link>
           </div>
         </div>
       </div>

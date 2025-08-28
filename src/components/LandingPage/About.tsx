@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function About() {
@@ -35,13 +36,23 @@ export default function About() {
                   on digital adaptations and augmentations of Table Top
                   Role-Playing Games (TTRPGs).
                 </p>
-                <button className="hidden md:block bg-white text-black px-6 py-3 rounded-full text-[16px]">
+                <Link
+                  href={"https://www.towhitventures.com/"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden md:block bg-white text-black px-6 py-3 rounded-full text-[16px]"
+                >
                   Visit ToWhitVentures Website
-                </button>
+                </Link>
                 <div className="pt-10 py-6 md:hidden">
-                  <button className=" bg-white text-black w-full px-6 py-3 rounded-full text-[16px]">
+                  <Link
+                    href={"https://www.towhitventures.com/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" bg-white text-black w-full px-6 py-3 rounded-full text-[16px]"
+                  >
                     Visit ToWhitVentures Website
-                  </button>
+                  </Link>
                 </div>
               </div>
 
