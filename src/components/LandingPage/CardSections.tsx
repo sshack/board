@@ -63,7 +63,7 @@ const CardSections = () => {
           alt="Instagram"
           width={200}
           height={200}
-          className="absolute w-fit h-[300px] top-5 left-[27%] -translate-x-1/2 z-10 rounded-md md:hidden"
+          className="absolute w-fit h-[300px] top-5 left-[32%] -translate-x-1/2 z-10 rounded-md md:hidden"
         />
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[36px] tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
