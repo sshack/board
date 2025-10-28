@@ -1,8 +1,8 @@
-"use client";
-import React from "react";
-import { teamMembers } from "@/utils/mocks";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+'use client';
+import React from 'react';
+import { teamMembers } from '@/utils/mocks';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const TeamPerson: React.FC = () => {
   return (
@@ -63,13 +63,13 @@ const TeamPerson: React.FC = () => {
                           </div>
                           <div className="flex text-white text-[14px] gap-2">
                             <p>
-                              <span className="text-[#199FEC]">Expertise:</span>{" "}
+                              <span className="text-[#199FEC]">Expertise:</span>{' '}
                               {member.expertise}
                             </p>
                           </div>
                           <div className="text-white text-[14px]">
                             <p>
-                              <span className="text-[#199FEC]">Fun Fact:</span>{" "}
+                              <span className="text-[#199FEC]">Fun Fact:</span>{' '}
                               {member.funFact}
                             </p>
                           </div>
@@ -82,9 +82,9 @@ const TeamPerson: React.FC = () => {
             </div>
 
             {/* Desktop: Grid */}
-            <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center px-4">
               {teamMembers.map((member) => (
-                <div key={member.id} className="group">
+                <div key={member.id} className="group w-full max-w-[280px]">
                   <div className="rounded-xl p-[1px] h-[340px] bg-gradient-to-br from-[#199FEC]/20 to-[#00B4FF]/10 group-hover:from-[#199FEC]/70 group-hover:to-[#00B4FF]/40 transition-all duration-300">
                     <div className="relative h-full rounded-xl overflow-hidden bg-[#0B1C2C]">
                       <div className="h-48 bg-[#0B1C2C] flex items-center justify-center overflow-hidden">
