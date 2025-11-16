@@ -1,5 +1,5 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 export default function About() {
   return (
@@ -8,11 +8,11 @@ export default function About() {
         {/* Top Section - Echelon */}
         <div className="md:text-center mb-24 md:mb-[140px]">
           <h1 className="w-[327px] md:w-full text-[40px] leading-[48px] md:text-[56px] font-semibold text-white mb-4 md:leading-[64px] font-sans">
-            Curious about Echelon? <br /> We're happy to{" "}
+            Curious about Echelon? <br /> We're happy to{' '}
             <br className="md:hidden" />
             chat. Email us at <br />
             <span className="text-[#FC5212]">
-              {" "}
+              {' '}
               info@gameonech <br className="md:hidden " />
               elon.com
             </span>
@@ -37,19 +37,19 @@ export default function About() {
                   Role-Playing Games (TTRPGs).
                 </p>
                 <Link
-                  href={"https://www.towhitventures.com/"}
+                  href={'https://www.towhitventures.com/'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hidden md:block bg-white text-black px-6 py-3 rounded-full text-[16px]"
+                  className="hidden md:inline-block bg-[#199FEC] text-white px-6 py-3 rounded-full text-[16px] hover:bg-[#0094d4] transition-colors"
                 >
                   Visit ToWhitVentures Website
                 </Link>
                 <div className="pt-10 py-6 md:hidden">
                   <Link
-                    href={"https://www.towhitventures.com/"}
+                    href={'https://www.towhitventures.com/'}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" bg-white text-black w-full px-6 py-3 rounded-full text-[16px]"
+                    className="block w-full bg-[#199FEC] text-white px-6 py-3 rounded-full text-[16px] text-center hover:bg-[#0094d4] transition-colors"
                   >
                     Visit ToWhitVentures Website
                   </Link>
