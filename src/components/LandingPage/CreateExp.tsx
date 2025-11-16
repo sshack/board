@@ -33,12 +33,13 @@ export default function CreateExp() {
               </div>
               <div className="w-full max-w-[1200px]">
                 <Image
-                  src="/lp/game-details-product-screen-mob-img.png"
+                  src="/lp/roleplay.png"
                   alt="Game experience"
                   width={1200}
                   height={650}
                   className="w-full h-auto lg:hidden"
                 />
+
                 <Image
                   src="/lp/roleplay.png"
                   alt="Game experience"

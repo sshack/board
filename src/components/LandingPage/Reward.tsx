@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Reward() {
   return (
@@ -14,7 +14,7 @@ export default function Reward() {
             <div
               className="p-[1px] rounded-xl w-full md:flex-1 md:w-[416px] h-[270px]"
               style={{
-                background: "linear-gradient(rgba(25, 159, 236, 0.30))",
+                background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
               }}
             >
               <div className="relative w-full h-[268px] shrink-0 rounded-xl bg-[url('/lp/get-the-epic-img.png')] bg-center bg-cover overflow-hidden">
@@ -42,7 +42,7 @@ export default function Reward() {
             <div
               className="p-[1px] rounded-xl w-full md:flex-1 md:w-[416px] h-[270px]"
               style={{
-                background: "linear-gradient(rgba(25, 159, 236, 0.30))",
+                background: 'linear-gradient(rgba(25, 159, 236, 0.30))',
               }}
             >
               <div className="relative w-full h-[268px] shrink-0 rounded-xl bg-[url('/lp/get-core-img.png')] bg-center bg-cover overflow-hidden">
@@ -77,7 +77,7 @@ export default function Reward() {
               className="p-[1px] rounded-xl w-full md:flex-1 md:w-[416px] h-[128px]"
               style={{
                 background:
-                  "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div className="relative w-full h-[128px] shrink-0 rounded-xl bg-black overflow-hidden">
@@ -85,7 +85,7 @@ export default function Reward() {
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                   }}
                 >
                   <div className="w-full relative flex flex-col">
@@ -119,7 +119,7 @@ export default function Reward() {
               className="p-[1px] rounded-xl w-full"
               style={{
                 background:
-                  "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div className="relative w-full h-[128px] shrink-0 rounded-xl bg-black overflow-hidden">
@@ -127,7 +127,7 @@ export default function Reward() {
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                   }}
                 >
                   <div className="w-full relative flex flex-col">
@@ -171,7 +171,7 @@ export default function Reward() {
             className="p-[1px] rounded-xl w-full h-32 mt-6"
             style={{
               background:
-                "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
             }}
           >
             <div className="relative w-full h-full shrink-0 rounded-xl bg-black overflow-hidden">
@@ -179,7 +179,7 @@ export default function Reward() {
                 className="flex h-full w-full rounded-xl"
                 style={{
                   background:
-                    "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                 }}
               >
                 <div className="w-full relative flex flex-col justify-between p-4 gap-4">
@@ -208,7 +208,7 @@ export default function Reward() {
             className="p-[1px] rounded-xl w-full h-[144px] mt-6"
             style={{
               background:
-                "linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                'linear-gradient(130deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
             }}
           >
             <div className="relative w-full h-full shrink-0 rounded-xl bg-black overflow-hidden">
@@ -216,7 +216,7 @@ export default function Reward() {
                 className="flex h-full w-full rounded-xl"
                 style={{
                   background:
-                    "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                    'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                 }}
               >
                 <div className="w-full relative flex flex-col justify-between p-4 gap-4">
@@ -251,7 +251,7 @@ export default function Reward() {
               className="p-[1px] rounded-xl w-full h-[211px]"
               style={{
                 background:
-                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div className="relative w-full h-[209px] shrink-0 rounded-xl bg-black overflow-hidden">
@@ -259,7 +259,7 @@ export default function Reward() {
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                   }}
                 >
                   <div className="w-2/3 relative flex flex-col justify-between p-4 gap-4">
@@ -285,7 +285,7 @@ export default function Reward() {
               className="p-[1px] rounded-xl w-full h-full"
               style={{
                 background:
-                  "linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(45deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div className="relative w-full h-[132px] shrink-0 rounded-xl bg-black overflow-hidden">

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 const CardSections = () => {
   return (
@@ -28,9 +28,7 @@ const CardSections = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[36px]  tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Join the{" "}
-              <span className="text-[#00B4FF]">ConQuesting community</span> on
-              the Echelon Discord <br className="md:hidden" /> Server
+              Join the the Echelon Discord <br className="md:hidden" /> Server
             </h2>
           </div>
           <Link
@@ -68,7 +66,7 @@ const CardSections = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="text-[28px] leading-[36px] tracking-[-1.12px] md:text-[44px] md:leading-[49px] md:text-center relative z-10">
             <h2 className="font-semibold text-white mb-2">
-              Follow us on Instagram for{" "}
+              Follow us on Instagram for{' '}
               <span className="text-[#00B4FF]">
                 more loot <br className="hidden md:hidden" />
                 and quests!
