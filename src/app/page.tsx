@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <main className="flex flex-col items-center justify-center w-full h-full">
       <HomeSection />
-      <DragonCon />
+      {/* <DragonCon /> */}
       <EarlyAccess />
       <NextLevel />
       <TabletopGameplay />

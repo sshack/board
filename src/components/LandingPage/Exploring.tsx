@@ -1,22 +1,22 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Exploring({}) {
   const scrollToSubscribe = () => {
-    const el = document.getElementById("subscribe-section");
+    const el = document.getElementById('subscribe-section');
     if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+      el.scrollIntoView({ behavior: 'smooth' });
     }
   };
   const pathname = usePathname();
-  const shouldRenderTtrpg = pathname !== "/games";
+  const shouldRenderTtrpg = pathname !== '/games';
   return (
     <section className="w-full bg-cover bg-center flex flex-col items-center justify-center gap-0 md:gap-8 relative overflow-hidden max-w-[1440px] px-6 md:px-0 mb-[120px] md:mb-[180px]">
       <div
         className={`flex flex-col md:flex-row items-center md:items-start justify-between w-full gap-4 pt-10 ${
-          pathname === "/games" ? "pb-0" : "pb-40"
+          pathname === '/games' ? 'pb-0' : 'pb-40'
         } md:mt-0`}
       >
         <div className="flex flex-col items-start gap-4 md:gap-[28px] order-2 md:order-1 w-full md:w-auto">
@@ -31,28 +31,28 @@ export default function Exploring({}) {
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
                 background:
-                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div
                 className="relative w-full h-[268px] shrink-0 rounded-xl bg-black overflow-hidden"
                 style={{
                   borderColor:
-                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
+                    'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
                 }}
               >
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                   }}
                 >
                   {/* bloco cinza: agora respeita w-2/3 */}
                   <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
                     <div className="z-10 flex flex-col items-start gap-2">
                       <p className="text-white text-lg font-medium leading-7">
-                        Get “Anno Amagium: The RPG - Core Rules”
+                        Get "Anno Amagium: The RPG - Core Rules"
                       </p>
                       <p className="text-white/50 text-[14px] w-2/3 font-medium leading-5">
                         by following us on Instagram
@@ -60,7 +60,7 @@ export default function Exploring({}) {
                     </div>
 
                     <Link
-                      href="https://storage.googleapis.com/gondola-public-bucket/dragonCon_2025_epic_quest_tome.pdf"
+                      href="https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-fit btn"
@@ -78,28 +78,28 @@ export default function Exploring({}) {
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
                 background:
-                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div
                 className="relative w-full h-[268px] shrink-0 rounded-xl bg-black overflow-hidden"
                 style={{
                   borderColor:
-                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
+                    'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
                 }}
               >
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                   }}
                 >
                   {/* bloco cinza: agora respeita w-2/3 */}
                   <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
                     <div className="z-10 flex flex-col items-start gap-2">
                       <p className="text-white text-lg font-medium leading-7">
-                        Get “Anno Amagium: The RPG - Universe Guide and Lore”
+                        Anno Amagium: The RPG – Universe Guide and Lore
                       </p>
                       <p className="text-white/50 text-[14px] w-2/3 font-medium leading-5">
                         by following us on Instagram
@@ -125,29 +125,28 @@ export default function Exploring({}) {
               className="p-[1px] rounded-xl w-full md:flex-1"
               style={{
                 background:
-                  "linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)",
+                  'linear-gradient(300deg, #002C45 0%, #F45111 35%, #199FEC 70%, #002C45 100%)',
               }}
             >
               <div
                 className="relative w-full h-[268px] shrink-0 rounded-xl bg-black overflow-hidden"
                 style={{
                   borderColor:
-                    "var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))",
+                    'var(--Transparent-secondary-T2-30, rgba(25, 159, 236, 0.30))',
                 }}
               >
                 <div
                   className="flex h-full w-full rounded-xl"
                   style={{
                     background:
-                      "var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))",
+                      'var(--bg-gradient-bottom-right, linear-gradient(111deg, rgba(25, 159, 236, 0.10) 0.9%, rgba(25, 159, 236, 0.55) 100%))',
                   }}
                 >
                   {/* bloco cinza: agora respeita w-2/3 */}
-                  <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4">
-                    <div className="z-10 flex flex-col items-start gap-2">
-                      <p className="text-white text-lg font-medium leading-7">
-                        Get “Anno Amagium: The RPG - Character Creation and
-                        Advancement”
+                  <div className="w-2/3 relative flex flex-col justify-between pr-2 p-6 gap-4 h-full">
+                    <div className="z-10 flex flex-col items-start gap-2 flex-1">
+                      <p className="text-white text-lg font-medium leading-6">
+                        Anno Amagium: The RPG - Character Creation
                       </p>
                       <p className="text-white/50 w-2/3 text-[14px] font-medium leading-5">
                         by signing up for our mailing list
@@ -158,7 +157,7 @@ export default function Exploring({}) {
                       href="https://www.instagram.com/gameonechelon/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-fit btn"
+                      className="w-fit btn mt-auto"
                     >
                       Follow
                     </Link>
@@ -181,7 +180,7 @@ export default function Exploring({}) {
           <div className="flex flex-col items-start gap-6 md:gap-0  md:max-w-[576px] md:flex-1 order-2 md:order-1">
             <p
               className="font-semibold text-[28px] md:text-[44px] leading-[36px] md:leading-[28px] tracking-[-1.12px]"
-              style={{ color: "var(--Secondary-S500, #199FEC)" }}
+              style={{ color: 'var(--Secondary-S500, #199FEC)' }}
             >
               Digital <span className="text-white">TTRPG</span> Publishing
             </p>
