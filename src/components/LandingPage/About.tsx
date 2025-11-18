@@ -11,11 +11,7 @@ export default function About() {
             Curious about Echelon? <br /> We're happy to{' '}
             <br className="md:hidden" />
             chat. Email us at <br />
-            <span className="text-[#FC5212]">
-              {' '}
-              info@gameonech <br className="md:hidden " />
-              elon.com
-            </span>
+            <span className="text-[#FC5212]"> info@gameonechelon.com</span>
           </h1>
         </div>
 
