@@ -81,6 +81,8 @@ All applicants must have a good grasp on the gaming industry as a whole, and at 
         'Your current resume',
         'Links to pertinent portfolios or content channels',
       ],
+      email: 'Careers@ToWhitVentures.com',
+      emailSubject: 'CFO',
       type: 'position',
       showSalaryExpectations: true,
     },
@@ -97,6 +99,8 @@ The ideal candidate has experience with React/Next.js, TypeScript, server-side r
         'Brief description of your experience with AWS and PostgreSQL',
         'Your current resume',
       ],
+      email: 'Careers@ToWhitVentures.com',
+      emailSubject: 'Full-Stack Engineer',
       type: 'position',
       showSalaryExpectations: true,
     },
@@ -113,6 +117,8 @@ Strong JavaScript/TypeScript skills and experience with Pixi.js or similar 2D re
         'Your approach to performance optimization',
         'Current resume with game development experience',
       ],
+      email: 'Careers@ToWhitVentures.com',
+      emailSubject: 'Game Developer',
       type: 'position',
       showSalaryExpectations: true,
     },
@@ -129,6 +135,8 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
         'Approach to handling real-time multiplayer challenges',
         'Current resume',
       ],
+      email: 'Careers@ToWhitVentures.com',
+      emailSubject: 'Backend Engineer',
       type: 'position',
       showSalaryExpectations: true,
     },
@@ -145,7 +153,7 @@ Use "Game Master" in the subject line of your email. In addition to the standard
         "5 questions about Anno Amagium's core rules",
         "5 questions about Anno Amagium's lore",
       ],
-      email: 'Hank.Whitson@ToWhitVentures.com',
+      email: 'Careers@ToWhitVentures.com',
       emailSubject: 'Game Master',
       type: 'position',
       showSalaryExpectations: true,
@@ -163,7 +171,7 @@ Use "Content Creator" in the subject line of your email. In addition to your nor
         'Links to your content channels',
         'Example of your finest TTRPG content',
       ],
-      email: 'Hank.Whitson@ToWhitVentures.com',
+      email: 'Careers@ToWhitVentures.com',
       emailSubject: 'Content Creator',
       type: 'position',
       showSalaryExpectations: true,
@@ -180,7 +188,7 @@ Include "Cartographer" in the subject of your email.`,
         'Your current resume',
         'Examples demonstrating various styles and settings',
       ],
-      email: 'Hank.Whitson@ToWhitVentures.com',
+      email: 'Careers@ToWhitVentures.com',
       emailSubject: 'Cartographer',
       type: 'position',
       showSalaryExpectations: true,
@@ -197,7 +205,7 @@ Include "Icon Artist" in the subject line of your email.`,
         'Your current resume',
         'Examples of various icon styles',
       ],
-      email: 'Hank.Whitson@ToWhitVentures.com',
+      email: 'Careers@ToWhitVentures.com',
       emailSubject: 'Icon Artist',
       type: 'position',
       showSalaryExpectations: true,
@@ -456,25 +464,62 @@ Include "Icon Artist" in the subject line of your email.`,
                   </div>
                 )}
 
-                {/* Contact Section */}
-                {selectedItem.email && (
+                {/* Contact Section - Updated Email Button */}
+                {(selectedItem.email || selectedItem.type === 'position') && (
                   <div className="border-t border-gray-700 pt-6">
                     <p className="text-gray-300 text-[15px] mb-4">
                       {selectedItem.type === 'opportunity'
                         ? 'Interested? Send us your information:'
                         : 'Ready to apply? Send your application to:'}
                     </p>
-                    <a
-                      href={`mailto:${
-                        selectedItem.email
-                      }?subject=${encodeURIComponent(
-                        selectedItem.emailSubject || ''
-                      )}`}
-                      className="inline-flex items-center gap-3 bg-[#199FEC] text-white px-6 py-3 rounded-full hover:bg-[#0094d4] transition-all hover:gap-4"
-                    >
-                      <span className="font-medium">Send Email</span>
-                      <span className="text-lg">→</span>
-                    </a>
+                    <div className="bg-gradient-to-r from-[#0E3045] to-[#001824] p-6 rounded-lg border border-[#199FEC]/30">
+                      <div className="flex items-center justify-between flex-wrap gap-4">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-[#199FEC]/20 rounded-full flex items-center justify-center">
+                            <svg
+                              className="w-5 h-5 text-[#199FEC]"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                          </div>
+                          <div>
+                            <p className="text-white font-medium">
+                              Careers@ToWhitVentures.com
+                            </p>
+                            <p className="text-gray-400 text-sm">
+                              Subject:{' '}
+                              {selectedItem.emailSubject || 'Application'}
+                            </p>
+                          </div>
+                        </div>
+                        <a
+                          href={`mailto:${
+                            selectedItem.email || 'Careers@ToWhitVentures.com'
+                          }?subject=${encodeURIComponent(
+                            selectedItem.emailSubject || 'Application'
+                          )}`}
+                          className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#199FEC] to-[#0094d4] text-white px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
+                        >
+                          <span>Send Application</span>
+                          <svg
+                            className="w-4 h-4 group-hover:translate-x-1 transition-transform"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 )}
               </div>
