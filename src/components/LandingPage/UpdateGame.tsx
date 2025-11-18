@@ -95,7 +95,7 @@ const UpdateGame = () => {
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
               <div className="w-full h-[200px] md:h-[248px] relative overflow-hidden">
                 <Image
-                  src="/lp/Update/cardUpdate002.png"
+                  src="/lp/join-cover.png"
                   alt="Echelon"
                   width={450}
                   height={300}
@@ -118,7 +118,7 @@ const UpdateGame = () => {
           {/* Card 5 */}
           <Link href="/updates/eclipsing-escapism" className="block">
             <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
-              <div className="w-full h-[200px] md:h-[248px]  bg-[url('/lp/Update/cardUpdate003.png')] bg-center bg-cover flex items-center justify-center relative overflow-hidden"></div>
+              <div className="w-full h-[200px] md:h-[248px]  bg-[url('/lp/eclipsing-cover.png')] bg-center bg-cover flex items-center justify-center relative overflow-hidden"></div>
               <div className="p-5 md:p-6">
                 <p className="text-sm text-gray-400">
                   Hank Whitson • Nov 19, 2024 • 2 min read
