@@ -297,7 +297,7 @@ Include "Icon Artist" in the subject line of your email.`,
                       Core Rules
                     </a>
                     <a
-                      href="https://storage.googleapis.com/gondola-public-bucket/dragonCon_2025_epic_quest_tome.pdf"
+                      href="https://drive.google.com/file/d/1bzw_WEk0VuvAndhqMKhxXf3EWMJBSU7e/view"
                       className="text-white underline text-[12px] md:text-[13px] hover:text-[#199FEC] transition-colors block"
                     >
                       Universe Guide & Lore
