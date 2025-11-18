@@ -1,7 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Header from './Header';
 
 const UpdateGame = () => {
   return (
@@ -88,6 +86,49 @@ const UpdateGame = () => {
                   Friends. Gamers. Fellow adventurers. We bid you fond greetings
                   and a warm welcome to Echelon. As it stands, this site is
                   merely the avatar of an idea. A promise of things to com...
+                </p>
+              </div>
+            </div>
+          </Link>
+          {/* Card 4 */}
+          <Link href="/updates/join-our-party" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px] relative overflow-hidden">
+                <Image
+                  src="/lp/Update/cardUpdate002.png"
+                  alt="Echelon"
+                  width={450}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • Nov 18, 2024 • 2 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Join Our Party
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  We are looking for a team to take on the world. Heroes wanted.
+                </p>
+              </div>
+            </div>
+          </Link>
+          {/* Card 5 */}
+          <Link href="/updates/eclipsing-escapism" className="block">
+            <div className="bg-[#0B1C2C] rounded-2xl overflow-hidden cursor-pointer hover:bg-[#0F2238] transition-all duration-500 ease-out hover:scale-[1.02] transform">
+              <div className="w-full h-[200px] md:h-[248px]  bg-[url('/lp/Update/cardUpdate003.png')] bg-center bg-cover flex items-center justify-center relative overflow-hidden"></div>
+              <div className="p-5 md:p-6">
+                <p className="text-sm text-gray-400">
+                  Hank Whitson • Nov 19, 2024 • 2 min read
+                </p>
+                <h3 className="text-[18px] md:text-[20px] text-white mt-5 md:mt-6 mb-1 font-normal">
+                  Eclipsing Escapism
+                </h3>
+                <p className="text-sm md:text-[16px] text-white/50 font-normal">
+                  Playing "Make Believe" means more than escaping real life. It
+                  is the first step in actualizing your dreams.
                 </p>
               </div>
             </div>

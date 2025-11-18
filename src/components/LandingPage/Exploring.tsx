@@ -163,7 +163,7 @@ export default function Exploring({}) {
                     </Link>
                   </div>
 
-                  <div className="absolute right-0 bg-cover bg-center bg-no-repeat w-1/2 h-full bg-[url('/lp/sign-up-001.png')] rounded-r-2xl shrink-0"></div>
+                  <div className="absolute right-0 bg-cover bg-center bg-no-repeat w-1/2 h-full bg-[url('/lp/follow-001.png')] rounded-r-2xl shrink-0"></div>
                 </div>
               </div>
             </div>
