@@ -81,7 +81,7 @@ All applicants must have a good grasp on the gaming industry as a whole, and at 
         'Your current resume',
         'Links to pertinent portfolios or content channels',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'CFO',
       type: 'position',
       showSalaryExpectations: true,
@@ -99,7 +99,7 @@ The ideal candidate has experience with React/Next.js, TypeScript, server-side r
         'Brief description of your experience with AWS and PostgreSQL',
         'Your current resume',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Full-Stack Engineer',
       type: 'position',
       showSalaryExpectations: true,
@@ -117,7 +117,7 @@ Strong JavaScript/TypeScript skills and experience with Pixi.js or similar 2D re
         'Your approach to performance optimization',
         'Current resume with game development experience',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Game Developer',
       type: 'position',
       showSalaryExpectations: true,
@@ -135,7 +135,7 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
         'Approach to handling real-time multiplayer challenges',
         'Current resume',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Backend Engineer',
       type: 'position',
       showSalaryExpectations: true,
@@ -153,7 +153,7 @@ Use "Game Master" in the subject line of your email. In addition to the standard
         "5 questions about Anno Amagium's core rules",
         "5 questions about Anno Amagium's lore",
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Game Master',
       type: 'position',
       showSalaryExpectations: true,
@@ -171,7 +171,7 @@ Use "Content Creator" in the subject line of your email. In addition to your nor
         'Links to your content channels',
         'Example of your finest TTRPG content',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Content Creator',
       type: 'position',
       showSalaryExpectations: true,
@@ -188,7 +188,7 @@ Include "Cartographer" in the subject of your email.`,
         'Your current resume',
         'Examples demonstrating various styles and settings',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Cartographer',
       type: 'position',
       showSalaryExpectations: true,
@@ -205,7 +205,7 @@ Include "Icon Artist" in the subject line of your email.`,
         'Your current resume',
         'Examples of various icon styles',
       ],
-      email: 'Careers@ToWhitVentures.com',
+      email: 'contact@towhitventures.com',
       emailSubject: 'Icon Artist',
       type: 'position',
       showSalaryExpectations: true,
@@ -487,7 +487,7 @@ Include "Icon Artist" in the subject line of your email.`,
                           </div>
                           <div>
                             <p className="text-white font-medium">
-                              Careers@ToWhitVentures.com
+                              contact@towhitventures.com
                             </p>
                             <p className="text-gray-400 text-sm">
                               Subject:{' '}
@@ -497,7 +497,7 @@ Include "Icon Artist" in the subject line of your email.`,
                         </div>
                         <a
                           href={`mailto:${
-                            selectedItem.email || 'Careers@ToWhitVentures.com'
+                            selectedItem.email || 'contact@towhitventures.com'
                           }?subject=${encodeURIComponent(
                             selectedItem.emailSubject || 'Application'
                           )}`}
