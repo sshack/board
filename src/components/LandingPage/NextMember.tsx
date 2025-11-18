@@ -11,11 +11,13 @@ type JobItem = {
   emailSubject?: string;
   requirements?: string[];
   type: 'opportunity' | 'position';
+  showSalaryExpectations?: boolean;
 };
 
 export default function NextMember() {
   const [selectedItem, setSelectedItem] = useState<JobItem | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const scrollToSubscribe = () => {
     const el = document.getElementById('subscribe-section');
@@ -52,6 +54,7 @@ Talk about your mechanics (in as much detail as you feel comfortable with), desc
       email: 'Hank.Whitson@ToWhitVentures.com',
       emailSubject: 'Original Game: [Your Title Here]',
       type: 'opportunity',
+      showSalaryExpectations: false,
     },
     {
       id: 'patrons-angels',
@@ -61,6 +64,7 @@ Talk about your mechanics (in as much detail as you feel comfortable with), desc
       email: 'Hank.Whitson@ToWhitVentures.com',
       emailSubject: 'Investment Opportunity',
       type: 'opportunity',
+      showSalaryExpectations: false,
     },
   ];
 
@@ -68,16 +72,17 @@ Talk about your mechanics (in as much detail as you feel comfortable with), desc
     {
       id: 'benevolent-master',
       title: 'Benevolent Master of Coin',
-      brief: 'Financial wizard to manage our treasury',
-      fullDescription: `We are looking for a financial expert to help manage and grow our resources as we build the ultimate online gaming platform. This role involves strategic financial planning, budget management, and ensuring our gold stays where it belongs - funding great games and creators.
+      brief: 'Financial expert to manage our treasury',
+      fullDescription: `We are seeking an experienced economancer. A mage with a mind for money who craves fiscal and creative enrichment. This role revolves around strategic financial planning, budget management, and economic puzzle solving. We need someone who is genuinely excited by the prospect of making a quality online gaming platform that is also fair toward its userbase, and we realize that is an enormous undertaking. Phrased differently… "Likely Fat Coinpurse, but Courage Required Ahead."
 
-The ideal candidate will have experience with startup finances, understand the gaming industry, and appreciate the importance of supporting creative endeavors.`,
+All applicants must have a good grasp on the gaming industry as a whole, and at least a passing familiarity with current titles and trends. An ideal candidate will have prior experience with startup finances and work history in the gaming space specifically. In addition to the standard application materials, please add two additional paragraphs to your cover letter. In the first, briefly discuss why this project is particular interest to you. In the second, please discuss a gaming monetization model that you appreciate.`,
       requirements: [
         'A brief 3-paragraph cover letter',
         'Your current resume',
         'Links to pertinent portfolios or content channels',
       ],
       type: 'position',
+      showSalaryExpectations: true,
     },
     {
       id: 'fullstack-engineer',
@@ -93,6 +98,7 @@ The ideal candidate has experience with React/Next.js, TypeScript, server-side r
         'Your current resume',
       ],
       type: 'position',
+      showSalaryExpectations: true,
     },
     {
       id: 'game-developer',
@@ -108,6 +114,7 @@ Strong JavaScript/TypeScript skills and experience with Pixi.js or similar 2D re
         'Current resume with game development experience',
       ],
       type: 'position',
+      showSalaryExpectations: true,
     },
     {
       id: 'backend-engineer',
@@ -123,8 +130,86 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
         'Current resume',
       ],
       type: 'position',
+      showSalaryExpectations: true,
+    },
+    {
+      id: 'veteran-game-masters',
+      title: 'Veteran Game Masters',
+      brief: 'Talented storytellers to run our game and provide feedback',
+      fullDescription: `We need talented storytellers to run our game, provide early impressions, and contribute feedback. We will get you the earliest possible access to Anno Amagium's public alpha, and regular updates on game development. You must be a veteran of many TTRPG campaigns, both as a player and the game master. Total time spent on a campaign is difficult to quantify, especially when measuring time at the table versus research, versus prep work, but we are looking for true masters in the sense of "I have been doing this for over ten-thousand hours."
+
+Use "Game Master" in the subject line of your email. In addition to the standard application materials, please include 5 questions about Anno Amagium's core rules, and 5 questions about its lore.`,
+      requirements: [
+        'A brief cover letter discussing your GM experience',
+        'Your current resume',
+        "5 questions about Anno Amagium's core rules",
+        "5 questions about Anno Amagium's lore",
+      ],
+      email: 'Hank.Whitson@ToWhitVentures.com',
+      emailSubject: 'Game Master',
+      type: 'position',
+      showSalaryExpectations: true,
+    },
+    {
+      id: 'content-creators',
+      title: 'Tabletop Content Creators, Streamers, and Tastemakers',
+      brief: 'Spread the word about our game through your content',
+      fullDescription: `Wanted: Talented Streamer or Similar to play our game and spread the word. We will get you the earliest possible access to Anno Amagium's public alpha and regular info updates on game development. Applicants must be polite, professional, and make awesome content. Candidates with at least one year of regular updates in their respective field are preferred.
+
+Use "Content Creator" in the subject line of your email. In addition to your normal materials, please share your engagement numbers, links to your channels, and an example of what you feel is your finest TTRPG content.`,
+      requirements: [
+        'Your current resume',
+        'Engagement numbers and channel statistics',
+        'Links to your content channels',
+        'Example of your finest TTRPG content',
+      ],
+      email: 'Hank.Whitson@ToWhitVentures.com',
+      emailSubject: 'Content Creator',
+      type: 'position',
+      showSalaryExpectations: true,
+    },
+    {
+      id: 'digital-cartographers',
+      title: 'Digital Cartographers and Battle Map Creators',
+      brief: 'Create maps for battle, exploration, and traditional cartography',
+      fullDescription: `We need a talented mapwright to… make maps. Lots of maps. Mostly for battle and exploration, but a smattering of traditional cartography as well. Ideal candidates will have the ability to create excellent art that matches the game's established aesthetic, in a variety of modern and fantastic settings.
+
+Include "Cartographer" in the subject of your email.`,
+      requirements: [
+        'Portfolio of map work',
+        'Your current resume',
+        'Examples demonstrating various styles and settings',
+      ],
+      email: 'Hank.Whitson@ToWhitVentures.com',
+      emailSubject: 'Cartographer',
+      type: 'position',
+      showSalaryExpectations: true,
+    },
+    {
+      id: 'icon-tokens-wizard',
+      title: 'Icon & Tokens Wizard',
+      brief: 'Create character portraits, spell effects, and item icons',
+      fullDescription: `An endless supply of small images showing everything from character portraits, to spell effects, to weapon and item icons, tailored to the game's unique aesthetic.
+
+Include "Icon Artist" in the subject line of your email.`,
+      requirements: [
+        'Portfolio showcasing icon and token work',
+        'Your current resume',
+        'Examples of various icon styles',
+      ],
+      email: 'Hank.Whitson@ToWhitVentures.com',
+      emailSubject: 'Icon Artist',
+      type: 'position',
+      showSalaryExpectations: true,
     },
   ];
+
+  // Pagination logic
+  const itemsPerPage = 4;
+  const totalPages = Math.ceil(openings.length / itemsPerPage);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentOpenings = openings.slice(startIndex, endIndex);
 
   const allItems: JobItem[] = [...opportunities, ...openings];
 
@@ -184,6 +269,34 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
                   ))}
                 </div>
 
+                <div className="bg-[#199FEC]/10 rounded-lg p-4 border border-[#199FEC]/30">
+                  <p className="text-white text-[13px] md:text-[14px] font-medium mb-2">
+                    <span className="text-[#199FEC]">
+                      Note for Creative Applicants:
+                    </span>
+                  </p>
+                  <p className="text-gray-300 text-[12px] md:text-[13px]">
+                    If you are interested in applying—especially for creative
+                    positions—we strongly recommend serious applicants
+                    familiarize themselves with Anno Amagium's first two rule
+                    books:
+                  </p>
+                  <div className="mt-2 space-y-1">
+                    <a
+                      href="https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
+                      className="text-white underline text-[12px] md:text-[13px] hover:text-[#199FEC] transition-colors block"
+                    >
+                      Core Rules
+                    </a>
+                    <a
+                      href="https://storage.googleapis.com/gondola-public-bucket/dragonCon_2025_epic_quest_tome.pdf"
+                      className="text-white underline text-[12px] md:text-[13px] hover:text-[#199FEC] transition-colors block"
+                    >
+                      Universe Guide & Lore
+                    </a>
+                  </div>
+                </div>
+
                 <p className="text-gray-300 text-[13px] md:text-[14px] italic">
                   All of the following listings are open to remote work, though
                   being close to the Los Angeles area is a plus.
@@ -192,12 +305,38 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
 
               {/* Openings Column */}
               <div className="space-y-6">
-                <h3 className="text-[#199FEC] text-lg md:text-xl font-semibold uppercase tracking-wide">
-                  Openings
-                </h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-[#199FEC] text-lg md:text-xl font-semibold uppercase tracking-wide">
+                    Openings
+                  </h3>
 
-                <div className="space-y-4">
-                  {openings.map((item) => (
+                  {/* Pagination controls */}
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() => setCurrentPage(1)}
+                      className={`px-3 py-1 rounded text-sm transition-colors ${
+                        currentPage === 1
+                          ? 'bg-[#199FEC] text-white'
+                          : 'bg-transparent text-gray-400 hover:text-white border border-gray-600 hover:border-[#199FEC]'
+                      }`}
+                    >
+                      1
+                    </button>
+                    <button
+                      onClick={() => setCurrentPage(2)}
+                      className={`px-3 py-1 rounded text-sm transition-colors ${
+                        currentPage === 2
+                          ? 'bg-[#199FEC] text-white'
+                          : 'bg-transparent text-gray-400 hover:text-white border border-gray-600 hover:border-[#199FEC]'
+                      }`}
+                    >
+                      2
+                    </button>
+                  </div>
+                </div>
+
+                <div className="space-y-4 min-h-[320px]">
+                  {currentOpenings.map((item) => (
                     <div
                       key={item.id}
                       className="group cursor-pointer transition-transform hover:translate-x-1"
@@ -223,26 +362,6 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
                   apply to the role that you feel is the best possible fit for
                   your skill set.
                 </p>
-
-                <div className="bg-[#199FEC]/10 rounded-lg p-4 border border-[#199FEC]/30">
-                  <p className="text-[#199FEC] text-[13px] md:text-[14px] font-medium mb-2">
-                    Reference Materials:
-                  </p>
-                  <div className="space-y-1">
-                    <a
-                      href="https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
-                      className="text-white underline text-[13px] md:text-[14px] hover:text-[#199FEC] transition-colors block"
-                    >
-                      Core Rules
-                    </a>
-                    <a
-                      href="https://storage.googleapis.com/gondola-public-bucket/dragonCon_2025_epic_quest_tome.pdf"
-                      className="text-white underline text-[13px] md:text-[14px] hover:text-[#199FEC] transition-colors block"
-                    >
-                      Universe Guide & Lore
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -327,13 +446,15 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
                   </div>
                 )}
 
-                {/* Salary Expectations Note */}
-                <div className="bg-[#199FEC]/10 rounded-lg p-4 border border-[#199FEC]/30">
-                  <p className="text-[#199FEC] text-[13px] md:text-[14px] font-medium">
-                    Be sure to specify your hourly rate or other salary
-                    expectations.
-                  </p>
-                </div>
+                {/* Salary Expectations Note - Only show if showSalaryExpectations is true */}
+                {selectedItem.showSalaryExpectations !== false && (
+                  <div className="bg-[#199FEC]/10 rounded-lg p-4 border border-[#199FEC]/30">
+                    <p className="text-[#199FEC] text-[13px] md:text-[14px] font-medium">
+                      Be sure to specify your hourly rate or other salary
+                      expectations.
+                    </p>
+                  </div>
+                )}
 
                 {/* Contact Section */}
                 {selectedItem.email && (
