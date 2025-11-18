@@ -106,6 +106,23 @@ const MarkdownProcessor = {
       {...props}
     />
   ),
+
+  // Image component
+  img: (props: any) => {
+    return (
+      <img
+        className="w-full max-w-full h-auto rounded-lg my-4 border border-[#0F2238]"
+        loading="lazy"
+        {...props}
+        onError={(e) => {
+          const target = e.target as HTMLImageElement;
+          target.style.display = 'none';
+          // Optionally, you can replace with a placeholder
+          // target.src = '/placeholder-image.png';
+        }}
+      />
+    );
+  },
 };
 
 export default MarkdownProcessor;

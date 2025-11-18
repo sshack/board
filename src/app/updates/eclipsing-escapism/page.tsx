@@ -5,6 +5,7 @@ import { MarkdownRenderer } from '@/components/markdown-renderer';
 const markdownText = `# Eclipsing Escapism
 
 At the end of my last post, I wrote a tiny blurb about the importance of escapism. **“It allows us to explore alternate realities, discover new aspects of ourselves, and empowers us to courageously face the problems waiting for us in reality.”** The more responsible among us may scoff, but I guarantee you, the “creatives” you know live and die by this truth. And given how important it is, it is easy for us creatives to lose sight of something even more important: escapism is only the starting line. You’ve got to go further than that. It’s not enough to simply disappear from reality. You’ve got to bring something back with you.
+![Game screenshot](/lp/eclipsing1.png)
 
 The best of entertainment does that. It stays with us. It changes us. Truly profound experiences stain us. But let’s level with ourselves. Masterpieces are few and far between. No matter how finely curated your watch list or how cultured your TBR pile, you cannot reliably get that kind of enrichment and resonation by consuming “Good Media” alone.
 
@@ -12,6 +13,7 @@ The _**is**_ a way to get those things consistently, however. You collaborate as
 
 ## The Beauty of Baldur’s Gate 3
 Excellent video games already make this possible. *Baldur’s Gate 3* should require no introduction. It is a breathtakingly meticulous realization of a *Dungeons and Dragons* 5E campaign that respects players’ autonomy and indulges their creativity at every turn. No noble ideal is unattainable. No prurient vice is forbidden. You can kill off key figures in the story, seduce eldritch horrors, transform into a bear at inopportune moments, and the game will somehow make it all work. Its varying difficulty options even allow players to choose how stringent they want their Dungeon Master to be in terms of interpreting the rules for the sake of challenge. Best of all: you can experience the whole thing with friends. A party of actual humans!
+![Game screenshot](/lp/eclipsing2.png)
 
 That alone gives it an enormous leg up over most forms of escapism, which tend to either be insular in their consumption (books, single-player games), passive in their consumption (spectatorship, movies, shows), or self-destructive in their participation (think social-media echo-chambers or cults). **This unique interaction—safe, group escapism; sharing self-conscious fantasies with people who will recall and participate in the same real social experiences—is what sets roleplaying games apart from the rest of the pack.**
 
@@ -24,6 +26,7 @@ Don’t get me wrong, awful GMs and awful party members do exist, and they can a
 **Players put more of themselves into the human-led TTRPG. The format requires it.** In a video game, there is always some form of structure imposed on a player’s response, whether it is an option selected from a predetermined menu, or an execution of a button command structuring your activity. Hell, let’s look a couple years down the road and say you have a hyper-advanced LLM interpreting and executing your desired action with beautiful animations rendered on the fly. (That actually sounds dope, not gonna lie.) But part of it is still coming from somewhere other than yourself. 
 
 At a table, you have to come up with a response yourself. And the response doesn’t have to be Shakespeare on your part either! A monstrous looking goblin pops out right in front of you. What do you do? Scream? Talk to it? Punch it in the face on reflex? None of those options are outlandishly creative. Those are actually some fairly boring responses to be honest, but they are also perfectly acceptable because they are a reflection of who you are trying to be in that moment. **You don’t need to be a creative genius for earnest, meaningful roleplay.**
+![Game screenshot](/lp/eclipsing3.png)
 
 There may be an adjustment period if you’ve never done anything like this before. But after you have acclimated to the format, the collaboration and improvisation, your will come to learn how you roleplay. Whether you punch the goblin or take it out to dinner, **your friends will think “that’s so you,” or “that’s so your character,” or—in the best-case scenario—they will think both of those things at the same time, even though “your character” is a distinct persona from the normal you.**
 
@@ -33,6 +36,7 @@ And if you are lucky enough to find a good Game Master? Somebody who bothers to 
 This is more than mere “escapism.” At minimum you discover something new about yourself. Best case, those revelations empower you for the better. You can find courage, personality traits, and strength of character that have been lying dormant within you. This is all on top of the usual perks of escapism: you get to experience things that would be suicidally reckless, irresponsibly charitable, loathsomely selfish, or logically impossible in real life. 
 
 **Except these fantasies have more reality to them than those found in the pages of a book, or the code of a typical game, because everyone at the table will experience it with you. They will become memories each of member of your party carries for the rest of their lives.** Even if the story is made up, even if the mechanics are tightly structured, the shared experience with your fellow party members and game master are completely authentic.
+![Game screenshot](/lp/eclipsing4.png)
 
 That’s what I mean when I talk about eclipsing escapism. That’s what To Whit Ventures is trying to enable as a company. That is what we want the Echelon platform to support. This is why I spent years building Anno Amagium. 
 

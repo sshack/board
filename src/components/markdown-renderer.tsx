@@ -277,6 +277,7 @@ export function MarkdownRenderer({ text }: MarkdownRendererProps) {
     'tr',
     'th',
     'td',
+    'img', // Added img to allowed elements
   ];
 
   if (!text?.trim()) {
