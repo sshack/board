@@ -230,13 +230,13 @@ Experience with AWS services (EC2, RDS, Lambda, S3), PostgreSQL optimization, No
                   </p>
                   <div className="space-y-1">
                     <a
-                      href="#"
+                      href="https://storage.googleapis.com/gondola-public-bucket/anno_amagium_rpg_book_core_rules.pdf"
                       className="text-white underline text-[13px] md:text-[14px] hover:text-[#199FEC] transition-colors block"
                     >
                       Core Rules
                     </a>
                     <a
-                      href="#"
+                      href="https://storage.googleapis.com/gondola-public-bucket/dragonCon_2025_epic_quest_tome.pdf"
                       className="text-white underline text-[13px] md:text-[14px] hover:text-[#199FEC] transition-colors block"
                     >
                       Universe Guide & Lore
